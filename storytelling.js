@@ -2267,7 +2267,7 @@ let run = (dataset) => {
 
     regl.frame((time) => {
         regl.clear({
-            color: [240/255, 240/255, 240/255, 1]
+            color: [255/255, 255/255, 255/255, 1]
         });
 
         if (waitingTime > cycleTime && startYear !== 2018) {
