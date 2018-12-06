@@ -151,7 +151,6 @@ function init() {
             text: '.box', // the step container
             step: '.scroll__text .box', // the step elements
             offset: 0.5, // set the trigger to be 1/2 way down screen
-            debug: true, // display the trigger offset for testing
         })
 
         .onStepEnter(handleStepEnter)
@@ -185,7 +184,6 @@ function init2() {
             text: '.scroll__text', // the step container
             step: '.scroll__text .boxvis3', // the step elements
             offset: 0.5, // set the trigger to be 1/2 way down screen
-            debug: true, // display the trigger offset for testing
         })
 
         .onStepEnter(handleStepEnter2)
