@@ -241,7 +241,7 @@ function handleResize() {
         .style('width', bodyWidth + 'px')
         .style('height', window.innerHeight + 'px');
 
-      
+
       // 3. tell scrollama to update new element dimensions
       scroller.resize();
     }
@@ -284,7 +284,7 @@ function handleStepEnter(response){
     console.log(c);
   }
   if (response.index == 2) {
-      
+
     map.removeLayer(subset_layer);
      info.remove(map);
     user_state_layer.addTo(map);
@@ -380,10 +380,10 @@ var nearest = leafletKnn(center_layer).nearestLayer(L.latLng(user_latlng[0].LatL
 var nearest_array=[];
   for(var i=0;i<nearest.length;i++){
   nearest_array.push([nearest[i].layer.feature.geometry.coordinates[1],nearest[i].layer.feature.geometry.coordinates[0]]);
-} 
+}
 //console.log(nearest_array);
 
-var subset_data = center_data.filter(({LatLng}) => 
+var subset_data = center_data.filter(({LatLng}) =>
    nearest_array.some(f => LatLng.every(l => f.includes(l))))
 
 var new_data = [];       //start with an empty array
@@ -495,5 +495,3 @@ function concat(str1,str2,year){
       }
 
 }
-
-
