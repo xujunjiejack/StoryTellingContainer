@@ -12,8 +12,9 @@
 }
 
 .subtitle{
-    font-size: 100px;
+    font-size: 24px;
     font-family: Georgia;
+    padding-bottom: 64px;
 }
 
 .textarea{
@@ -51,4 +52,15 @@
   background: #FAFAFA;
   box-shadow: 0 2px 18px 0 rgba(0,0,0,0.18);
   padding: 16px 32px 24px 32px;
+}
+
+#bg-toggles {
+  height: 800px !important;
+  padding-top: 200px;
+}
+
+
+
+.scroll__text {
+  padding-bottom: 600px;
 }
