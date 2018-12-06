@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src='https://unpkg.com/intersection-observer@0.5.0/intersection-observer.js'></script>
+    <script src='https://unpkg.com/scrollama'></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="storytelling.css" >
+    <link rel="stylesheet" href="vis3/vis3.css">
+
+
+
+    <link rel='stylesheet' href='https://unpkg.com/leaflet@1.2.0/dist/leaflet.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+<section id='scroll'>
+    <!--  graphic container  -->
+    <!--<div class='scroll__graphic'>-->
+    <div class="container-fluid">
+        <!--   actual graphic/chart   -->
+        <div class='chart'>
+
+            <div class="textarea" id="t1">
+            <h1 class="headline text-center">The Impatient List</h1>
+
+            <h3 class="subtitle text-center"> By Kuhu, Het, Tony, JJ </h3>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="intro_text" style="vertical-align: center; height: 700px" >
+
+            <p class="text-center">
+
+                More than 114,000 Americans eligible for organ transplants are waiting for a donation, with 80% of them waiting for a kidney transplant.
+            </p>
+
+            <p class="text-center">
+
+                Kidneys filter and remove excess waste, minerals and fluid from the blood. When your kidneys lose this filtering ability due to, for example, diabetes, harmful levels of fluid and waste accumulate in your body. Your blood pressure will then raise and result in kidney failure. When the kidneys have lost about 90 percent of their ability, end-stage kidney disease occurs.
+
+                When your kidneys fail, kidney transplantation is one of two ways to replace the work your own kidneys can no longer do. Compared to its alternative, dialysis, kidney transplant offers more freedom and better quality of life.
+            </p>
+
+            <p class="text-center">
+                However, getting a transplantation is not easy.
+
+            </p>
+
+        </div>
+    </div>
+
+    <div class="scroll__graphic sticky" style="width: 100%; height: 349px;">
+        <div class="overlay">
+            <div class="chart2" id="map" style="width: 100%; height: 800px;">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  step/text container  -->
+    <div class='scroll__text'>
+        <div class='box step' data-step='1'>
+            <h3>Step 1</h3>
+            <p>
+                To receive a transplant, you must first register yourself on the waitlist of a transplant center.
+
+            </p>
+        </div>
+        <div class='box step' data-step='2'>
+            <h3>Step 2</h3>
+            <p>
+                Since Kidney Transplant can be time sensitive, it is best for you to choose the ones adajacent to where you live.
+                <input id="zip" class="form-inline" type="text" style="display: inline;"></input>
+                <button id="problemsubmit" class="btn" style="display: inline-block;">Submit</button>
+            </p>
+        </div>
+        <div class='box step' data-step='3'>
+            <p>
+                Here is some text about...
+            </p>
+        </div>
+        <div class='box step' data-step='4'>
+            <h3>Then Maybe One More Place</h3>
+            <p>
+                One more change.
+            </p>
+        </div>
+
+        <div class='box step' data-step="5" >
+            <h3>Then Maybe One More Place</h3>
+            <p>
+                One more change.
+            </p>
+
+        </div>
+
+        <div class='box step' data-step="6" >
+            <h3>Then Maybe One More Place</h3>
+            <p>
+                One more change.
+            </p>
+
+        </div>
+
+        <div class='box step' data-step="7">
+            <p>STEP 5</p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+<!--<div class="container-fluid">-->
+    <!--&lt;!&ndash;   actual graphic/chart   &ndash;&gt;-->
+    <!--<div class='chart' >-->
+
+        <!--<div class="textarea" id="t2">-->
+            <!--<h1 class="headline text-center">The Impatient List</h1>-->
+
+            <!--<h3 class="subtitle text-center"> By Kuhu, Het, Tony, JJ </h3>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div class="transition" style="height: 1000px; background: #fcfbfb">
+    <p>This is transition page for second scroll</p>
+
+
+</div>
+
+<section id='scroll2'>
+
+    <div class="scroll__graphic sticky" style="width: 100%; height: 349px;">
+        <div class="overlay">
+            <div id="vis3">
+                <div id = "main" style = "transform: translate(40px,-40px); ">
+                    <canvas id="canvas" width="1200" height="600" style="border:0px solid #000000;" ></canvas>
+                </div>
+                <div style="padding: 4px 60px; transform: translate(40px,-60px)";>
+                    <!--<label for="yearSlider" style="margin-right:6px;">1995</label>-->
+                    <!--<input id="yearSlider" type="text" data-slider-min="1995" data-slider-max="2017" data-slider-step="1" data-slider-value="1995" style="width: 800px;"/>-->
+                    <!--<label for="yearSlider"  style="margin-left:6px;">2017</label>-->
+
+                    <!--<button type="button" id="animatonButton" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">-->
+                    <!--Single toggle-->
+                    <!--</button>-->
+                    <svg id = "vis3_svg" height="150" width="1000">
+
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='scroll__text'>
+        <div class='boxvis3 step' data-step='1'>
+            <p>Vis3 step1</p>
+
+        </div>
+    </div>
+
+
+</section>
+
+
+</body>
+
+<!--<script type="module" src="vis3/vis3Experiment.js"></script>-->
+<script type="module" src="storytelling.js"></script>
+<!--<script src="vis3_section.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="vis3/regl.js"></script>
+<script src="vis3/lodash.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.2.3/math.js"></script>
+
+
+<!-- Leaflet.js -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+        integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+        crossorigin=""></script>
+<!-- Mapbox -->
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+
+<!--  -->
+<script src='https://unpkg.com/intersection-observer'></script>
+<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+<script src="./js/leaflet-knn.js"></script>
+<!--<script src="js/main.js"></script>-->
+
+</html>

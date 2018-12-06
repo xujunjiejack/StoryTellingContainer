@@ -1,0 +1,313 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ================== */
+
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 60px;
+  margin: auto;
+}
+
+p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* choose a light or dark theme to add to the body tag. */
+.dark-theme {
+  background-color: #181414;
+  color: #fcfbfb;
+}
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
+
+
+.text-pad{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container {
+  max-width: 975px;
+}
+
+/* ******** */
+
+.image {
+  width: 100%;
+}
+
+
+/*
+super-font
+.headline
+.kicker
+.subhead
+.label
+.label-text
+.credit
+
+sub-font
+.date
+.body-text
+.note
+*/
+
+
+
+.super-font {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.sub-font {
+  font-family: 'Lora', serif;
+}
+
+/** article **/
+
+.kicker {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.headline {
+    font-size: 3.5rem;
+    line-height: 0.9;
+    margin-bottom: 0.25rem;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.body-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-top: 1.5rem;
+
+}
+
+.credit  {
+    font-size: 1.2rem;
+    line-height: 0.75;
+    margin-top: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.date {
+    font-size: 1rem;
+    line-height: 1;
+    margin-top: 0.25rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.subhead {
+    font-size: 2rem;
+    line-height: 0.9;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    font-weight: 700;
+}
+
+.label {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.label-text {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.note {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+.caption  {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+
+
+.intro {
+min-height: 500px;
+}
+
+/** scroll menu **/
+
+#scroll {
+position: relative;
+padding: 0;
+}
+
+.step {
+min-height: 300px;
+}
+
+.step img {
+    width: 100%;
+    height: auto;
+}
+
+
+.box {
+	margin-bottom: 100vh;
+	padding: 20px;
+	background: rgba(255,255,255,.6);
+}
+
+.boxvis3 {
+    margin-bottom: 100vh;
+    padding: 20px;
+    background: rgba(255,255,255,.6);
+}
+
+.scroll__graphic {
+position: -webkit-sticky;
+position: sticky;
+float: right;
+top: 0;
+right: 0;
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+
+.scroll__text {
+position: relative;
+padding: 21rem 1rem;
+max-width: 30rem;
+width: 33%;
+}
+
+.scroll__text2 {
+    position: relative;
+    padding: 21rem 1rem;
+    max-width: 30rem;
+    width: 33%;
+}
+
+.overlay {
+background: rgba(255,255,255, .25);
+}
+
+#map {
+position: static;
+}
+
+.full {
+  padding: 0;
+  margin: 0;
+}
+
+
+p {
+  margin-bottom: 0;
+}
+
+
+
+/** Footer - Other stories **/
+
+.footer-theme {
+    background-color: #ffe5a7;
+    color: #000000;
+    padding: 3rem;
+    margin-top: 5rem;
+}
+
+.kicker-footer {
+    color: #4b4b4b;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.headline-footer {
+    color: #4b4b4b;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 0rem;
+}
+
+.footer-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4b4b4b;
+    margin-bottom: 0rem;
+}
+
+.tag-text {
+    font-size: 0.8rem;
+    color: #a3a3a3;
+    padding-top: 0.4rem;
+    margin-bottom: 0.6rem;
+}

@@ -1,0 +1,30 @@
+.chart {
+    height: 843px;
+    /*background: url("patient-family.jpg");*/
+    background: beige;
+}
+
+.headline {
+    font-size: 80px;
+    /*padding-top: 100px;*/
+    padding-bottom: 40px;
+    font-family: Georgia;
+}
+
+.subtitle{
+    font-family: Georgia;
+}
+
+.textarea{
+
+}
+
+.intro_text{
+    padding-top: 150px;
+    margin-right: 200px;
+    margin-left: 200px;
+    font-size: 20px;
+    line-height: 40px;
+    font-family: Georgia;
+
+}

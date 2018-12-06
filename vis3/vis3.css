@@ -1,0 +1,57 @@
+.blob, .blob1, .blob2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: green;
+    border: 2px solid #ccc;
+}
+
+.blob1 {
+    top: 130px;
+    left: 90px;
+}
+
+.blob2 {
+    top: 30px;
+    left: 340px;
+}
+
+.node {
+    position: absolute;
+    /*width: 30px;*/
+    /*height: 300px;*/
+    border-radius: 0px;
+    border: 2px solid #ffffff;
+    /*top: 130px;*/
+    /*left: 30px;*/
+}
+
+.horizontalline{
+    height: 2px;
+    width: 600px;
+    left: 180px;
+    top: 355px;
+    position: absolute;
+}
+
+.tick{
+    /*position: absolute;*/
+    /*width: 2px;*/
+    /*height: 2px;*/
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+
+
+/*.verticalline{*/
+    /*height: 540px;*/
+    /*width: 2px;*/
+    /*left: 1140px;*/
+    /*top: 30px;*/
+    /*position: absolute;*/
+/*}*/

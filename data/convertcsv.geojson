@@ -1,0 +1,5905 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.2900766,34.09755005 ]
+    },
+    "properties": {
+    "Center Name":"Children's of Alabama (ALCH)",
+    "Waiting List":217,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.625869368,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":22,
+    "< 30 Days":0,
+    "30 to < 90 Days":2,
+    "90 Days to < 6 Months":3,
+    "6 Months to < 1 Year":1,
+    "1 Year to < 2 Years":7,
+    "2 Years to < 3 Years":4,
+    "3 Years to < 5 Years":4,
+    "5 or More Years":1,
+    "Center Code":"ALCHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.53967402,33.21208215 ]
+    },
+    "properties": {
+    "Center Name":"University of Alabama Hospital (ALUA)",
+    "Waiting List":20,
+    "Death Rate (center)":0.095775675,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.094183871,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1995,
+    "< 30 Days":45,
+    "30 to < 90 Days":67,
+    "90 Days to < 6 Months":88,
+    "6 Months to < 1 Year":120,
+    "1 Year to < 2 Years":199,
+    "2 Years to < 3 Years":108,
+    "3 Years to < 5 Years":301,
+    "5 or More Years":1067,
+    "Center Code":"ALUATX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.81176,33.52068 ]
+    },
+    "properties": {
+    "Center Name":"Birmingham VA Medical Center (ALVA)",
+    "Waiting List":102,
+    "Death Rate (center)":0.03126159,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.119456436,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":71,
+    "< 30 Days":0,
+    "30 to < 90 Days":12,
+    "90 Days to < 6 Months":9,
+    "6 Months to < 1 Year":13,
+    "1 Year to < 2 Years":15,
+    "2 Years to < 3 Years":13,
+    "3 Years to < 5 Years":8,
+    "5 or More Years":1,
+    "Center Code":"ALVATX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.29159233,34.74084135 ]
+    },
+    "properties": {
+    "Center Name":"Arkansas Children's Hospital (ARCH)",
+    "Waiting List":203,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":1.99136756,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":2,
+    "< 30 Days":0,
+    "30 to < 90 Days":0,
+    "90 Days to < 6 Months":1,
+    "6 Months to < 1 Year":0,
+    "1 Year to < 2 Years":0,
+    "2 Years to < 3 Years":0,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":1,
+    "Center Code":"ARCHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.38446965,34.7443364 ]
+    },
+    "properties": {
+    "Center Name":"UAMS Medical Center (ARUA)",
+    "Waiting List":51,
+    "Death Rate (center)":0.048930042,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.371479226,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":206,
+    "< 30 Days":15,
+    "30 to < 90 Days":18,
+    "90 Days to < 6 Months":27,
+    "6 Months to < 1 Year":42,
+    "1 Year to < 2 Years":42,
+    "2 Years to < 3 Years":23,
+    "3 Years to < 5 Years":17,
+    "5 or More Years":22,
+    "Center Code":"ARUATX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.0408755,33.4792831 ]
+    },
+    "properties": {
+    "Center Name":"Phoenix Children's Hospital (AZCH)",
+    "Waiting List":6,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":1.42103867,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":16,
+    "< 30 Days":6,
+    "30 to < 90 Days":0,
+    "90 Days to < 6 Months":2,
+    "6 Months to < 1 Year":6,
+    "1 Year to < 2 Years":1,
+    "2 Years to < 3 Years":1,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"AZCHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.93073,32.1762 ]
+    },
+    "properties": {
+    "Center Name":"Banner-University Medical Center Phoenix (AZGS)",
+    "Waiting List":867,
+    "Death Rate (center)":0.058005635,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.199445503,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":727,
+    "< 30 Days":21,
+    "30 to < 90 Days":25,
+    "90 Days to < 6 Months":47,
+    "6 Months to < 1 Year":52,
+    "1 Year to < 2 Years":121,
+    "2 Years to < 3 Years":160,
+    "3 Years to < 5 Years":181,
+    "5 or More Years":120,
+    "Center Code":"AZGSTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.9558917,33.65725275 ]
+    },
+    "properties": {
+    "Center Name":"Mayo Clinic Hospital (AZMC)",
+    "Waiting List":195,
+    "Death Rate (center)":0.055006238,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.334259743,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":920,
+    "< 30 Days":31,
+    "30 to < 90 Days":75,
+    "90 Days to < 6 Months":93,
+    "6 Months to < 1 Year":142,
+    "1 Year to < 2 Years":209,
+    "2 Years to < 3 Years":146,
+    "3 Years to < 5 Years":125,
+    "5 or More Years":99,
+    "Center Code":"AZMCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.0771416,33.4817027 ]
+    },
+    "properties": {
+    "Center Name":"St. Joseph's Hospital and Medical Center (AZSJ)",
+    "Waiting List":49,
+    "Death Rate (center)":0.048525309,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.339677162,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":102,
+    "< 30 Days":7,
+    "30 to < 90 Days":15,
+    "90 Days to < 6 Months":10,
+    "6 Months to < 1 Year":27,
+    "1 Year to < 2 Years":31,
+    "2 Years to < 3 Years":8,
+    "3 Years to < 5 Years":4,
+    "5 or More Years":0,
+    "Center Code":"AZSJTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.9458,32.241 ]
+    },
+    "properties": {
+    "Center Name":"Banner University Medical Center-Tucson (AZUA)",
+    "Waiting List":947,
+    "Death Rate (center)":0.023739885,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.732590409,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":118,
+    "< 30 Days":13,
+    "30 to < 90 Days":12,
+    "90 Days to < 6 Months":8,
+    "6 Months to < 1 Year":15,
+    "1 Year to < 2 Years":23,
+    "2 Years to < 3 Years":19,
+    "3 Years to < 5 Years":12,
+    "5 or More Years":16,
+    "Center Code":"AZUATX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.1508001,32.7978 ]
+    },
+    "properties": {
+    "Center Name":"Rady Children's Hospital and Health Center (CACH)",
+    "Waiting List":1521,
+    "Death Rate (center)":0.013345391,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.29231077,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":26,
+    "< 30 Days":2,
+    "30 to < 90 Days":1,
+    "90 Days to < 6 Months":3,
+    "6 Months to < 1 Year":2,
+    "1 Year to < 2 Years":6,
+    "2 Years to < 3 Years":6,
+    "3 Years to < 5 Years":4,
+    "5 or More Years":2,
+    "Center Code":"CACHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.04190667,41.26078945 ]
+    },
+    "properties": {
+    "Center Name":"Childrens Hospital Los Angeles (CACL)",
+    "Waiting List":439,
+    "Death Rate (center)":0.012718061,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.43783828,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":36,
+    "< 30 Days":0,
+    "30 to < 90 Days":4,
+    "90 Days to < 6 Months":2,
+    "6 Months to < 1 Year":9,
+    "1 Year to < 2 Years":9,
+    "2 Years to < 3 Years":4,
+    "3 Years to < 5 Years":7,
+    "5 or More Years":1,
+    "Center Code":"CACLTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.3810936,34.0751604 ]
+    },
+    "properties": {
+    "Center Name":"Cedars-Sinai Medical Center (CACS)",
+    "Waiting List":39,
+    "Death Rate (center)":0.052890051,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.16413728,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1284,
+    "< 30 Days":34,
+    "30 to < 90 Days":48,
+    "90 Days to < 6 Months":71,
+    "6 Months to < 1 Year":145,
+    "1 Year to < 2 Years":223,
+    "2 Years to < 3 Years":204,
+    "3 Years to < 5 Years":297,
+    "5 or More Years":262,
+    "Center Code":"CACSTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.2426391,32.89631765 ]
+    },
+    "properties": {
+    "Center Name":"Scripps Green Hospital (CAGH)",
+    "Waiting List":16,
+    "Death Rate (center)":0.048306021,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.086849631,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":544,
+    "< 30 Days":6,
+    "30 to < 90 Days":18,
+    "90 Days to < 6 Months":31,
+    "6 Months to < 1 Year":47,
+    "1 Year to < 2 Years":91,
+    "2 Years to < 3 Years":95,
+    "3 Years to < 5 Years":161,
+    "5 or More Years":95,
+    "Center Code":"CAGHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.8884071,33.78722845 ]
+    },
+    "properties": {
+    "Center Name":"University of California Irvine Medical Center (CAIM)",
+    "Waiting List":25,
+    "Death Rate (center)":0.048104435,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.077341564,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":667,
+    "< 30 Days":15,
+    "30 to < 90 Days":27,
+    "90 Days to < 6 Months":41,
+    "6 Months to < 1 Year":48,
+    "1 Year to < 2 Years":135,
+    "2 Years to < 3 Years":76,
+    "3 Years to < 5 Years":165,
+    "5 or More Years":160,
+    "Center Code":"CAIMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.2947553,33.82944295 ]
+    },
+    "properties": {
+    "Center Name":"Harbor UCLA Medical Center (CALA)",
+    "Waiting List":1,
+    "Death Rate (center)":0.025610641,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.059647585,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":462,
+    "< 30 Days":8,
+    "30 to < 90 Days":17,
+    "90 Days to < 6 Months":30,
+    "6 Months to < 1 Year":56,
+    "1 Year to < 2 Years":68,
+    "2 Years to < 3 Years":52,
+    "3 Years to < 5 Years":85,
+    "5 or More Years":146,
+    "Center Code":"CALATX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.2634355,34.04911185 ]
+    },
+    "properties": {
+    "Center Name":"Loma Linda University Medical Center (CALL)",
+    "Waiting List":0,
+    "Death Rate (center)":0.044055479,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.141813316,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1168,
+    "< 30 Days":26,
+    "30 to < 90 Days":42,
+    "90 Days to < 6 Months":88,
+    "6 Months to < 1 Year":131,
+    "1 Year to < 2 Years":238,
+    "2 Years to < 3 Years":185,
+    "3 Years to < 5 Years":233,
+    "5 or More Years":225,
+    "Center Code":"CALLTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3907663,37.76593885 ]
+    },
+    "properties": {
+    "Center Name":"UCSF Medical Center at Mission Bay (CAMB)",
+    "Waiting List":1033,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.226277749,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":50,
+    "< 30 Days":1,
+    "30 to < 90 Days":1,
+    "90 Days to < 6 Months":1,
+    "6 Months to < 1 Year":6,
+    "1 Year to < 2 Years":12,
+    "2 Years to < 3 Years":11,
+    "3 Years to < 5 Years":18,
+    "5 or More Years":0,
+    "Center Code":"CAMBTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.17531,37.43645 ]
+    },
+    "properties": {
+    "Center Name":"Lucile Salter Packard Children's Hospital at Stanford (CAPC)",
+    "Waiting List":270,
+    "Death Rate (center)":0.008998411,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.417293793,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":112,
+    "< 30 Days":9,
+    "30 to < 90 Days":12,
+    "90 Days to < 6 Months":12,
+    "6 Months to < 1 Year":12,
+    "1 Year to < 2 Years":28,
+    "2 Years to < 3 Years":19,
+    "3 Years to < 5 Years":18,
+    "5 or More Years":2,
+    "Center Code":"CAPCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4323086,37.79050015 ]
+    },
+    "properties": {
+    "Center Name":"California Pacific Medical Center (CAPM)",
+    "Waiting List":636,
+    "Death Rate (center)":0.055962959,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.105441104,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1750,
+    "< 30 Days":53,
+    "30 to < 90 Days":78,
+    "90 Days to < 6 Months":129,
+    "6 Months to < 1 Year":213,
+    "1 Year to < 2 Years":320,
+    "2 Years to < 3 Years":280,
+    "3 Years to < 5 Years":375,
+    "5 or More Years":302,
+    "Center Code":"CAPMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.382575,33.9765046 ]
+    },
+    "properties": {
+    "Center Name":"Riverside Community Hospital (CARC)",
+    "Waiting List":462,
+    "Death Rate (center)":0.049187613,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.109756883,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":247,
+    "< 30 Days":0,
+    "30 to < 90 Days":4,
+    "90 Days to < 6 Months":14,
+    "6 Months to < 1 Year":41,
+    "1 Year to < 2 Years":66,
+    "2 Years to < 3 Years":41,
+    "3 Years to < 5 Years":38,
+    "5 or More Years":43,
+    "Center Code":"CARCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.226489,32.8786919 ]
+    },
+    "properties": {
+    "Center Name":"University of California San Diego Medical Center (CASD)",
+    "Waiting List":148,
+    "Death Rate (center)":0.039549671,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.098905578,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":736,
+    "< 30 Days":21,
+    "30 to < 90 Days":26,
+    "90 Days to < 6 Months":59,
+    "6 Months to < 1 Year":103,
+    "1 Year to < 2 Years":113,
+    "2 Years to < 3 Years":98,
+    "3 Years to < 5 Years":167,
+    "5 or More Years":149,
+    "Center Code":"CASDTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4586,37.7627 ]
+    },
+    "properties": {
+    "Center Name":"University of California San Francisco Medical Center (CASF)",
+    "Waiting List":100,
+    "Death Rate (center)":0.068976176,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.066007671,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":4886,
+    "< 30 Days":70,
+    "30 to < 90 Days":180,
+    "90 Days to < 6 Months":223,
+    "6 Months to < 1 Year":398,
+    "1 Year to < 2 Years":691,
+    "2 Years to < 3 Years":569,
+    "3 Years to < 5 Years":1069,
+    "5 or More Years":1686,
+    "Center Code":"CASFTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.1543535,32.79969815 ]
+    },
+    "properties": {
+    "Center Name":"Sharp Memorial Hospital (CASH)",
+    "Waiting List":603,
+    "Death Rate (center)":0.035099122,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.127474097,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":482,
+    "< 30 Days":22,
+    "30 to < 90 Days":23,
+    "90 Days to < 6 Months":39,
+    "6 Months to < 1 Year":59,
+    "1 Year to < 2 Years":82,
+    "2 Years to < 3 Years":60,
+    "3 Years to < 5 Years":101,
+    "5 or More Years":96,
+    "Center Code":"CASHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -123.0811,44.0465 ]
+    },
+    "properties": {
+    "Center Name":"Saint Joseph Hospital (CASJ)",
+    "Waiting List":863,
+    "Death Rate (center)":0.043789096,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.090299453,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":148,
+    "< 30 Days":2,
+    "30 to < 90 Days":3,
+    "90 Days to < 6 Months":7,
+    "6 Months to < 1 Year":11,
+    "1 Year to < 2 Years":29,
+    "2 Years to < 3 Years":20,
+    "3 Years to < 5 Years":40,
+    "5 or More Years":36,
+    "Center Code":"CASJTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.45508,38.55413004 ]
+    },
+    "properties": {
+    "Center Name":"University of California Davis Medical Center (CASM)",
+    "Waiting List":2268,
+    "Death Rate (center)":0.039559666,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.271438405,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1381,
+    "< 30 Days":36,
+    "30 to < 90 Days":77,
+    "90 Days to < 6 Months":146,
+    "6 Months to < 1 Year":215,
+    "1 Year to < 2 Years":308,
+    "2 Years to < 3 Years":256,
+    "3 Years to < 5 Years":230,
+    "5 or More Years":113,
+    "Center Code":"CASMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.7816121,37.67758085 ]
+    },
+    "properties": {
+    "Center Name":"Stanford Health Care (CASU)",
+    "Waiting List":930,
+    "Death Rate (center)":0.055005982,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.064748648,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1936,
+    "< 30 Days":44,
+    "30 to < 90 Days":61,
+    "90 Days to < 6 Months":117,
+    "6 Months to < 1 Year":187,
+    "1 Year to < 2 Years":360,
+    "2 Years to < 3 Years":238,
+    "3 Years to < 5 Years":393,
+    "5 or More Years":536,
+    "Center Code":"CASUTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.14163218,39.9812576 ]
+    },
+    "properties": {
+    "Center Name":"St. Vincent Medical Center (CASV)",
+    "Waiting List":296,
+    "Death Rate (center)":0.050171517,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.168239106,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":353,
+    "< 30 Days":8,
+    "30 to < 90 Days":18,
+    "90 Days to < 6 Months":26,
+    "6 Months to < 1 Year":35,
+    "1 Year to < 2 Years":82,
+    "2 Years to < 3 Years":42,
+    "3 Years to < 5 Years":80,
+    "5 or More Years":62,
+    "Center Code":"CASVTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.4465068,34.0664646 ]
+    },
+    "properties": {
+    "Center Name":"University of California at Los Angeles Medical Center (CAUC)",
+    "Waiting List":96,
+    "Death Rate (center)":0.047600751,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.157072936,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":2268,
+    "< 30 Days":66,
+    "30 to < 90 Days":79,
+    "90 Days to < 6 Months":148,
+    "6 Months to < 1 Year":246,
+    "1 Year to < 2 Years":489,
+    "2 Years to < 3 Years":360,
+    "3 Years to < 5 Years":468,
+    "5 or More Years":412,
+    "Center Code":"CAUCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.2018882,34.0627257 ]
+    },
+    "properties": {
+    "Center Name":"Keck Hospital of USC (CAUH)",
+    "Waiting List":524,
+    "Death Rate (center)":0.05834417,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.149404973,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1118,
+    "< 30 Days":36,
+    "30 to < 90 Days":81,
+    "90 Days to < 6 Months":76,
+    "6 Months to < 1 Year":95,
+    "1 Year to < 2 Years":174,
+    "2 Years to < 3 Years":175,
+    "3 Years to < 5 Years":307,
+    "5 or More Years":174,
+    "Center Code":"CAUHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.0105821,39.5570689 ]
+    },
+    "properties": {
+    "Center Name":"Children's Hospital Colorado (COCH)",
+    "Waiting List":0,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":1.372335212,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":20,
+    "< 30 Days":5,
+    "30 to < 90 Days":3,
+    "90 Days to < 6 Months":7,
+    "6 Months to < 1 Year":2,
+    "1 Year to < 2 Years":2,
+    "2 Years to < 3 Years":1,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"COCHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.9758832,39.6699704 ]
+    },
+    "properties": {
+    "Center Name":"Centura Porter Adventist Hospital (COPM)",
+    "Waiting List":196,
+    "Death Rate (center)":0.096001,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.142288672,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":177,
+    "< 30 Days":0,
+    "30 to < 90 Days":0,
+    "90 Days to < 6 Months":5,
+    "6 Months to < 1 Year":30,
+    "1 Year to < 2 Years":76,
+    "2 Years to < 3 Years":18,
+    "3 Years to < 5 Years":31,
+    "5 or More Years":17,
+    "Center Code":"COPMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.9670967,39.74715715 ]
+    },
+    "properties": {
+    "Center Name":"Presbyterian/St Luke's Medical Center (COSL)",
+    "Waiting List":100,
+    "Death Rate (center)":0.038292242,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.141079394,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":428,
+    "< 30 Days":16,
+    "30 to < 90 Days":24,
+    "90 Days to < 6 Months":15,
+    "6 Months to < 1 Year":33,
+    "1 Year to < 2 Years":90,
+    "2 Years to < 3 Years":65,
+    "3 Years to < 5 Years":109,
+    "5 or More Years":76,
+    "Center Code":"COSLTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.8415,39.7425 ]
+    },
+    "properties": {
+    "Center Name":"University of Colorado Hospital/Health Science Center (COUC)",
+    "Waiting List":2,
+    "Death Rate (center)":0.056749053,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.169909703,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":988,
+    "< 30 Days":37,
+    "30 to < 90 Days":61,
+    "90 Days to < 6 Months":57,
+    "6 Months to < 1 Year":127,
+    "1 Year to < 2 Years":237,
+    "2 Years to < 3 Years":153,
+    "3 Years to < 5 Years":214,
+    "5 or More Years":102,
+    "Center Code":"COUCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.6794554,41.75396065 ]
+    },
+    "properties": {
+    "Center Name":"Hartford Hospital (CTHH)",
+    "Waiting List":315,
+    "Death Rate (center)":0.062333878,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.207600626,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":336,
+    "< 30 Days":10,
+    "30 to < 90 Days":28,
+    "90 Days to < 6 Months":38,
+    "6 Months to < 1 Year":45,
+    "1 Year to < 2 Years":63,
+    "2 Years to < 3 Years":55,
+    "3 Years to < 5 Years":53,
+    "5 or More Years":44,
+    "Center Code":"CTHHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.93601316,41.30431175 ]
+    },
+    "properties": {
+    "Center Name":"Yale New Haven Hospital (CTYN)",
+    "Waiting List":175,
+    "Death Rate (center)":0.060550699,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.151401639,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":720,
+    "< 30 Days":14,
+    "30 to < 90 Days":30,
+    "90 Days to < 6 Months":35,
+    "6 Months to < 1 Year":61,
+    "1 Year to < 2 Years":139,
+    "2 Years to < 3 Years":115,
+    "3 Years to < 5 Years":164,
+    "5 or More Years":162,
+    "Center Code":"CTYNTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.80556782,33.50467185 ]
+    },
+    "properties": {
+    "Center Name":"Children's National Medical Center (DCCH)",
+    "Waiting List":108,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":1.347785978,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":25,
+    "< 30 Days":1,
+    "30 to < 90 Days":4,
+    "90 Days to < 6 Months":5,
+    "6 Months to < 1 Year":7,
+    "1 Year to < 2 Years":4,
+    "2 Years to < 3 Years":1,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":3,
+    "Center Code":"DCCHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.05060019,38.9014106 ]
+    },
+    "properties": {
+    "Center Name":"George Washington University Hospital (DCGW)",
+    "Waiting List":2332,
+    "Death Rate (center)":0.029775916,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.390159608,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":259,
+    "< 30 Days":12,
+    "30 to < 90 Days":12,
+    "90 Days to < 6 Months":36,
+    "6 Months to < 1 Year":59,
+    "1 Year to < 2 Years":64,
+    "2 Years to < 3 Years":49,
+    "3 Years to < 5 Years":27,
+    "5 or More Years":0,
+    "Center Code":"DCGWTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01632175,38.90477119 ]
+    },
+    "properties": {
+    "Center Name":"Walter Reed National Military Medical Center at Bethesda (DCWR)",
+    "Waiting List":10,
+    "Death Rate (center)":0.040543041,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.216263003,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":303,
+    "< 30 Days":8,
+    "30 to < 90 Days":21,
+    "90 Days to < 6 Months":22,
+    "6 Months to < 1 Year":38,
+    "1 Year to < 2 Years":77,
+    "2 Years to < 3 Years":45,
+    "3 Years to < 5 Years":53,
+    "5 or More Years":39,
+    "Center Code":"DCWRTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.55673,39.77859 ]
+    },
+    "properties": {
+    "Center Name":"Alfred I DuPont Hospital for Children (DEAI)",
+    "Waiting List":130,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.874102564,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":4,
+    "< 30 Days":1,
+    "30 to < 90 Days":1,
+    "90 Days to < 6 Months":0,
+    "6 Months to < 1 Year":0,
+    "1 Year to < 2 Years":1,
+    "2 Years to < 3 Years":1,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"DEAITX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.6684,39.6875 ]
+    },
+    "properties": {
+    "Center Name":"Christiana Care Health Services (DECC)",
+    "Waiting List":223,
+    "Death Rate (center)":0.050735727,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.11419278,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":173,
+    "< 30 Days":6,
+    "30 to < 90 Days":4,
+    "90 Days to < 6 Months":12,
+    "6 Months to < 1 Year":26,
+    "1 Year to < 2 Years":36,
+    "2 Years to < 3 Years":25,
+    "3 Years to < 5 Years":37,
+    "5 or More Years":27,
+    "Center Code":"DECCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.3644,26.0819 ]
+    },
+    "properties": {
+    "Center Name":"Cleveland Clinic Florida Weston (FLCC)",
+    "Waiting List":412,
+    "Death Rate (center)":0.026116468,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.426596074,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":574,
+    "< 30 Days":47,
+    "30 to < 90 Days":65,
+    "90 Days to < 6 Months":92,
+    "6 Months to < 1 Year":144,
+    "1 Year to < 2 Years":137,
+    "2 Years to < 3 Years":53,
+    "3 Years to < 5 Years":36,
+    "5 or More Years":0,
+    "Center Code":"FLCCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.66033,-36.82494 ]
+    },
+    "properties": {
+    "Center Name":"Florida Hospital Medical Center (FLFH)",
+    "Waiting List":1205,
+    "Death Rate (center)":0.042370561,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.358327202,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":391,
+    "< 30 Days":15,
+    "30 to < 90 Days":43,
+    "90 Days to < 6 Months":34,
+    "6 Months to < 1 Year":38,
+    "1 Year to < 2 Years":74,
+    "2 Years to < 3 Years":67,
+    "3 Years to < 5 Years":65,
+    "5 or More Years":55,
+    "Center Code":"FLFHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.85002357,26.54376865 ]
+    },
+    "properties": {
+    "Center Name":"Gulf Coast Medical Center (FLFR)",
+    "Waiting List":1426,
+    "Death Rate (center)":0.057892502,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.083093604,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":102,
+    "< 30 Days":0,
+    "30 to < 90 Days":9,
+    "90 Days to < 6 Months":13,
+    "6 Months to < 1 Year":23,
+    "1 Year to < 2 Years":30,
+    "2 Years to < 3 Years":4,
+    "3 Years to < 5 Years":16,
+    "5 or More Years":7,
+    "Center Code":"FLFRTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.0544,29.201 ]
+    },
+    "properties": {
+    "Center Name":"Halifax Medical Center (FLHM)",
+    "Waiting List":325,
+    "Death Rate (center)":0.060854715,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.424666363,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":44,
+    "< 30 Days":5,
+    "30 to < 90 Days":5,
+    "90 Days to < 6 Months":9,
+    "6 Months to < 1 Year":12,
+    "1 Year to < 2 Years":10,
+    "2 Years to < 3 Years":2,
+    "3 Years to < 5 Years":1,
+    "5 or More Years":0,
+    "Center Code":"FLHMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.21260146,25.7916705 ]
+    },
+    "properties": {
+    "Center Name":"Jackson Memorial Hospital University of Miami School of Medicine (FLJM)",
+    "Waiting List":526,
+    "Death Rate (center)":0.056318619,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.184786107,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1491,
+    "< 30 Days":46,
+    "30 to < 90 Days":66,
+    "90 Days to < 6 Months":93,
+    "6 Months to < 1 Year":156,
+    "1 Year to < 2 Years":344,
+    "2 Years to < 3 Years":230,
+    "3 Years to < 5 Years":341,
+    "5 or More Years":215,
+    "Center Code":"FLJMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.80373351,27.91549155 ]
+    },
+    "properties": {
+    "Center Name":"Largo Medical Center (FLLM)",
+    "Waiting List":428,
+    "Death Rate (center)":0.074172477,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":1.514347541,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":49,
+    "< 30 Days":5,
+    "30 to < 90 Days":13,
+    "90 Days to < 6 Months":13,
+    "6 Months to < 1 Year":6,
+    "1 Year to < 2 Years":9,
+    "2 Years to < 3 Years":3,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"FLLMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.21114008,30.47676999 ]
+    },
+    "properties": {
+    "Center Name":"Sacred Heart Hospital Pensacola (FLSH)",
+    "Waiting List":244,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.142815249,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":148,
+    "< 30 Days":5,
+    "30 to < 90 Days":14,
+    "90 Days to < 6 Months":25,
+    "6 Months to < 1 Year":71,
+    "1 Year to < 2 Years":33,
+    "2 Years to < 3 Years":0,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"FLSHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.44479406,30.2604657 ]
+    },
+    "properties": {
+    "Center Name":"Mayo Clinic Florida (FLSL)",
+    "Waiting List":0,
+    "Death Rate (center)":0.062697943,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.220688474,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":743,
+    "< 30 Days":20,
+    "30 to < 90 Days":83,
+    "90 Days to < 6 Months":49,
+    "6 Months to < 1 Year":125,
+    "1 Year to < 2 Years":151,
+    "2 Years to < 3 Years":120,
+    "3 Years to < 5 Years":117,
+    "5 or More Years":78,
+    "Center Code":"FLSLTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.45889587,27.9375006 ]
+    },
+    "properties": {
+    "Center Name":"Tampa General Hospital (FLTG)",
+    "Waiting List":1460,
+    "Death Rate (center)":0.044690308,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.33945498,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":761,
+    "< 30 Days":43,
+    "30 to < 90 Days":72,
+    "90 Days to < 6 Months":76,
+    "6 Months to < 1 Year":128,
+    "1 Year to < 2 Years":203,
+    "2 Years to < 3 Years":119,
+    "3 Years to < 5 Years":92,
+    "5 or More Years":28,
+    "Center Code":"FLTGTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.34347126,29.64042595 ]
+    },
+    "properties": {
+    "Center Name":"UF Health Shands Hospital (FLUF)",
+    "Waiting List":828,
+    "Death Rate (center)":0.055619676,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.158569156,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":535,
+    "< 30 Days":33,
+    "30 to < 90 Days":25,
+    "90 Days to < 6 Months":40,
+    "6 Months to < 1 Year":66,
+    "1 Year to < 2 Years":116,
+    "2 Years to < 3 Years":126,
+    "3 Years to < 5 Years":95,
+    "5 or More Years":34,
+    "Center Code":"FLUFTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.31985887,33.79356545 ]
+    },
+    "properties": {
+    "Center Name":"Children's Healthcare of Atlanta at Egleston (GAEH)",
+    "Waiting List":71,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.736819645,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":33,
+    "< 30 Days":1,
+    "30 to < 90 Days":1,
+    "90 Days to < 6 Months":2,
+    "6 Months to < 1 Year":6,
+    "1 Year to < 2 Years":14,
+    "2 Years to < 3 Years":6,
+    "3 Years to < 5 Years":2,
+    "5 or More Years":1,
+    "Center Code":"GAEHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.32208291,33.792151 ]
+    },
+    "properties": {
+    "Center Name":"Emory University Hospital (GAEM)",
+    "Waiting List":561,
+    "Death Rate (center)":0.058896173,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.111709142,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":2332,
+    "< 30 Days":76,
+    "30 to < 90 Days":127,
+    "90 Days to < 6 Months":167,
+    "6 Months to < 1 Year":284,
+    "1 Year to < 2 Years":488,
+    "2 Years to < 3 Years":428,
+    "3 Years to < 5 Years":459,
+    "5 or More Years":303,
+    "Center Code":"GAEMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.28570002,30.85884995 ]
+    },
+    "properties": {
+    "Center Name":"AU Medical Center, Inc. (GAMC)",
+    "Waiting List":1021,
+    "Death Rate (center)":0.061594092,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.05392526,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":967,
+    "< 30 Days":9,
+    "30 to < 90 Days":32,
+    "90 Days to < 6 Months":43,
+    "6 Months to < 1 Year":69,
+    "1 Year to < 2 Years":160,
+    "2 Years to < 3 Years":220,
+    "3 Years to < 5 Years":287,
+    "5 or More Years":147,
+    "Center Code":"GAMCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.39542732,33.8093759 ]
+    },
+    "properties": {
+    "Center Name":"Piedmont Hospital (GAPH)",
+    "Waiting List":577,
+    "Death Rate (center)":0.050560768,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.104985955,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1460,
+    "< 30 Days":48,
+    "30 to < 90 Days":65,
+    "90 Days to < 6 Months":103,
+    "6 Months to < 1 Year":143,
+    "1 Year to < 2 Years":256,
+    "2 Years to < 3 Years":224,
+    "3 Years to < 5 Years":386,
+    "5 or More Years":235,
+    "Center Code":"GAPHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.853676,21.30799045 ]
+    },
+    "properties": {
+    "Center Name":"The Queen's Medical Center (HIQM)",
+    "Waiting List":130,
+    "Death Rate (center)":0.034606201,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.120194223,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":312,
+    "< 30 Days":2,
+    "30 to < 90 Days":7,
+    "90 Days to < 6 Months":20,
+    "6 Months to < 1 Year":41,
+    "1 Year to < 2 Years":61,
+    "2 Years to < 3 Years":41,
+    "3 Years to < 5 Years":83,
+    "5 or More Years":57,
+    "Center Code":"HIQMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.63485196,41.5898162 ]
+    },
+    "properties": {
+    "Center Name":"Iowa Methodist Medical Center (IAIM)",
+    "Waiting List":4,
+    "Death Rate (center)":0.062197161,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.814931882,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":92,
+    "< 30 Days":12,
+    "30 to < 90 Days":8,
+    "90 Days to < 6 Months":19,
+    "6 Months to < 1 Year":13,
+    "1 Year to < 2 Years":25,
+    "2 Years to < 3 Years":10,
+    "3 Years to < 5 Years":3,
+    "5 or More Years":2,
+    "Center Code":"IAIMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.09087991,36.03792865 ]
+    },
+    "properties": {
+    "Center Name":"University of Iowa Hospitals and Clinics Transplant Programs (IAIV)",
+    "Waiting List":155,
+    "Death Rate (center)":0.035577515,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.307990317,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":237,
+    "< 30 Days":13,
+    "30 to < 90 Days":17,
+    "90 Days to < 6 Months":23,
+    "6 Months to < 1 Year":39,
+    "1 Year to < 2 Years":76,
+    "2 Years to < 3 Years":29,
+    "3 Years to < 5 Years":32,
+    "5 or More Years":8,
+    "Center Code":"IAIVTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.65681472,41.97824445 ]
+    },
+    "properties": {
+    "Center Name":"Mercy Medical Center-Des Moines (IAMH)",
+    "Waiting List":44,
+    "Death Rate (center)":0.031933379,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.241615971,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":78,
+    "< 30 Days":2,
+    "30 to < 90 Days":4,
+    "90 Days to < 6 Months":3,
+    "6 Months to < 1 Year":10,
+    "1 Year to < 2 Years":26,
+    "2 Years to < 3 Years":10,
+    "3 Years to < 5 Years":19,
+    "5 or More Years":4,
+    "Center Code":"IAMHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.52895999,41.66374002 ]
+    },
+    "properties": {
+    "Center Name":"The Iowa City VA Health Care System (IAVA)",
+    "Waiting List":4,
+    "Death Rate (center)":0.06932494,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.390662602,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":136,
+    "< 30 Days":8,
+    "30 to < 90 Days":3,
+    "90 Days to < 6 Months":16,
+    "6 Months to < 1 Year":18,
+    "1 Year to < 2 Years":28,
+    "2 Years to < 3 Years":28,
+    "3 Years to < 5 Years":30,
+    "5 or More Years":5,
+    "Center Code":"IAVATX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.73210067,41.72199875 ]
+    },
+    "properties": {
+    "Center Name":"Advocate Christ Medical Center (ILCH)",
+    "Waiting List":30,
+    "Death Rate (center)":0.038248209,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.111280775,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":202,
+    "< 30 Days":8,
+    "30 to < 90 Days":8,
+    "90 Days to < 6 Months":10,
+    "6 Months to < 1 Year":21,
+    "1 Year to < 2 Years":44,
+    "2 Years to < 3 Years":29,
+    "3 Years to < 5 Years":66,
+    "5 or More Years":16,
+    "Center Code":"ILCHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.62145003,41.89596001 ]
+    },
+    "properties": {
+    "Center Name":"Ann & Robert H. Lurie Children's Hospital of Chicago (ILCM)",
+    "Waiting List":480,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.37227816,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":43,
+    "< 30 Days":0,
+    "30 to < 90 Days":2,
+    "90 Days to < 6 Months":4,
+    "6 Months to < 1 Year":7,
+    "1 Year to < 2 Years":11,
+    "2 Years to < 3 Years":7,
+    "3 Years to < 5 Years":4,
+    "5 or More Years":8,
+    "Center Code":"ILCMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.83524275,41.85901495 ]
+    },
+    "properties": {
+    "Center Name":"Loyola University Medical Center (ILLU)",
+    "Waiting List":209,
+    "Death Rate (center)":0.081166072,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.247286576,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":330,
+    "< 30 Days":22,
+    "30 to < 90 Days":29,
+    "90 Days to < 6 Months":27,
+    "6 Months to < 1 Year":70,
+    "1 Year to < 2 Years":94,
+    "2 Years to < 3 Years":21,
+    "3 Years to < 5 Years":43,
+    "5 or More Years":24,
+    "Center Code":"ILLUTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.52843,39.50941 ]
+    },
+    "properties": {
+    "Center Name":"Memorial Medical Center (ILMM)",
+    "Waiting List":206,
+    "Death Rate (center)":0.09193811,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.149400252,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":94,
+    "< 30 Days":2,
+    "30 to < 90 Days":6,
+    "90 Days to < 6 Months":6,
+    "6 Months to < 1 Year":11,
+    "1 Year to < 2 Years":30,
+    "2 Years to < 3 Years":10,
+    "3 Years to < 5 Years":20,
+    "5 or More Years":9,
+    "Center Code":"ILMMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.62153624,41.89498135 ]
+    },
+    "properties": {
+    "Center Name":"Northwestern Memorial Hospital (ILNM)",
+    "Waiting List":0,
+    "Death Rate (center)":0.046524436,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.196766906,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":935,
+    "< 30 Days":21,
+    "30 to < 90 Days":43,
+    "90 Days to < 6 Months":44,
+    "6 Months to < 1 Year":88,
+    "1 Year to < 2 Years":153,
+    "2 Years to < 3 Years":162,
+    "3 Years to < 5 Years":223,
+    "5 or More Years":201,
+    "Center Code":"ILNMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.66911211,41.8739038 ]
+    },
+    "properties": {
+    "Center Name":"Rush University Medical Center (ILPL)",
+    "Waiting List":429,
+    "Death Rate (center)":0.03164176,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.187829864,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":462,
+    "< 30 Days":15,
+    "30 to < 90 Days":25,
+    "90 Days to < 6 Months":33,
+    "6 Months to < 1 Year":70,
+    "1 Year to < 2 Years":125,
+    "2 Years to < 3 Years":70,
+    "3 Years to < 5 Years":77,
+    "5 or More Years":47,
+    "Center Code":"ILPLTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.58998457,40.7023663 ]
+    },
+    "properties": {
+    "Center Name":"OSF Saint Francis Medical Center (ILSF)",
+    "Waiting List":577,
+    "Death Rate (center)":0.045449293,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.134334351,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":325,
+    "< 30 Days":9,
+    "30 to < 90 Days":19,
+    "90 Days to < 6 Months":23,
+    "6 Months to < 1 Year":40,
+    "1 Year to < 2 Years":60,
+    "2 Years to < 3 Years":68,
+    "3 Years to < 5 Years":60,
+    "5 or More Years":46,
+    "Center Code":"ILSFTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.60126996,41.79001002 ]
+    },
+    "properties": {
+    "Center Name":"University of Chicago Medical Center (ILUC)",
+    "Waiting List":240,
+    "Death Rate (center)":0.051841716,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.123297781,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":497,
+    "< 30 Days":18,
+    "30 to < 90 Days":13,
+    "90 Days to < 6 Months":25,
+    "6 Months to < 1 Year":43,
+    "1 Year to < 2 Years":81,
+    "2 Years to < 3 Years":80,
+    "3 Years to < 5 Years":129,
+    "5 or More Years":108,
+    "Center Code":"ILUCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.67062,41.86922 ]
+    },
+    "properties": {
+    "Center Name":"University of Illinois Medical Center (ILUI)",
+    "Waiting List":300,
+    "Death Rate (center)":0.06773203,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.180681904,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":584,
+    "< 30 Days":22,
+    "30 to < 90 Days":32,
+    "90 Days to < 6 Months":50,
+    "6 Months to < 1 Year":73,
+    "1 Year to < 2 Years":88,
+    "2 Years to < 3 Years":66,
+    "3 Years to < 5 Years":126,
+    "5 or More Years":127,
+    "Center Code":"ILUITX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -85.41530167,40.19690095 ]
+    },
+    "properties": {
+    "Center Name":"Indiana University Health (INIM)",
+    "Waiting List":478,
+    "Death Rate (center)":0.05001979,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.230571758,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":800,
+    "< 30 Days":28,
+    "30 to < 90 Days":54,
+    "90 Days to < 6 Months":83,
+    "6 Months to < 1 Year":106,
+    "1 Year to < 2 Years":157,
+    "2 Years to < 3 Years":128,
+    "3 Years to < 5 Years":137,
+    "5 or More Years":107,
+    "Center Code":"INIMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -85.24972703,41.03890485 ]
+    },
+    "properties": {
+    "Center Name":"Lutheran Hospital of Fort Wayne (INLH)",
+    "Waiting List":743,
+    "Death Rate (center)":0.047403463,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.146779379,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":96,
+    "< 30 Days":4,
+    "30 to < 90 Days":8,
+    "90 Days to < 6 Months":8,
+    "6 Months to < 1 Year":16,
+    "1 Year to < 2 Years":16,
+    "2 Years to < 3 Years":16,
+    "3 Years to < 5 Years":22,
+    "5 or More Years":6,
+    "Center Code":"INLHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.2733442,34.06406005 ]
+    },
+    "properties": {
+    "Center Name":"St Vincent Hospital and Health Care Center (INSV)",
+    "Waiting List":375,
+    "Death Rate (center)":0.037599596,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.233613308,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":244,
+    "< 30 Days":17,
+    "30 to < 90 Days":21,
+    "90 Days to < 6 Months":29,
+    "6 Months to < 1 Year":41,
+    "1 Year to < 2 Years":50,
+    "2 Years to < 3 Years":42,
+    "3 Years to < 5 Years":40,
+    "5 or More Years":4,
+    "Center Code":"INSVTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.6090332,39.0559267 ]
+    },
+    "properties": {
+    "Center Name":"University of Kansas Hospital (KSUK)",
+    "Waiting List":193,
+    "Death Rate (center)":0.039927633,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.386566614,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":299,
+    "< 30 Days":13,
+    "30 to < 90 Days":25,
+    "90 Days to < 6 Months":43,
+    "6 Months to < 1 Year":61,
+    "1 Year to < 2 Years":75,
+    "2 Years to < 3 Years":46,
+    "3 Years to < 5 Years":26,
+    "5 or More Years":10,
+    "Center Code":"KSUKTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -85.75025024,38.2500543 ]
+    },
+    "properties": {
+    "Center Name":"Jewish Hospital (KYJH)",
+    "Waiting List":772,
+    "Death Rate (center)":0.096239239,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.251821777,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":330,
+    "< 30 Days":7,
+    "30 to < 90 Days":31,
+    "90 Days to < 6 Months":35,
+    "6 Months to < 1 Year":63,
+    "1 Year to < 2 Years":88,
+    "2 Years to < 3 Years":56,
+    "3 Years to < 5 Years":32,
+    "5 or More Years":18,
+    "Center Code":"KYJHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -85.74973679,38.24844765 ]
+    },
+    "properties": {
+    "Center Name":"Norton Children's Hospital (KYKC)",
+    "Waiting List":92,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":1.457114362,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1,
+    "< 30 Days":0,
+    "30 to < 90 Days":0,
+    "90 Days to < 6 Months":0,
+    "6 Months to < 1 Year":0,
+    "1 Year to < 2 Years":0,
+    "2 Years to < 3 Years":1,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"KYKCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.50669,38.03904 ]
+    },
+    "properties": {
+    "Center Name":"University of Kentucky Medical Center (KYUK)",
+    "Waiting List":244,
+    "Death Rate (center)":0.059820914,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.198215587,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":439,
+    "< 30 Days":12,
+    "30 to < 90 Days":33,
+    "90 Days to < 6 Months":40,
+    "6 Months to < 1 Year":77,
+    "1 Year to < 2 Years":80,
+    "2 Years to < 3 Years":83,
+    "3 Years to < 5 Years":80,
+    "5 or More Years":34,
+    "Center Code":"KYUKTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.12764053,29.9178692 ]
+    },
+    "properties": {
+    "Center Name":"Children's Hospital (LACH)",
+    "Waiting List":0,
+    "Death Rate (center)":0.125688231,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.821961948,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":6,
+    "< 30 Days":0,
+    "30 to < 90 Days":0,
+    "90 Days to < 6 Months":2,
+    "6 Months to < 1 Year":2,
+    "1 Year to < 2 Years":1,
+    "2 Years to < 3 Years":1,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"LACHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.14567367,29.9610677 ]
+    },
+    "properties": {
+    "Center Name":"Ochsner Foundation Hospital (LAOF)",
+    "Waiting List":144,
+    "Death Rate (center)":0.057994928,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.125266867,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1021,
+    "< 30 Days":18,
+    "30 to < 90 Days":47,
+    "90 Days to < 6 Months":59,
+    "6 Months to < 1 Year":130,
+    "1 Year to < 2 Years":202,
+    "2 Years to < 3 Years":152,
+    "3 Years to < 5 Years":271,
+    "5 or More Years":142,
+    "Center Code":"LAOFTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.07588289,29.95531385 ]
+    },
+    "properties": {
+    "Center Name":"Tulane Medical Center (LATU)",
+    "Waiting List":185,
+    "Death Rate (center)":0.049388512,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.166203082,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":526,
+    "< 30 Days":27,
+    "30 to < 90 Days":43,
+    "90 Days to < 6 Months":59,
+    "6 Months to < 1 Year":67,
+    "1 Year to < 2 Years":96,
+    "2 Years to < 3 Years":64,
+    "3 Years to < 5 Years":93,
+    "5 or More Years":77,
+    "Center Code":"LATUTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.77870669,32.48491885 ]
+    },
+    "properties": {
+    "Center Name":"Willis-Knighton Medical Center (LAWK)",
+    "Waiting List":479,
+    "Death Rate (center)":0.03898495,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.197002425,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":315,
+    "< 30 Days":9,
+    "30 to < 90 Days":22,
+    "90 Days to < 6 Months":34,
+    "6 Months to < 1 Year":43,
+    "1 Year to < 2 Years":64,
+    "2 Years to < 3 Years":61,
+    "3 Years to < 5 Years":60,
+    "5 or More Years":22,
+    "Center Code":"LAWKTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.10970568,42.33837185 ]
+    },
+    "properties": {
+    "Center Name":"Beth Israel Deaconess Medical Center (MABI)",
+    "Waiting List":238,
+    "Death Rate (center)":0.043935497,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.156793624,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":412,
+    "< 30 Days":14,
+    "30 to < 90 Days":25,
+    "90 Days to < 6 Months":27,
+    "6 Months to < 1 Year":59,
+    "1 Year to < 2 Years":94,
+    "2 Years to < 3 Years":76,
+    "3 Years to < 5 Years":67,
+    "5 or More Years":50,
+    "Center Code":"MABITX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.60300615,42.12152205 ]
+    },
+    "properties": {
+    "Center Name":"Baystate Medical Center (MABS)",
+    "Waiting List":1995,
+    "Death Rate (center)":0.038171795,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.213889716,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":168,
+    "< 30 Days":4,
+    "30 to < 90 Days":20,
+    "90 Days to < 6 Months":18,
+    "6 Months to < 1 Year":20,
+    "1 Year to < 2 Years":41,
+    "2 Years to < 3 Years":24,
+    "3 Years to < 5 Years":26,
+    "5 or More Years":15,
+    "Center Code":"MABSTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.07464659,42.33415835 ]
+    },
+    "properties": {
+    "Center Name":"Boston Medical Center (MABU)",
+    "Waiting List":868,
+    "Death Rate (center)":0.028872091,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.173370849,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":280,
+    "< 30 Days":10,
+    "30 to < 90 Days":15,
+    "90 Days to < 6 Months":27,
+    "6 Months to < 1 Year":30,
+    "1 Year to < 2 Years":63,
+    "2 Years to < 3 Years":56,
+    "3 Years to < 5 Years":45,
+    "5 or More Years":34,
+    "Center Code":"MABUTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.1057172,42.33734685 ]
+    },
+    "properties": {
+    "Center Name":"Boston Children's Hospital (MACH)",
+    "Waiting List":795,
+    "Death Rate (center)":0.030511235,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.85295304,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":22,
+    "< 30 Days":1,
+    "30 to < 90 Days":3,
+    "90 Days to < 6 Months":1,
+    "6 Months to < 1 Year":5,
+    "1 Year to < 2 Years":5,
+    "2 Years to < 3 Years":2,
+    "3 Years to < 5 Years":3,
+    "5 or More Years":2,
+    "Center Code":"MACHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.2042249,42.48464385 ]
+    },
+    "properties": {
+    "Center Name":"Lahey Clinic Medical Center (MALC)",
+    "Waiting List":219,
+    "Death Rate (center)":0.053460782,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.219294925,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":177,
+    "< 30 Days":14,
+    "30 to < 90 Days":10,
+    "90 Days to < 6 Months":20,
+    "6 Months to < 1 Year":25,
+    "1 Year to < 2 Years":32,
+    "2 Years to < 3 Years":22,
+    "3 Years to < 5 Years":38,
+    "5 or More Years":16,
+    "Center Code":"MALCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.06873742,42.36291795 ]
+    },
+    "properties": {
+    "Center Name":"Massachusetts General Hospital (MAMG)",
+    "Waiting List":1750,
+    "Death Rate (center)":0.05461105,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.169559532,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1033,
+    "< 30 Days":28,
+    "30 to < 90 Days":70,
+    "90 Days to < 6 Months":92,
+    "6 Months to < 1 Year":137,
+    "1 Year to < 2 Years":271,
+    "2 Years to < 3 Years":183,
+    "3 Years to < 5 Years":174,
+    "5 or More Years":78,
+    "Center Code":"MAMGTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0634112,42.3495588 ]
+    },
+    "properties": {
+    "Center Name":"Tufts Medical Center (MANM)",
+    "Waiting List":5,
+    "Death Rate (center)":0.049695809,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.217275225,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":196,
+    "< 30 Days":8,
+    "30 to < 90 Days":12,
+    "90 Days to < 6 Months":16,
+    "6 Months to < 1 Year":20,
+    "1 Year to < 2 Years":47,
+    "2 Years to < 3 Years":19,
+    "3 Years to < 5 Years":41,
+    "5 or More Years":33,
+    "Center Code":"MANMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.10604363,42.33568 ]
+    },
+    "properties": {
+    "Center Name":"Brigham and Women's Hospital (MAPB)",
+    "Waiting List":88,
+    "Death Rate (center)":0.030946105,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.263472694,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":306,
+    "< 30 Days":7,
+    "30 to < 90 Days":16,
+    "90 Days to < 6 Months":26,
+    "6 Months to < 1 Year":48,
+    "1 Year to < 2 Years":83,
+    "2 Years to < 3 Years":52,
+    "3 Years to < 5 Years":55,
+    "5 or More Years":19,
+    "Center Code":"MAPBTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.76208,42.27625 ]
+    },
+    "properties": {
+    "Center Name":"UMass Memorial Medical Center (MAUM)",
+    "Waiting List":399,
+    "Death Rate (center)":0.046355515,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.166769717,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":364,
+    "< 30 Days":9,
+    "30 to < 90 Days":20,
+    "90 Days to < 6 Months":33,
+    "6 Months to < 1 Year":45,
+    "1 Year to < 2 Years":85,
+    "2 Years to < 3 Years":64,
+    "3 Years to < 5 Years":63,
+    "5 or More Years":45,
+    "Center Code":"MAUMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.59239403,39.2964392 ]
+    },
+    "properties": {
+    "Center Name":"Johns Hopkins Hospital (MDJH)",
+    "Waiting List":50,
+    "Death Rate (center)":0.058783294,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.146148765,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1426,
+    "< 30 Days":35,
+    "30 to < 90 Days":57,
+    "90 Days to < 6 Months":113,
+    "6 Months to < 1 Year":200,
+    "1 Year to < 2 Years":319,
+    "2 Years to < 3 Years":248,
+    "3 Years to < 5 Years":328,
+    "5 or More Years":126,
+    "Center Code":"MDJHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.62439437,39.28827365 ]
+    },
+    "properties": {
+    "Center Name":"University of Maryland Medical System (MDUM)",
+    "Waiting List":38,
+    "Death Rate (center)":0.07846115,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.156882077,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1205,
+    "< 30 Days":23,
+    "30 to < 90 Days":27,
+    "90 Days to < 6 Months":83,
+    "6 Months to < 1 Year":111,
+    "1 Year to < 2 Years":186,
+    "2 Years to < 3 Years":164,
+    "3 Years to < 5 Years":387,
+    "5 or More Years":224,
+    "Center Code":"MDUMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.27625522,43.6531775 ]
+    },
+    "properties": {
+    "Center Name":"Maine Medical Center (MEMC)",
+    "Waiting List":4,
+    "Death Rate (center)":0.04124633,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.431789788,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":108,
+    "< 30 Days":9,
+    "30 to < 90 Days":10,
+    "90 Days to < 6 Months":10,
+    "6 Months to < 1 Year":13,
+    "1 Year to < 2 Years":19,
+    "2 Years to < 3 Years":21,
+    "3 Years to < 5 Years":18,
+    "5 or More Years":8,
+    "Center Code":"MEMCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.09356974,42.6173755 ]
+    },
+    "properties": {
+    "Center Name":"William Beaumont Hospital (MIBH)",
+    "Waiting List":5,
+    "Death Rate (center)":0.051789206,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.214177061,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":379,
+    "< 30 Days":8,
+    "30 to < 90 Days":21,
+    "90 Days to < 6 Months":38,
+    "6 Months to < 1 Year":39,
+    "1 Year to < 2 Years":102,
+    "2 Years to < 3 Years":67,
+    "3 Years to < 5 Years":57,
+    "5 or More Years":47,
+    "Center Code":"MIBHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.6330972,35.511168 ]
+    },
+    "properties": {
+    "Center Name":"Children's Hospital of Michigan (MICH)",
+    "Waiting List":94,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.616542411,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":6,
+    "< 30 Days":0,
+    "30 to < 90 Days":0,
+    "90 Days to < 6 Months":2,
+    "6 Months to < 1 Year":0,
+    "1 Year to < 2 Years":3,
+    "2 Years to < 3 Years":0,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":1,
+    "Center Code":"MICHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.05434001,42.35165006 ]
+    },
+    "properties": {
+    "Center Name":"Helen DeVos Children's Hospital (MIDV)",
+    "Waiting List":16,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":1.080040323,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":4,
+    "< 30 Days":0,
+    "30 to < 90 Days":0,
+    "90 Days to < 6 Months":1,
+    "6 Months to < 1 Year":2,
+    "1 Year to < 2 Years":0,
+    "2 Years to < 3 Years":1,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"MIDVTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.08540269,42.36764305 ]
+    },
+    "properties": {
+    "Center Name":"Henry Ford Hospital (MIHF)",
+    "Waiting List":312,
+    "Death Rate (center)":0.062128058,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.20657406,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":472,
+    "< 30 Days":16,
+    "30 to < 90 Days":20,
+    "90 Days to < 6 Months":32,
+    "6 Months to < 1 Year":45,
+    "1 Year to < 2 Years":102,
+    "2 Years to < 3 Years":97,
+    "3 Years to < 5 Years":112,
+    "5 or More Years":48,
+    "Center Code":"MIHFTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.0563402,42.3518979 ]
+    },
+    "properties": {
+    "Center Name":"Harper University Hospital Detroit Medical Center (MIHH)",
+    "Waiting List":59,
+    "Death Rate (center)":0.034908567,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.12629668,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":226,
+    "< 30 Days":1,
+    "30 to < 90 Days":9,
+    "90 Days to < 6 Months":16,
+    "6 Months to < 1 Year":15,
+    "1 Year to < 2 Years":44,
+    "2 Years to < 3 Years":58,
+    "3 Years to < 5 Years":47,
+    "5 or More Years":36,
+    "Center Code":"MIHHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.91322987,42.41947195 ]
+    },
+    "properties": {
+    "Center Name":"St John Hospital and Medical Center (MISJ)",
+    "Waiting List":161,
+    "Death Rate (center)":0.046949564,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.117521895,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":232,
+    "< 30 Days":5,
+    "30 to < 90 Days":9,
+    "90 Days to < 6 Months":12,
+    "6 Months to < 1 Year":20,
+    "1 Year to < 2 Years":57,
+    "2 Years to < 3 Years":48,
+    "3 Years to < 5 Years":45,
+    "5 or More Years":36,
+    "Center Code":"MISJTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -85.66280337,42.95837285 ]
+    },
+    "properties": {
+    "Center Name":"Mercy Health Saint Mary�s (MISM",
+    "Waiting List":166,
+    "Death Rate (center)":0.073836931,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.359459218,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":328,
+    "< 30 Days":8,
+    "30 to < 90 Days":22,
+    "90 Days to < 6 Months":39,
+    "6 Months to < 1 Year":54,
+    "1 Year to < 2 Years":71,
+    "2 Years to < 3 Years":58,
+    "3 Years to < 5 Years":59,
+    "5 or More Years":17,
+    "Center Code":"MISMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.731193,42.2836501 ]
+    },
+    "properties": {
+    "Center Name":"University of Michigan Medical Center (MIUM)",
+    "Waiting List":1763,
+    "Death Rate (center)":0.047836476,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.181905137,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":807,
+    "< 30 Days":25,
+    "30 to < 90 Days":67,
+    "90 Days to < 6 Months":66,
+    "6 Months to < 1 Year":122,
+    "1 Year to < 2 Years":117,
+    "2 Years to < 3 Years":156,
+    "3 Years to < 5 Years":161,
+    "5 or More Years":93,
+    "Center Code":"MIUMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.26218936,44.97208635 ]
+    },
+    "properties": {
+    "Center Name":"Hennepin County Medical Center (MNHC)",
+    "Waiting List":17,
+    "Death Rate (center)":0.035655296,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.155510897,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":321,
+    "< 30 Days":8,
+    "30 to < 90 Days":15,
+    "90 Days to < 6 Months":16,
+    "6 Months to < 1 Year":33,
+    "1 Year to < 2 Years":69,
+    "2 Years to < 3 Years":49,
+    "3 Years to < 5 Years":42,
+    "5 or More Years":89,
+    "Center Code":"MNHCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.36163994,44.92704005 ]
+    },
+    "properties": {
+    "Center Name":"Rochester Methodist Hospital (Mayo Clinic) (MNMC)",
+    "Waiting List":391,
+    "Death Rate (center)":0.045532386,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.314712314,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":828,
+    "< 30 Days":29,
+    "30 to < 90 Days":71,
+    "90 Days to < 6 Months":79,
+    "6 Months to < 1 Year":178,
+    "1 Year to < 2 Years":184,
+    "2 Years to < 3 Years":94,
+    "3 Years to < 5 Years":121,
+    "5 or More Years":72,
+    "Center Code":"MNMCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -123.0811,44.0465 ]
+    },
+    "properties": {
+    "Center Name":"Saint Marys Hospital (Mayo Clinic) (MNSM)",
+    "Waiting List":228,
+    "Death Rate (center)":0.145808383,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.574625321,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":17,
+    "< 30 Days":0,
+    "30 to < 90 Days":4,
+    "90 Days to < 6 Months":3,
+    "6 Months to < 1 Year":3,
+    "1 Year to < 2 Years":3,
+    "2 Years to < 3 Years":2,
+    "3 Years to < 5 Years":2,
+    "5 or More Years":0,
+    "Center Code":"MNSMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.23061003,44.97127997 ]
+    },
+    "properties": {
+    "Center Name":"University of Minnesota Medical Center, Fairview (MNUM)",
+    "Waiting List":353,
+    "Death Rate (center)":0.061890217,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.229562775,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":867,
+    "< 30 Days":29,
+    "30 to < 90 Days":58,
+    "90 Days to < 6 Months":54,
+    "6 Months to < 1 Year":113,
+    "1 Year to < 2 Years":162,
+    "2 Years to < 3 Years":106,
+    "3 Years to < 5 Years":187,
+    "5 or More Years":158,
+    "Center Code":"MNUMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.26432457,38.63734255 ]
+    },
+    "properties": {
+    "Center Name":"Barnes-Jewish Hospital (MOBH)",
+    "Waiting List":3,
+    "Death Rate (center)":0.059691876,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.272897155,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":795,
+    "< 30 Days":34,
+    "30 to < 90 Days":53,
+    "90 Days to < 6 Months":67,
+    "6 Months to < 1 Year":88,
+    "1 Year to < 2 Years":176,
+    "2 Years to < 3 Years":117,
+    "3 Years to < 5 Years":157,
+    "5 or More Years":103,
+    "Center Code":"MOBHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.23950993,38.62061001 ]
+    },
+    "properties": {
+    "Center Name":"Cardinal Glennon Children's Hospital (MOCG)",
+    "Waiting List":2,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":2.085818528,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":4,
+    "< 30 Days":0,
+    "30 to < 90 Days":0,
+    "90 Days to < 6 Months":2,
+    "6 Months to < 1 Year":2,
+    "1 Year to < 2 Years":0,
+    "2 Years to < 3 Years":0,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"MOCGTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.26501209,38.6377054 ]
+    },
+    "properties": {
+    "Center Name":"St. Louis Children's Hospital (MOCH)",
+    "Waiting List":274,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":1.448583569,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":5,
+    "< 30 Days":1,
+    "30 to < 90 Days":1,
+    "90 Days to < 6 Months":0,
+    "6 Months to < 1 Year":0,
+    "1 Year to < 2 Years":1,
+    "2 Years to < 3 Years":2,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"MOCHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01397879,38.927021 ]
+    },
+    "properties": {
+    "Center Name":"Children's Mercy Hospital (MOCM)",
+    "Waiting List":249,
+    "Death Rate (center)":0.034793999,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.65558601,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":38,
+    "< 30 Days":2,
+    "30 to < 90 Days":5,
+    "90 Days to < 6 Months":4,
+    "6 Months to < 1 Year":13,
+    "1 Year to < 2 Years":9,
+    "2 Years to < 3 Years":1,
+    "3 Years to < 5 Years":4,
+    "5 or More Years":0,
+    "Center Code":"MOCMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.58896,40.67855 ]
+    },
+    "properties": {
+    "Center Name":"St Luke's Hospital of Kansas City (MOLH)",
+    "Waiting List":118,
+    "Death Rate (center)":0.025878036,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.522618875,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":230,
+    "< 30 Days":9,
+    "30 to < 90 Days":27,
+    "90 Days to < 6 Months":31,
+    "6 Months to < 1 Year":58,
+    "1 Year to < 2 Years":69,
+    "2 Years to < 3 Years":27,
+    "3 Years to < 5 Years":9,
+    "5 or More Years":0,
+    "Center Code":"MOLHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.55974788,39.00993505 ]
+    },
+    "properties": {
+    "Center Name":"Research Medical Center (MORH)",
+    "Waiting List":6,
+    "Death Rate (center)":0.041376751,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.321595257,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":227,
+    "< 30 Days":8,
+    "30 to < 90 Days":15,
+    "90 Days to < 6 Months":32,
+    "6 Months to < 1 Year":52,
+    "1 Year to < 2 Years":52,
+    "2 Years to < 3 Years":38,
+    "3 Years to < 5 Years":24,
+    "5 or More Years":6,
+    "Center Code":"MORHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.23937996,38.62255005 ]
+    },
+    "properties": {
+    "Center Name":"SSM Health Saint Louis University Hospital (MOSL)",
+    "Waiting List":4,
+    "Death Rate (center)":0.024503391,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.301455245,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":175,
+    "< 30 Days":7,
+    "30 to < 90 Days":15,
+    "90 Days to < 6 Months":15,
+    "6 Months to < 1 Year":44,
+    "1 Year to < 2 Years":45,
+    "2 Years to < 3 Years":24,
+    "3 Years to < 5 Years":21,
+    "5 or More Years":4,
+    "Center Code":"MOSLTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.17556,32.32871997 ]
+    },
+    "properties": {
+    "Center Name":"University of Mississippi Medical Center (MSUM)",
+    "Waiting List":15,
+    "Death Rate (center)":0.044791536,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.23442943,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":604,
+    "< 30 Days":23,
+    "30 to < 90 Days":41,
+    "90 Days to < 6 Months":78,
+    "6 Months to < 1 Year":90,
+    "1 Year to < 2 Years":118,
+    "2 Years to < 3 Years":86,
+    "3 Years to < 5 Years":121,
+    "5 or More Years":47,
+    "Center Code":"MSUMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.26771223,36.08983775 ]
+    },
+    "properties": {
+    "Center Name":"Wake Forest Baptist Medical Center (NCBG)",
+    "Waiting List":800,
+    "Death Rate (center)":0.054278161,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.281564059,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":650,
+    "< 30 Days":26,
+    "30 to < 90 Days":67,
+    "90 Days to < 6 Months":72,
+    "6 Months to < 1 Year":142,
+    "1 Year to < 2 Years":133,
+    "2 Years to < 3 Years":74,
+    "3 Years to < 5 Years":68,
+    "5 or More Years":68,
+    "Center Code":"NCBGTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.83931376,35.20374595 ]
+    },
+    "properties": {
+    "Center Name":"Carolinas Medical Center (NCCM)",
+    "Waiting List":33,
+    "Death Rate (center)":0.026321184,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.210302532,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":524,
+    "< 30 Days":20,
+    "30 to < 90 Days":30,
+    "90 Days to < 6 Months":44,
+    "6 Months to < 1 Year":85,
+    "1 Year to < 2 Years":97,
+    "2 Years to < 3 Years":89,
+    "3 Years to < 5 Years":85,
+    "5 or More Years":74,
+    "Center Code":"NCCMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -78.93734788,36.0070213 ]
+    },
+    "properties": {
+    "Center Name":"Duke University Hospital (NCDU)",
+    "Waiting List":278,
+    "Death Rate (center)":0.051854179,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.265193084,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":630,
+    "< 30 Days":21,
+    "30 to < 90 Days":46,
+    "90 Days to < 6 Months":76,
+    "6 Months to < 1 Year":126,
+    "1 Year to < 2 Years":155,
+    "2 Years to < 3 Years":70,
+    "3 Years to < 5 Years":98,
+    "5 or More Years":38,
+    "Center Code":"NCDUTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.40290417,35.60759855 ]
+    },
+    "properties": {
+    "Center Name":"Vidant Medical Center (NCEC)",
+    "Waiting List":177,
+    "Death Rate (center)":0.047631138,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.277433642,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":270,
+    "< 30 Days":13,
+    "30 to < 90 Days":18,
+    "90 Days to < 6 Months":29,
+    "6 Months to < 1 Year":58,
+    "1 Year to < 2 Years":63,
+    "2 Years to < 3 Years":26,
+    "3 Years to < 5 Years":33,
+    "5 or More Years":30,
+    "Center Code":"NCECTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.2362,44.9677 ]
+    },
+    "properties": {
+    "Center Name":"University of North Carolina Hospitals (NCMH)",
+    "Waiting List":0,
+    "Death Rate (center)":0.045426797,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.138575225,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":772,
+    "< 30 Days":28,
+    "30 to < 90 Days":43,
+    "90 Days to < 6 Months":33,
+    "6 Months to < 1 Year":94,
+    "1 Year to < 2 Years":193,
+    "2 Years to < 3 Years":147,
+    "3 Years to < 5 Years":136,
+    "5 or More Years":98,
+    "Center Code":"NCMHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -100.78177,46.80745001 ]
+    },
+    "properties": {
+    "Center Name":"Sanford Bismarck Medical Center (NDMC)",
+    "Waiting List":93,
+    "Death Rate (center)":0.091707351,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.235659994,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":100,
+    "< 30 Days":5,
+    "30 to < 90 Days":10,
+    "90 Days to < 6 Months":10,
+    "6 Months to < 1 Year":10,
+    "1 Year to < 2 Years":21,
+    "2 Years to < 3 Years":21,
+    "3 Years to < 5 Years":23,
+    "5 or More Years":0,
+    "Center Code":"NDMCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.87681928,46.8455717 ]
+    },
+    "properties": {
+    "Center Name":"Sanford Medical Center Fargo (NDSL)",
+    "Waiting List":330,
+    "Death Rate (center)":0.040660136,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.37924488,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":65,
+    "< 30 Days":2,
+    "30 to < 90 Days":3,
+    "90 Days to < 6 Months":7,
+    "6 Months to < 1 Year":11,
+    "1 Year to < 2 Years":12,
+    "2 Years to < 3 Years":12,
+    "3 Years to < 5 Years":14,
+    "5 or More Years":4,
+    "Center Code":"NDSLTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.64303233,40.75454505 ]
+    },
+    "properties": {
+    "Center Name":"The Nebraska Medical Center (NEUN)",
+    "Waiting List":280,
+    "Death Rate (center)":0.038497276,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.620836242,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":217,
+    "< 30 Days":21,
+    "30 to < 90 Days":29,
+    "90 Days to < 6 Months":30,
+    "6 Months to < 1 Year":42,
+    "1 Year to < 2 Years":59,
+    "2 Years to < 3 Years":26,
+    "3 Years to < 5 Years":5,
+    "5 or More Years":5,
+    "Center Code":"NEUNTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.13664,44.06137 ]
+    },
+    "properties": {
+    "Center Name":"Mary Hitchcock Memorial Hospital (NHDH)",
+    "Waiting List":574,
+    "Death Rate (center)":0.048086628,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.346531024,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":96,
+    "< 30 Days":4,
+    "30 to < 90 Days":7,
+    "90 Days to < 6 Months":13,
+    "6 Months to < 1 Year":20,
+    "1 Year to < 2 Years":21,
+    "2 Years to < 3 Years":15,
+    "3 Years to < 5 Years":12,
+    "5 or More Years":4,
+    "Center Code":"NHDHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.21258458,40.71027275 ]
+    },
+    "properties": {
+    "Center Name":"Newark Beth Israel Medical Center (NJBI)",
+    "Waiting List":1491,
+    "Death Rate (center)":0.350527831,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.953033268,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":4,
+    "< 30 Days":1,
+    "30 to < 90 Days":1,
+    "90 Days to < 6 Months":0,
+    "6 Months to < 1 Year":0,
+    "1 Year to < 2 Years":1,
+    "2 Years to < 3 Years":1,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"NJBITX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.05594088,40.8837051 ]
+    },
+    "properties": {
+    "Center Name":"Hackensack University Medical Center (NJHK)",
+    "Waiting List":97,
+    "Death Rate (center)":0.050824168,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.240006831,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":185,
+    "< 30 Days":13,
+    "30 to < 90 Days":19,
+    "90 Days to < 6 Months":20,
+    "6 Months to < 1 Year":30,
+    "1 Year to < 2 Years":40,
+    "2 Years to < 3 Years":35,
+    "3 Years to < 5 Years":27,
+    "5 or More Years":1,
+    "Center Code":"NJHKTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.44309,40.45778 ]
+    },
+    "properties": {
+    "Center Name":"Our Lady of Lourdes Medical Center (NJLL)",
+    "Waiting List":0,
+    "Death Rate (center)":0.04613068,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.126718186,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":309,
+    "< 30 Days":13,
+    "30 to < 90 Days":17,
+    "90 Days to < 6 Months":26,
+    "6 Months to < 1 Year":49,
+    "1 Year to < 2 Years":51,
+    "2 Years to < 3 Years":66,
+    "3 Years to < 5 Years":63,
+    "5 or More Years":24,
+    "Center Code":"NJLLTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.44952047,40.4953003 ]
+    },
+    "properties": {
+    "Center Name":"Robert Wood Johnson University Hospital (NJRW)",
+    "Waiting List":328,
+    "Death Rate (center)":0.064557793,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.104241022,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":193,
+    "< 30 Days":5,
+    "30 to < 90 Days":0,
+    "90 Days to < 6 Months":5,
+    "6 Months to < 1 Year":0,
+    "1 Year to < 2 Years":56,
+    "2 Years to < 3 Years":36,
+    "3 Years to < 5 Years":48,
+    "5 or More Years":43,
+    "Center Code":"NJRWTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.91973578,36.0726356 ]
+    },
+    "properties": {
+    "Center Name":"Saint Barnabas Medical Center (NJSB)",
+    "Waiting List":394,
+    "Death Rate (center)":0.041651567,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.213308565,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1491,
+    "< 30 Days":47,
+    "30 to < 90 Days":59,
+    "90 Days to < 6 Months":110,
+    "6 Months to < 1 Year":186,
+    "1 Year to < 2 Years":334,
+    "2 Years to < 3 Years":230,
+    "3 Years to < 5 Years":351,
+    "5 or More Years":174,
+    "Center Code":"NJSBTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6171645,35.08840225 ]
+    },
+    "properties": {
+    "Center Name":"University Hospital, University of New Mexico Health Sciences Center (NMAQ)",
+    "Waiting List":148,
+    "Death Rate (center)":0.035544714,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.16203035,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":223,
+    "< 30 Days":11,
+    "30 to < 90 Days":6,
+    "90 Days to < 6 Months":8,
+    "6 Months to < 1 Year":21,
+    "1 Year to < 2 Years":46,
+    "2 Years to < 3 Years":33,
+    "3 Years to < 5 Years":46,
+    "5 or More Years":52,
+    "Center Code":"NMAQTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6341359,35.08092275 ]
+    },
+    "properties": {
+    "Center Name":"Presbyterian Hospital (NMPH)",
+    "Waiting List":11,
+    "Death Rate (center)":0.061714017,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.205315778,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":305,
+    "< 30 Days":5,
+    "30 to < 90 Days":30,
+    "90 Days to < 6 Months":41,
+    "6 Months to < 1 Year":41,
+    "1 Year to < 2 Years":64,
+    "2 Years to < 3 Years":36,
+    "3 Years to < 5 Years":46,
+    "5 or More Years":42,
+    "Center Code":"NMPHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.0680499,36.80623 ]
+    },
+    "properties": {
+    "Center Name":"University Medical Center of Southern Nevada (NVUM)",
+    "Waiting List":232,
+    "Death Rate (center)":0.013890896,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.3913668,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":195,
+    "< 30 Days":4,
+    "30 to < 90 Days":13,
+    "90 Days to < 6 Months":20,
+    "6 Months to < 1 Year":47,
+    "1 Year to < 2 Years":61,
+    "2 Years to < 3 Years":26,
+    "3 Years to < 5 Years":19,
+    "5 or More Years":5,
+    "Center Code":"NVUMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.77717862,42.6532796 ]
+    },
+    "properties": {
+    "Center Name":"Albany Medical Center Hospital (NYAM)",
+    "Waiting List":96,
+    "Death Rate (center)":0.026199843,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.23939083,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":228,
+    "< 30 Days":12,
+    "30 to < 90 Days":16,
+    "90 Days to < 6 Months":24,
+    "6 Months to < 1 Year":33,
+    "1 Year to < 2 Years":38,
+    "2 Years to < 3 Years":30,
+    "3 Years to < 5 Years":52,
+    "5 or More Years":23,
+    "Center Code":"NYAMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.70854637,40.7539227 ]
+    },
+    "properties": {
+    "Center Name":"Long Island Jewish Medical Center-Cohen Children's Medical Center (NYCC)",
+    "Waiting List":736,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":1.231179775,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":16,
+    "< 30 Days":1,
+    "30 to < 90 Days":2,
+    "90 Days to < 6 Months":3,
+    "6 Months to < 1 Year":6,
+    "1 Year to < 2 Years":4,
+    "2 Years to < 3 Years":0,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"NYCCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.94032,40.84128 ]
+    },
+    "properties": {
+    "Center Name":"NY Presbyterian Hospital/Columbia Univ. Medical Center (NYCP)",
+    "Waiting List":270,
+    "Death Rate (center)":0.071957955,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.179560896,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":746,
+    "< 30 Days":14,
+    "30 to < 90 Days":36,
+    "90 Days to < 6 Months":48,
+    "6 Months to < 1 Year":96,
+    "1 Year to < 2 Years":114,
+    "2 Years to < 3 Years":87,
+    "3 Years to < 5 Years":190,
+    "5 or More Years":161,
+    "Center Code":"NYCPTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.14027992,43.04232996 ]
+    },
+    "properties": {
+    "Center Name":"State University of New York, Downstate Medical Center (NYDS)",
+    "Waiting List":50,
+    "Death Rate (center)":0.042378088,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.100657284,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":423,
+    "< 30 Days":11,
+    "30 to < 90 Days":25,
+    "90 Days to < 6 Months":24,
+    "6 Months to < 1 Year":43,
+    "1 Year to < 2 Years":59,
+    "2 Years to < 3 Years":54,
+    "3 Years to < 5 Years":109,
+    "5 or More Years":98,
+    "Center Code":"NYDSTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -78.83177345,42.9252301 ]
+    },
+    "properties": {
+    "Center Name":"Erie County Medical Center (NYEC)",
+    "Waiting List":116,
+    "Death Rate (center)":0.106738902,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.42307149,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":219,
+    "< 30 Days":16,
+    "30 to < 90 Days":14,
+    "90 Days to < 6 Months":20,
+    "6 Months to < 1 Year":41,
+    "1 Year to < 2 Years":54,
+    "2 Years to < 3 Years":15,
+    "3 Years to < 5 Years":16,
+    "5 or More Years":43,
+    "Center Code":"NYECTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.6253854,43.12290635 ]
+    },
+    "properties": {
+    "Center Name":"Strong Memorial Hospital, University of Rochester Medical Center (NYFL)",
+    "Waiting List":807,
+    "Death Rate (center)":0.044958918,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.169181619,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":398,
+    "< 30 Days":14,
+    "30 to < 90 Days":33,
+    "90 Days to < 6 Months":35,
+    "6 Months to < 1 Year":46,
+    "1 Year to < 2 Years":82,
+    "2 Years to < 3 Years":68,
+    "3 Years to < 5 Years":67,
+    "5 or More Years":53,
+    "Center Code":"NYFLTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.9170033,40.8253239 ]
+    },
+    "properties": {
+    "Center Name":"Montefiore Medical Center (NYMA)",
+    "Waiting List":94,
+    "Death Rate (center)":0.057028554,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.180269101,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":947,
+    "< 30 Days":38,
+    "30 to < 90 Days":75,
+    "90 Days to < 6 Months":121,
+    "6 Months to < 1 Year":124,
+    "1 Year to < 2 Years":157,
+    "2 Years to < 3 Years":131,
+    "3 Years to < 5 Years":158,
+    "5 or More Years":143,
+    "Center Code":"NYMATX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.1399,25.8142 ]
+    },
+    "properties": {
+    "Center Name":"Mount Sinai Medical Center (NYMS)",
+    "Waiting List":306,
+    "Death Rate (center)":0.053549274,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.127354231,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1763,
+    "< 30 Days":47,
+    "30 to < 90 Days":70,
+    "90 Days to < 6 Months":126,
+    "6 Months to < 1 Year":183,
+    "1 Year to < 2 Years":334,
+    "2 Years to < 3 Years":276,
+    "3 Years to < 5 Years":366,
+    "5 or More Years":361,
+    "Center Code":"NYMSTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.70096351,40.7751841 ]
+    },
+    "properties": {
+    "Center Name":"North Shore University Hospital/Northwell Health (NYNS)",
+    "Waiting List":22,
+    "Death Rate (center)":0.041383536,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.111521558,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":429,
+    "< 30 Days":12,
+    "30 to < 90 Days":24,
+    "90 Days to < 6 Months":24,
+    "6 Months to < 1 Year":71,
+    "1 Year to < 2 Years":94,
+    "2 Years to < 3 Years":66,
+    "3 Years to < 5 Years":74,
+    "5 or More Years":64,
+    "Center Code":"NYNSTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.9537,40.7641 ]
+    },
+    "properties": {
+    "Center Name":"New York-Presbyterian Hospital/Weill Cornell Medical Center (NYNY)",
+    "Waiting List":6,
+    "Death Rate (center)":0.056380294,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.149936362,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1236,
+    "< 30 Days":17,
+    "30 to < 90 Days":43,
+    "90 Days to < 6 Months":48,
+    "6 Months to < 1 Year":124,
+    "1 Year to < 2 Years":192,
+    "2 Years to < 3 Years":180,
+    "3 Years to < 5 Years":279,
+    "5 or More Years":353,
+    "Center Code":"NYNYTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.73960006,42.62681994 ]
+    },
+    "properties": {
+    "Center Name":"University Hospital of State University of New York at Stony Brook (NYSB)",
+    "Waiting List":0,
+    "Death Rate (center)":0.054750153,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.34671587,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":236,
+    "< 30 Days":10,
+    "30 to < 90 Days":8,
+    "90 Days to < 6 Months":18,
+    "6 Months to < 1 Year":52,
+    "1 Year to < 2 Years":78,
+    "2 Years to < 3 Years":25,
+    "3 Years to < 5 Years":30,
+    "5 or More Years":15,
+    "Center Code":"NYSBTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.97146786,40.745955 ]
+    },
+    "properties": {
+    "Center Name":"New York University Medical Center (NYUC)",
+    "Waiting List":10,
+    "Death Rate (center)":0.037999534,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.411086993,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":388,
+    "< 30 Days":29,
+    "30 to < 90 Days":42,
+    "90 Days to < 6 Months":62,
+    "6 Months to < 1 Year":67,
+    "1 Year to < 2 Years":64,
+    "2 Years to < 3 Years":50,
+    "3 Years to < 5 Years":55,
+    "5 or More Years":19,
+    "Center Code":"NYUCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.94431004,40.65453008 ]
+    },
+    "properties": {
+    "Center Name":"State University of New York Upstate Medical University (NYUM)",
+    "Waiting List":556,
+    "Death Rate (center)":0.052264612,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.443733385,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":295,
+    "< 30 Days":12,
+    "30 to < 90 Days":15,
+    "90 Days to < 6 Months":60,
+    "6 Months to < 1 Year":75,
+    "1 Year to < 2 Years":84,
+    "2 Years to < 3 Years":24,
+    "3 Years to < 5 Years":10,
+    "5 or More Years":15,
+    "Center Code":"NYUMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.02160725,43.0400565 ]
+    },
+    "properties": {
+    "Center Name":"James J. Peters VA Medical Center (NYVA)",
+    "Waiting List":761,
+    "Death Rate (center)":0.035337655,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.22273605,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":88,
+    "< 30 Days":10,
+    "30 to < 90 Days":6,
+    "90 Days to < 6 Months":7,
+    "6 Months to < 1 Year":32,
+    "1 Year to < 2 Years":33,
+    "2 Years to < 3 Years":0,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"NYVATX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.80669395,41.087434 ]
+    },
+    "properties": {
+    "Center Name":"Westchester Medical Center (NYWC)",
+    "Waiting List":245,
+    "Death Rate (center)":0.078368238,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.112127888,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":479,
+    "< 30 Days":15,
+    "30 to < 90 Days":16,
+    "90 Days to < 6 Months":34,
+    "6 Months to < 1 Year":65,
+    "1 Year to < 2 Years":95,
+    "2 Years to < 3 Years":55,
+    "3 Years to < 5 Years":105,
+    "5 or More Years":94,
+    "Center Code":"NYWCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.54841274,41.65938035 ]
+    },
+    "properties": {
+    "Center Name":"The Cleveland Clinic Foundation (OHCC)",
+    "Waiting List":398,
+    "Death Rate (center)":0.056905265,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.228277368,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":636,
+    "< 30 Days":17,
+    "30 to < 90 Days":37,
+    "90 Days to < 6 Months":79,
+    "6 Months to < 1 Year":106,
+    "1 Year to < 2 Years":106,
+    "2 Years to < 3 Years":94,
+    "3 Years to < 5 Years":122,
+    "5 or More Years":75,
+    "Center Code":"OHCCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.98039904,39.95281405 ]
+    },
+    "properties": {
+    "Center Name":"Nationwide Children's Hospital (OHCH)",
+    "Waiting List":352,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":1.146481821,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":9,
+    "< 30 Days":1,
+    "30 to < 90 Days":2,
+    "90 Days to < 6 Months":1,
+    "6 Months to < 1 Year":3,
+    "1 Year to < 2 Years":0,
+    "2 Years to < 3 Years":0,
+    "3 Years to < 5 Years":2,
+    "5 or More Years":0,
+    "Center Code":"OHCHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.05491286,42.3518356 ]
+    },
+    "properties": {
+    "Center Name":"Children's Hospital Medical Center (OHCM)",
+    "Waiting List":90,
+    "Death Rate (center)":0.045291091,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":1.086986174,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":30,
+    "< 30 Days":3,
+    "30 to < 90 Days":10,
+    "90 Days to < 6 Months":4,
+    "6 Months to < 1 Year":6,
+    "1 Year to < 2 Years":4,
+    "2 Years to < 3 Years":3,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"OHCMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.61600726,41.61860055 ]
+    },
+    "properties": {
+    "Center Name":"University of Toledo Medical Center (OHCO)",
+    "Waiting List":237,
+    "Death Rate (center)":0.039760241,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.408216238,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":136,
+    "< 30 Days":5,
+    "30 to < 90 Days":7,
+    "90 Days to < 6 Months":18,
+    "6 Months to < 1 Year":24,
+    "1 Year to < 2 Years":37,
+    "2 Years to < 3 Years":18,
+    "3 Years to < 5 Years":17,
+    "5 or More Years":10,
+    "Center Code":"OHCOTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.01842022,39.99493415 ]
+    },
+    "properties": {
+    "Center Name":"Ohio State University Medical Center (OHOU)",
+    "Waiting List":151,
+    "Death Rate (center)":0.054863061,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.427157768,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":458,
+    "< 30 Days":28,
+    "30 to < 90 Days":55,
+    "90 Days to < 6 Months":75,
+    "6 Months to < 1 Year":52,
+    "1 Year to < 2 Years":121,
+    "2 Years to < 3 Years":59,
+    "3 Years to < 5 Years":50,
+    "5 or More Years":18,
+    "Center Code":"OHOUTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.54332305,39.23275331 ]
+    },
+    "properties": {
+    "Center Name":"St. Elizabeth Health Center (OHSE)",
+    "Waiting List":935,
+    "Death Rate (center)":0.5844,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":2,
+    "< 30 Days":0,
+    "30 to < 90 Days":0,
+    "90 Days to < 6 Months":0,
+    "6 Months to < 1 Year":0,
+    "1 Year to < 2 Years":0,
+    "2 Years to < 3 Years":0,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":2,
+    "Center Code":"OHSETX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.51111282,39.12083875 ]
+    },
+    "properties": {
+    "Center Name":"The Christ Hospital (OHTC)",
+    "Waiting List":259,
+    "Death Rate (center)":0.023596994,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.53900532,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":94,
+    "< 30 Days":9,
+    "30 to < 90 Days":17,
+    "90 Days to < 6 Months":16,
+    "6 Months to < 1 Year":16,
+    "1 Year to < 2 Years":12,
+    "2 Years to < 3 Years":5,
+    "3 Years to < 5 Years":10,
+    "5 or More Years":9,
+    "Center Code":"OHTCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.50339364,39.1379036 ]
+    },
+    "properties": {
+    "Center Name":"University of Cincinnati  Medical Center (OHUC)",
+    "Waiting List":26,
+    "Death Rate (center)":0.073357706,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.450766539,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":240,
+    "< 30 Days":19,
+    "30 to < 90 Days":32,
+    "90 Days to < 6 Months":33,
+    "6 Months to < 1 Year":45,
+    "1 Year to < 2 Years":63,
+    "2 Years to < 3 Years":18,
+    "3 Years to < 5 Years":15,
+    "5 or More Years":15,
+    "Center Code":"OHUCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.60684368,41.50712751 ]
+    },
+    "properties": {
+    "Center Name":"University Hospitals of Cleveland (OHUH)",
+    "Waiting List":66,
+    "Death Rate (center)":0.075079544,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.144067405,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":577,
+    "< 30 Days":21,
+    "30 to < 90 Days":32,
+    "90 Days to < 6 Months":67,
+    "6 Months to < 1 Year":74,
+    "1 Year to < 2 Years":84,
+    "2 Years to < 3 Years":82,
+    "3 Years to < 5 Years":106,
+    "5 or More Years":111,
+    "Center Code":"OHUHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.57649973,35.5294826 ]
+    },
+    "properties": {
+    "Center Name":"Integris Baptist Medical Center (OKBC)",
+    "Waiting List":1936,
+    "Death Rate (center)":0.049118642,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.407963346,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":244,
+    "< 30 Days":5,
+    "30 to < 90 Days":31,
+    "90 Days to < 6 Months":42,
+    "6 Months to < 1 Year":50,
+    "1 Year to < 2 Years":51,
+    "2 Years to < 3 Years":27,
+    "3 Years to < 5 Years":30,
+    "5 or More Years":8,
+    "Center Code":"OKBCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.19498022,39.94769755 ]
+    },
+    "properties": {
+    "Center Name":"Children's Hospital of Oklahoma (OKCM)",
+    "Waiting List":839,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.439795304,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":10,
+    "< 30 Days":0,
+    "30 to < 90 Days":2,
+    "90 Days to < 6 Months":0,
+    "6 Months to < 1 Year":1,
+    "1 Year to < 2 Years":4,
+    "2 Years to < 3 Years":1,
+    "3 Years to < 5 Years":2,
+    "5 or More Years":0,
+    "Center Code":"OKCMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.5010817,35.4812872 ]
+    },
+    "properties": {
+    "Center Name":"OU Medical Center (OKMD)",
+    "Waiting List":247,
+    "Death Rate (center)":0.032162906,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.353897346,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":97,
+    "< 30 Days":6,
+    "30 to < 90 Days":9,
+    "90 Days to < 6 Months":8,
+    "6 Months to < 1 Year":18,
+    "1 Year to < 2 Years":26,
+    "2 Years to < 3 Years":14,
+    "3 Years to < 5 Years":11,
+    "5 or More Years":5,
+    "Center Code":"OKMDTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.59049437,39.0485192 ]
+    },
+    "properties": {
+    "Center Name":"Saint Francis Hospital (OKSF)",
+    "Waiting List":720,
+    "Death Rate (center)":0.036523435,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.324909874,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":97,
+    "< 30 Days":6,
+    "30 to < 90 Days":6,
+    "90 Days to < 6 Months":15,
+    "6 Months to < 1 Year":14,
+    "1 Year to < 2 Years":23,
+    "2 Years to < 3 Years":14,
+    "3 Years to < 5 Years":12,
+    "5 or More Years":7,
+    "Center Code":"OKSFTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.96630993,36.13430994 ]
+    },
+    "properties": {
+    "Center Name":"St John Medical Center (OKSJ)",
+    "Waiting List":227,
+    "Death Rate (center)":0.051029416,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.516889709,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":93,
+    "< 30 Days":5,
+    "30 to < 90 Days":9,
+    "90 Days to < 6 Months":19,
+    "6 Months to < 1 Year":18,
+    "1 Year to < 2 Years":20,
+    "2 Years to < 3 Years":9,
+    "3 Years to < 5 Years":11,
+    "5 or More Years":2,
+    "Center Code":"OKSJTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.6966301,45.53047998 ]
+    },
+    "properties": {
+    "Center Name":"Legacy Good Samaritan Hospital and Medical Center (ORGS)",
+    "Waiting List":642,
+    "Death Rate (center)":0.042280263,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.362090307,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":238,
+    "< 30 Days":13,
+    "30 to < 90 Days":16,
+    "90 Days to < 6 Months":21,
+    "6 Months to < 1 Year":40,
+    "1 Year to < 2 Years":58,
+    "2 Years to < 3 Years":32,
+    "3 Years to < 5 Years":47,
+    "5 or More Years":11,
+    "Center Code":"ORGSTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.6856953,45.499038 ]
+    },
+    "properties": {
+    "Center Name":"Oregon Health & Science University (ORUO)",
+    "Waiting List":8,
+    "Death Rate (center)":0.038125708,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.42234768,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":281,
+    "< 30 Days":17,
+    "30 to < 90 Days":29,
+    "90 Days to < 6 Months":40,
+    "6 Months to < 1 Year":59,
+    "1 Year to < 2 Years":50,
+    "2 Years to < 3 Years":27,
+    "3 Years to < 5 Years":40,
+    "5 or More Years":19,
+    "Center Code":"ORUOTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.67563,45.51179 ]
+    },
+    "properties": {
+    "Center Name":"VA Portland Health Care System (ORVA)",
+    "Waiting List":1,
+    "Death Rate (center)":0.02470192,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.228736605,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":177,
+    "< 30 Days":4,
+    "30 to < 90 Days":16,
+    "90 Days to < 6 Months":16,
+    "6 Months to < 1 Year":29,
+    "1 Year to < 2 Years":33,
+    "2 Years to < 3 Years":33,
+    "3 Years to < 5 Years":33,
+    "5 or More Years":13,
+    "Center Code":"ORVATX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.14477058,40.03694351 ]
+    },
+    "properties": {
+    "Center Name":"Albert Einstein Medical Center (PAAE)",
+    "Waiting List":102,
+    "Death Rate (center)":0.082977977,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.096950882,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":561,
+    "< 30 Days":5,
+    "30 to < 90 Days":12,
+    "90 Days to < 6 Months":25,
+    "6 Months to < 1 Year":51,
+    "1 Year to < 2 Years":58,
+    "2 Years to < 3 Years":62,
+    "3 Years to < 5 Years":138,
+    "5 or More Years":210,
+    "Center Code":"PAAETX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.00331139,40.45696955 ]
+    },
+    "properties": {
+    "Center Name":"Allegheny General Hospital (PAAG)",
+    "Waiting List":604,
+    "Death Rate (center)":0.062904113,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.280654229,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":375,
+    "< 30 Days":13,
+    "30 to < 90 Days":22,
+    "90 Days to < 6 Months":38,
+    "6 Months to < 1 Year":56,
+    "1 Year to < 2 Years":91,
+    "2 Years to < 3 Years":64,
+    "3 Years to < 5 Years":57,
+    "5 or More Years":34,
+    "Center Code":"PAAGTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.36825021,39.85541155 ]
+    },
+    "properties": {
+    "Center Name":"Crozer-Chester Medical Center (PACC)",
+    "Waiting List":388,
+    "Death Rate (center)":0.025412231,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.099135636,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":144,
+    "< 30 Days":1,
+    "30 to < 90 Days":12,
+    "90 Days to < 6 Months":11,
+    "6 Months to < 1 Year":17,
+    "1 Year to < 2 Years":27,
+    "2 Years to < 3 Years":20,
+    "3 Years to < 5 Years":48,
+    "5 or More Years":8,
+    "Center Code":"PACCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.95324526,40.46720145 ]
+    },
+    "properties": {
+    "Center Name":"UPMC Children's Hospital of Pittsburgh (PACH)",
+    "Waiting List":238,
+    "Death Rate (center)":0.122979798,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":1.446621459,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":12,
+    "< 30 Days":3,
+    "30 to < 90 Days":0,
+    "90 Days to < 6 Months":3,
+    "6 Months to < 1 Year":3,
+    "1 Year to < 2 Years":3,
+    "2 Years to < 3 Years":0,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"PACHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.4649171,37.0874995 ]
+    },
+    "properties": {
+    "Center Name":"Children's Hospital of Philadelphia (PACP)",
+    "Waiting List":1236,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.369224594,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":50,
+    "< 30 Days":1,
+    "30 to < 90 Days":5,
+    "90 Days to < 6 Months":7,
+    "6 Months to < 1 Year":10,
+    "1 Year to < 2 Years":7,
+    "2 Years to < 3 Years":3,
+    "3 Years to < 5 Years":11,
+    "5 or More Years":6,
+    "Center Code":"PACPTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.605347,40.966707 ]
+    },
+    "properties": {
+    "Center Name":"Geisinger Medical Center (PAGM)",
+    "Waiting List":108,
+    "Death Rate (center)":0.04532875,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.16220388,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":209,
+    "< 30 Days":12,
+    "30 to < 90 Days":12,
+    "90 Days to < 6 Months":6,
+    "6 Months to < 1 Year":30,
+    "1 Year to < 2 Years":56,
+    "2 Years to < 3 Years":21,
+    "3 Years to < 5 Years":53,
+    "5 or More Years":19,
+    "Center Code":"PAGMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.67394001,40.26441 ]
+    },
+    "properties": {
+    "Center Name":"Penn State Milton S Hershey Medical Center (PAHE)",
+    "Waiting List":127,
+    "Death Rate (center)":0.054346797,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.17014259,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":165,
+    "< 30 Days":12,
+    "30 to < 90 Days":14,
+    "90 Days to < 6 Months":20,
+    "6 Months to < 1 Year":19,
+    "1 Year to < 2 Years":47,
+    "2 Years to < 3 Years":20,
+    "3 Years to < 5 Years":26,
+    "5 or More Years":7,
+    "Center Code":"PAHETX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.63598,32.68292999 ]
+    },
+    "properties": {
+    "Center Name":"Pinnacle Health System at Harrisburg Hospital (PAHH)",
+    "Waiting List":667,
+    "Death Rate (center)":0.036986405,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.136767423,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":249,
+    "< 30 Days":8,
+    "30 to < 90 Days":13,
+    "90 Days to < 6 Months":16,
+    "6 Months to < 1 Year":26,
+    "1 Year to < 2 Years":52,
+    "2 Years to < 3 Years":43,
+    "3 Years to < 5 Years":44,
+    "5 or More Years":47,
+    "Center Code":"PAHHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.16355928,39.95674865 ]
+    },
+    "properties": {
+    "Center Name":"Hahnemann University Hospital (PAHM)",
+    "Waiting List":757,
+    "Death Rate (center)":0.050202815,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.132042509,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":344,
+    "< 30 Days":11,
+    "30 to < 90 Days":15,
+    "90 Days to < 6 Months":11,
+    "6 Months to < 1 Year":40,
+    "1 Year to < 2 Years":70,
+    "2 Years to < 3 Years":58,
+    "3 Years to < 5 Years":71,
+    "5 or More Years":68,
+    "Center Code":"PAHMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.26243038,39.98813305 ]
+    },
+    "properties": {
+    "Center Name":"The Lankenau Hospital (PALH)",
+    "Waiting List":1,
+    "Death Rate (center)":0.042359286,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.231878213,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":162,
+    "< 30 Days":4,
+    "30 to < 90 Days":9,
+    "90 Days to < 6 Months":21,
+    "6 Months to < 1 Year":18,
+    "1 Year to < 2 Years":48,
+    "2 Years to < 3 Years":23,
+    "3 Years to < 5 Years":24,
+    "5 or More Years":15,
+    "Center Code":"PALHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.52193051,40.565376 ]
+    },
+    "properties": {
+    "Center Name":"Lehigh Valley Hospital (PALV)",
+    "Waiting List":462,
+    "Death Rate (center)":0.056407784,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.235862907,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":384,
+    "< 30 Days":21,
+    "30 to < 90 Days":8,
+    "90 Days to < 6 Months":31,
+    "6 Months to < 1 Year":70,
+    "1 Year to < 2 Years":86,
+    "2 Years to < 3 Years":79,
+    "3 Years to < 5 Years":61,
+    "5 or More Years":28,
+    "Center Code":"PALVTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.08707465,42.1338802 ]
+    },
+    "properties": {
+    "Center Name":"UPMC Hamot (PAPH)",
+    "Waiting List":727,
+    "Death Rate (center)":0.033769416,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.337694157,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":60,
+    "< 30 Days":2,
+    "30 to < 90 Days":8,
+    "90 Days to < 6 Months":6,
+    "6 Months to < 1 Year":16,
+    "1 Year to < 2 Years":26,
+    "2 Years to < 3 Years":2,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"PAPHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.95133998,40.44531 ]
+    },
+    "properties": {
+    "Center Name":"University of Pittsburgh Medical Center (PAPT)",
+    "Waiting List":1553,
+    "Death Rate (center)":0.067707805,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.212613725,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":839,
+    "< 30 Days":29,
+    "30 to < 90 Days":66,
+    "90 Days to < 6 Months":76,
+    "6 Months to < 1 Year":123,
+    "1 Year to < 2 Years":168,
+    "2 Years to < 3 Years":137,
+    "3 Years to < 5 Years":173,
+    "5 or More Years":67,
+    "Center Code":"PAPTTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.1256601,40.0062181 ]
+    },
+    "properties": {
+    "Center Name":"St. Christopher's Hospital for Children (PASC)",
+    "Waiting List":423,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":4,
+    "< 30 Days":0,
+    "30 to < 90 Days":1,
+    "90 Days to < 6 Months":1,
+    "6 Months to < 1 Year":1,
+    "1 Year to < 2 Years":0,
+    "2 Years to < 3 Years":1,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"PASCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.15801475,39.9493479 ]
+    },
+    "properties": {
+    "Center Name":"Thomas Jefferson University Hospital (PATJ)",
+    "Waiting List":78,
+    "Death Rate (center)":0.054503537,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.162898346,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":577,
+    "< 30 Days":33,
+    "30 to < 90 Days":23,
+    "90 Days to < 6 Months":48,
+    "6 Months to < 1 Year":79,
+    "1 Year to < 2 Years":115,
+    "2 Years to < 3 Years":110,
+    "3 Years to < 5 Years":75,
+    "5 or More Years":94,
+    "Center Code":"PATJTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.15082352,40.0053079 ]
+    },
+    "properties": {
+    "Center Name":"Temple University Hospital (PATU)",
+    "Waiting List":650,
+    "Death Rate (center)":0.049740469,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.192592696,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":336,
+    "< 30 Days":4,
+    "30 to < 90 Days":15,
+    "90 Days to < 6 Months":30,
+    "6 Months to < 1 Year":60,
+    "1 Year to < 2 Years":93,
+    "2 Years to < 3 Years":46,
+    "3 Years to < 5 Years":60,
+    "5 or More Years":28,
+    "Center Code":"PATUTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -55.25328,25.21831 ]
+    },
+    "properties": {
+    "Center Name":"Hospital of the University of Pennsylvania (PAUP)",
+    "Waiting List":281,
+    "Death Rate (center)":0.039933664,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.162560909,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1138,
+    "< 30 Days":51,
+    "30 to < 90 Days":50,
+    "90 Days to < 6 Months":90,
+    "6 Months to < 1 Year":154,
+    "1 Year to < 2 Years":241,
+    "2 Years to < 3 Years":212,
+    "3 Years to < 5 Years":191,
+    "5 or More Years":149,
+    "Center Code":"PAUPTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.99734,40.43851 ]
+    },
+    "properties": {
+    "Center Name":"VA Pittsburgh Healthcare System (PAVA)",
+    "Waiting List":544,
+    "Death Rate (center)":0.068456933,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.090695108,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":642,
+    "< 30 Days":14,
+    "30 to < 90 Days":26,
+    "90 Days to < 6 Months":40,
+    "6 Months to < 1 Year":62,
+    "1 Year to < 2 Years":157,
+    "2 Years to < 3 Years":109,
+    "3 Years to < 5 Years":137,
+    "5 or More Years":97,
+    "Center Code":"PAVATX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -66.04891,18.41048 ]
+    },
+    "properties": {
+    "Center Name":"Auxilio Mutuo Hospital (PRSJ)",
+    "Waiting List":364,
+    "Death Rate (center)":0.056318953,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.161762671,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":352,
+    "< 30 Days":7,
+    "30 to < 90 Days":31,
+    "90 Days to < 6 Months":31,
+    "6 Months to < 1 Year":35,
+    "1 Year to < 2 Years":96,
+    "2 Years to < 3 Years":67,
+    "3 Years to < 5 Years":69,
+    "5 or More Years":16,
+    "Center Code":"PRSJTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.4091293,41.8118618 ]
+    },
+    "properties": {
+    "Center Name":"Rhode Island Hospital (RIRH)",
+    "Waiting List":0,
+    "Death Rate (center)":0.055186893,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.200445325,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":278,
+    "< 30 Days":9,
+    "30 to < 90 Days":11,
+    "90 Days to < 6 Months":30,
+    "6 Months to < 1 Year":30,
+    "1 Year to < 2 Years":68,
+    "2 Years to < 3 Years":51,
+    "3 Years to < 5 Years":49,
+    "5 or More Years":30,
+    "Center Code":"RIRHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.9467,32.7845 ]
+    },
+    "properties": {
+    "Center Name":"Medical University of South Carolina (SCMU)",
+    "Waiting List":60,
+    "Death Rate (center)":0.060622779,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.257805566,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":930,
+    "< 30 Days":53,
+    "30 to < 90 Days":61,
+    "90 Days to < 6 Months":66,
+    "6 Months to < 1 Year":152,
+    "1 Year to < 2 Years":194,
+    "2 Years to < 3 Years":124,
+    "3 Years to < 5 Years":154,
+    "5 or More Years":126,
+    "Center Code":"SCMUTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.71485,43.53374 ]
+    },
+    "properties": {
+    "Center Name":"Avera McKennan Hospital (SDMK)",
+    "Waiting List":4,
+    "Death Rate (center)":0.046202498,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.119751294,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":241,
+    "< 30 Days":4,
+    "30 to < 90 Days":11,
+    "90 Days to < 6 Months":18,
+    "6 Months to < 1 Year":33,
+    "1 Year to < 2 Years":47,
+    "2 Years to < 3 Years":52,
+    "3 Years to < 5 Years":48,
+    "5 or More Years":28,
+    "Center Code":"SDMKTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.74252005,43.53600993 ]
+    },
+    "properties": {
+    "Center Name":"Sanford Health/USD Medical Center (SDSV)",
+    "Waiting List":65,
+    "Death Rate (center)":0.054331364,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.260848302,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":100,
+    "< 30 Days":1,
+    "30 to < 90 Days":7,
+    "90 Days to < 6 Months":6,
+    "6 Months to < 1 Year":23,
+    "1 Year to < 2 Years":25,
+    "2 Years to < 3 Years":23,
+    "3 Years to < 5 Years":10,
+    "5 or More Years":5,
+    "Center Code":"SDSVTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -85.16007003,35.02190995 ]
+    },
+    "properties": {
+    "Center Name":"Erlanger Medical Center (TNEM)",
+    "Waiting List":9,
+    "Death Rate (center)":0.061232758,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.1881501,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":161,
+    "< 30 Days":3,
+    "30 to < 90 Days":10,
+    "90 Days to < 6 Months":14,
+    "6 Months to < 1 Year":22,
+    "1 Year to < 2 Years":45,
+    "2 Years to < 3 Years":24,
+    "3 Years to < 5 Years":28,
+    "5 or More Years":15,
+    "Center Code":"TNEMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.03187007,35.14452999 ]
+    },
+    "properties": {
+    "Center Name":"Le Bonheur Children's Medical Center (TNLB)",
+    "Waiting List":0,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.874286503,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":5,
+    "< 30 Days":0,
+    "30 to < 90 Days":1,
+    "90 Days to < 6 Months":1,
+    "6 Months to < 1 Year":0,
+    "1 Year to < 2 Years":2,
+    "2 Years to < 3 Years":0,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":1,
+    "Center Code":"TNLBTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.02005994,35.13651995 ]
+    },
+    "properties": {
+    "Center Name":"Methodist University Hospital (TNMH)",
+    "Waiting List":202,
+    "Death Rate (center)":0.038671123,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.171534869,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":863,
+    "< 30 Days":33,
+    "30 to < 90 Days":58,
+    "90 Days to < 6 Months":68,
+    "6 Months to < 1 Year":106,
+    "1 Year to < 2 Years":197,
+    "2 Years to < 3 Years":155,
+    "3 Years to < 5 Years":164,
+    "5 or More Years":82,
+    "Center Code":"TNMHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.80976,36.15335 ]
+    },
+    "properties": {
+    "Center Name":"Centennial Medical Center (TNPV)",
+    "Waiting List":1,
+    "Death Rate (center)":0.072913894,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.075498108,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":97,
+    "< 30 Days":5,
+    "30 to < 90 Days":4,
+    "90 Days to < 6 Months":6,
+    "6 Months to < 1 Year":17,
+    "1 Year to < 2 Years":27,
+    "2 Years to < 3 Years":0,
+    "3 Years to < 5 Years":25,
+    "5 or More Years":13,
+    "Center Code":"TNPVTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.8385116,40.76944239 ]
+    },
+    "properties": {
+    "Center Name":"Saint Thomas Hospital (TNST)",
+    "Waiting List":524,
+    "Death Rate (center)":0.039393928,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.236012829,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":167,
+    "< 30 Days":10,
+    "30 to < 90 Days":6,
+    "90 Days to < 6 Months":9,
+    "6 Months to < 1 Year":39,
+    "1 Year to < 2 Years":39,
+    "2 Years to < 3 Years":46,
+    "3 Years to < 5 Years":17,
+    "5 or More Years":1,
+    "Center Code":"TNSTTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.94282107,35.93990805 ]
+    },
+    "properties": {
+    "Center Name":"University of Tennessee Medical Center at Knoxville (TNUK)",
+    "Waiting List":112,
+    "Death Rate (center)":0.034810579,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.234224465,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":296,
+    "< 30 Days":1,
+    "30 to < 90 Days":15,
+    "90 Days to < 6 Months":17,
+    "6 Months to < 1 Year":48,
+    "1 Year to < 2 Years":74,
+    "2 Years to < 3 Years":76,
+    "3 Years to < 5 Years":51,
+    "5 or More Years":14,
+    "Center Code":"TNUKTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.8016343,36.14092375 ]
+    },
+    "properties": {
+    "Center Name":"Vanderbilt University Medical Center (TNVU)",
+    "Waiting List":1006,
+    "Death Rate (center)":0.053231025,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.205542146,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1006,
+    "< 30 Days":38,
+    "30 to < 90 Days":74,
+    "90 Days to < 6 Months":96,
+    "6 Months to < 1 Year":137,
+    "1 Year to < 2 Years":210,
+    "2 Years to < 3 Years":198,
+    "3 Years to < 5 Years":166,
+    "5 or More Years":87,
+    "Center Code":"TNVUTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.77816,36.16784 ]
+    },
+    "properties": {
+    "Center Name":"Nashville Veterans Administration Hospital (TNVU)",
+    "Waiting List":472,
+    "Death Rate (center)":0.027727169,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.112099644,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":183,
+    "< 30 Days":3,
+    "30 to < 90 Days":13,
+    "90 Days to < 6 Months":23,
+    "6 Months to < 1 Year":20,
+    "1 Year to < 2 Years":30,
+    "2 Years to < 3 Years":31,
+    "3 Years to < 5 Years":40,
+    "5 or More Years":23,
+    "Center Code":"TNVUVA1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -99.1749825,28.671489 ]
+    },
+    "properties": {
+    "Center Name":"Baylor  Scott and White All Saints Medical Center-Fort Worth (TXAS)",
+    "Waiting List":584,
+    "Death Rate (center)":0.053040597,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.084252724,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":757,
+    "< 30 Days":39,
+    "30 to < 90 Days":42,
+    "90 Days to < 6 Months":57,
+    "6 Months to < 1 Year":92,
+    "1 Year to < 2 Years":143,
+    "2 Years to < 3 Years":124,
+    "3 Years to < 5 Years":156,
+    "5 or More Years":104,
+    "Center Code":"TXASTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -98.57809432,29.5078264 ]
+    },
+    "properties": {
+    "Center Name":"University Hospital, University of Texas Health Science Center (TXBC)",
+    "Waiting List":4,
+    "Death Rate (center)":0.068788654,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.182089622,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":567,
+    "< 30 Days":24,
+    "30 to < 90 Days":53,
+    "90 Days to < 6 Months":44,
+    "6 Months to < 1 Year":84,
+    "1 Year to < 2 Years":150,
+    "2 Years to < 3 Years":85,
+    "3 Years to < 5 Years":81,
+    "5 or More Years":46,
+    "Center Code":"TXBCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.34108604,32.7365621 ]
+    },
+    "properties": {
+    "Center Name":"Cook Children's Medical Center (TXCF)",
+    "Waiting List":148,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":1.929536979,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":9,
+    "< 30 Days":2,
+    "30 to < 90 Days":1,
+    "90 Days to < 6 Months":4,
+    "6 Months to < 1 Year":0,
+    "1 Year to < 2 Years":2,
+    "2 Years to < 3 Years":0,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"TXCFTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.57750828,39.0844038 ]
+    },
+    "properties": {
+    "Center Name":"Children's Medical Center of Dallas (TXCM)",
+    "Waiting List":22,
+    "Death Rate (center)":0.04507219,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.428805031,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":26,
+    "< 30 Days":0,
+    "30 to < 90 Days":2,
+    "90 Days to < 6 Months":1,
+    "6 Months to < 1 Year":12,
+    "1 Year to < 2 Years":6,
+    "2 Years to < 3 Years":2,
+    "3 Years to < 5 Years":2,
+    "5 or More Years":1,
+    "Center Code":"TXCMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.38647521,27.7487325 ]
+    },
+    "properties": {
+    "Center Name":"Driscoll Children's Hospital (TXDC)",
+    "Waiting List":482,
+    "Death Rate (center)":0.037164225,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.662284678,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":4,
+    "< 30 Days":0,
+    "30 to < 90 Days":1,
+    "90 Days to < 6 Months":0,
+    "6 Months to < 1 Year":1,
+    "1 Year to < 2 Years":1,
+    "2 Years to < 3 Years":0,
+    "3 Years to < 5 Years":1,
+    "5 or More Years":0,
+    "Center Code":"TXDCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.70667,30.41175 ]
+    },
+    "properties": {
+    "Center Name":"North Austin Medical Center (TXDM)",
+    "Waiting List":162,
+    "Death Rate (center)":0.065403268,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.083552394,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":274,
+    "< 30 Days":6,
+    "30 to < 90 Days":6,
+    "90 Days to < 6 Months":11,
+    "6 Months to < 1 Year":15,
+    "1 Year to < 2 Years":23,
+    "2 Years to < 3 Years":22,
+    "3 Years to < 5 Years":50,
+    "5 or More Years":141,
+    "Center Code":"TXDMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -98.20292528,26.25273355 ]
+    },
+    "properties": {
+    "Center Name":"Doctor's Hospital at Renaissance (TXDR)",
+    "Waiting List":309,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.165062364,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":130,
+    "< 30 Days":7,
+    "30 to < 90 Days":14,
+    "90 Days to < 6 Months":23,
+    "6 Months to < 1 Year":39,
+    "1 Year to < 2 Years":47,
+    "2 Years to < 3 Years":0,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"TXDRTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.3098637,32.93229599 ]
+    },
+    "properties": {
+    "Center Name":"Texas Health Harris Methodist Fort Worth Hospital (TXFW)",
+    "Waiting List":4886,
+    "Death Rate (center)":0.024566733,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.59304199,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":90,
+    "< 30 Days":11,
+    "30 to < 90 Days":12,
+    "90 Days to < 6 Months":10,
+    "6 Months to < 1 Year":21,
+    "1 Year to < 2 Years":26,
+    "2 Years to < 3 Years":8,
+    "3 Years to < 5 Years":2,
+    "5 or More Years":0,
+    "Center Code":"TXFWTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.77382822,32.91211415 ]
+    },
+    "properties": {
+    "Center Name":"Medical City Dallas Hospital (TXHD)",
+    "Waiting List":864,
+    "Death Rate (center)":0.042616495,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.335954746,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":245,
+    "< 30 Days":22,
+    "30 to < 90 Days":29,
+    "90 Days to < 6 Months":43,
+    "6 Months to < 1 Year":51,
+    "1 Year to < 2 Years":39,
+    "2 Years to < 3 Years":30,
+    "3 Years to < 5 Years":20,
+    "5 or More Years":11,
+    "Center Code":"TXHDTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.4540685,30.174836 ]
+    },
+    "properties": {
+    "Center Name":"Memorial Hermann Hospital, University of Texas at Houston (TXHH)",
+    "Waiting List":6,
+    "Death Rate (center)":0.056197495,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.150858848,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":352,
+    "< 30 Days":14,
+    "30 to < 90 Days":25,
+    "90 Days to < 6 Months":25,
+    "6 Months to < 1 Year":56,
+    "1 Year to < 2 Years":69,
+    "2 Years to < 3 Years":38,
+    "3 Years to < 5 Years":88,
+    "5 or More Years":37,
+    "Center Code":"TXHHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.1143,31.5497 ]
+    },
+    "properties": {
+    "Center Name":"CHI St. Luke's Health Baylor College of Medicine Medical Center (TXHI)",
+    "Waiting List":1168,
+    "Death Rate (center)":0.057555369,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.131131655,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":864,
+    "< 30 Days":25,
+    "30 to < 90 Days":38,
+    "90 Days to < 6 Months":58,
+    "6 Months to < 1 Year":92,
+    "1 Year to < 2 Years":203,
+    "2 Years to < 3 Years":131,
+    "3 Years to < 5 Years":205,
+    "5 or More Years":112,
+    "Center Code":"TXHITX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -98.57634466,29.5142308 ]
+    },
+    "properties": {
+    "Center Name":"Methodist Specialty and Transplant Hospital (TXHS)",
+    "Waiting List":458,
+    "Death Rate (center)":0.069350187,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.147576134,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1553,
+    "< 30 Days":48,
+    "30 to < 90 Days":140,
+    "90 Days to < 6 Months":176,
+    "6 Months to < 1 Year":179,
+    "1 Year to < 2 Years":271,
+    "2 Years to < 3 Years":277,
+    "3 Years to < 5 Years":278,
+    "5 or More Years":184,
+    "Center Code":"TXHSTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.77630865,29.31251645 ]
+    },
+    "properties": {
+    "Center Name":"University of Texas Medical Branch at Galveston (TXJS)",
+    "Waiting List":0,
+    "Death Rate (center)":0.050609866,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.220966465,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":425,
+    "< 30 Days":19,
+    "30 to < 90 Days":35,
+    "90 Days to < 6 Months":50,
+    "6 Months to < 1 Year":57,
+    "1 Year to < 2 Years":129,
+    "2 Years to < 3 Years":62,
+    "3 Years to < 5 Years":53,
+    "5 or More Years":20,
+    "Center Code":"TXJSTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.4983423,31.7699876 ]
+    },
+    "properties": {
+    "Center Name":"Las Palmas Medical Center (TXLP)",
+    "Waiting List":12,
+    "Death Rate (center)":0.028797256,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.281920736,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":166,
+    "< 30 Days":7,
+    "30 to < 90 Days":21,
+    "90 Days to < 6 Months":15,
+    "6 Months to < 1 Year":21,
+    "1 Year to < 2 Years":37,
+    "2 Years to < 3 Years":25,
+    "3 Years to < 5 Years":29,
+    "5 or More Years":11,
+    "Center Code":"TXLPTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.82504596,32.76125335 ]
+    },
+    "properties": {
+    "Center Name":"Methodist Dallas Medical Center (TXMC)",
+    "Waiting List":967,
+    "Death Rate (center)":0.032520506,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.232758516,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":394,
+    "< 30 Days":17,
+    "30 to < 90 Days":36,
+    "90 Days to < 6 Months":57,
+    "6 Months to < 1 Year":56,
+    "1 Year to < 2 Years":101,
+    "2 Years to < 3 Years":77,
+    "3 Years to < 5 Years":36,
+    "5 or More Years":14,
+    "Center Code":"TXMCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.39926398,29.7108167 ]
+    },
+    "properties": {
+    "Center Name":"Houston Methodist Hospital (TXMH)",
+    "Waiting List":165,
+    "Death Rate (center)":0.072292404,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.161307721,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1521,
+    "< 30 Days":49,
+    "30 to < 90 Days":62,
+    "90 Days to < 6 Months":130,
+    "6 Months to < 1 Year":195,
+    "1 Year to < 2 Years":264,
+    "2 Years to < 3 Years":157,
+    "3 Years to < 5 Years":342,
+    "5 or More Years":322,
+    "Center Code":"TXMHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.34514635,32.73570585 ]
+    },
+    "properties": {
+    "Center Name":"Medical City Fort Worth (TXPL)",
+    "Waiting List":330,
+    "Death Rate (center)":0.021315771,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":1.246806551,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":116,
+    "< 30 Days":22,
+    "30 to < 90 Days":24,
+    "90 Days to < 6 Months":21,
+    "6 Months to < 1 Year":18,
+    "1 Year to < 2 Years":25,
+    "2 Years to < 3 Years":4,
+    "3 Years to < 5 Years":2,
+    "5 or More Years":0,
+    "Center Code":"TXPLTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.83538145,32.8131807 ]
+    },
+    "properties": {
+    "Center Name":"Parkland Health and Hospital System (TXPM)",
+    "Waiting List":4,
+    "Death Rate (center)":0.021707845,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.07004027,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":155,
+    "< 30 Days":0,
+    "30 to < 90 Days":2,
+    "90 Days to < 6 Months":11,
+    "6 Months to < 1 Year":15,
+    "1 Year to < 2 Years":23,
+    "2 Years to < 3 Years":27,
+    "3 Years to < 5 Years":35,
+    "5 or More Years":42,
+    "Center Code":"TXPMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -98.58916043,29.51237735 ]
+    },
+    "properties": {
+    "Center Name":"Christus Santa Rosa Hospital Medical Center (TXRM)",
+    "Waiting List":36,
+    "Death Rate (center)":0.038061991,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.129709862,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":1,
+    "< 30 Days":0,
+    "30 to < 90 Days":0,
+    "90 Days to < 6 Months":0,
+    "6 Months to < 1 Year":0,
+    "1 Year to < 2 Years":0,
+    "2 Years to < 3 Years":0,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":1,
+    "Center Code":"TXRMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.8388,32.81287 ]
+    },
+    "properties": {
+    "Center Name":"UT Southwestern Medical Center/ (TXSP)",
+    "Waiting List":236,
+    "Death Rate (center)":0.040469144,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.131495412,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":478,
+    "< 30 Days":26,
+    "30 to < 90 Days":48,
+    "90 Days to < 6 Months":49,
+    "6 Months to < 1 Year":61,
+    "1 Year to < 2 Years":111,
+    "2 Years to < 3 Years":81,
+    "3 Years to < 5 Years":86,
+    "5 or More Years":16,
+    "Center Code":"TXSPTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -99.1749825,28.671489 ]
+    },
+    "properties": {
+    "Center Name":"Scott and White Memorial Hospital (TXSW)",
+    "Waiting List":1118,
+    "Death Rate (center)":0.036487782,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.746932515,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":148,
+    "< 30 Days":11,
+    "30 to < 90 Days":15,
+    "90 Days to < 6 Months":27,
+    "6 Months to < 1 Year":35,
+    "1 Year to < 2 Years":32,
+    "2 Years to < 3 Years":12,
+    "3 Years to < 5 Years":15,
+    "5 or More Years":1,
+    "Center Code":"TXSWTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.4008326,29.7077811 ]
+    },
+    "properties": {
+    "Center Name":"Texas Children's Hospital (TXTC)",
+    "Waiting List":0,
+    "Death Rate (center)":0.038628312,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.620794051,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":53,
+    "< 30 Days":2,
+    "30 to < 90 Days":5,
+    "90 Days to < 6 Months":9,
+    "6 Months to < 1 Year":10,
+    "1 Year to < 2 Years":6,
+    "2 Years to < 3 Years":4,
+    "3 Years to < 5 Years":10,
+    "5 or More Years":7,
+    "Center Code":"TXTCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.77792353,32.7899432 ]
+    },
+    "properties": {
+    "Center Name":"Baylor University Medical Center (TXTX)",
+    "Waiting List":153,
+    "Death Rate (center)":0.05211583,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.156321551,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":868,
+    "< 30 Days":38,
+    "30 to < 90 Days":44,
+    "90 Days to < 6 Months":71,
+    "6 Months to < 1 Year":103,
+    "1 Year to < 2 Years":179,
+    "2 Years to < 3 Years":145,
+    "3 Years to < 5 Years":185,
+    "5 or More Years":103,
+    "Center Code":"TXTXTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.11642849,32.332254 ]
+    },
+    "properties": {
+    "Center Name":"East Texas Medical Center (TXTY)",
+    "Waiting List":0,
+    "Death Rate (center)":0.066594905,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.147422264,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":130,
+    "< 30 Days":0,
+    "30 to < 90 Days":0,
+    "90 Days to < 6 Months":0,
+    "6 Months to < 1 Year":5,
+    "1 Year to < 2 Years":33,
+    "2 Years to < 3 Years":23,
+    "3 Years to < 5 Years":40,
+    "5 or More Years":29,
+    "Center Code":"TXTYTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.38885497,29.70187215 ]
+    },
+    "properties": {
+    "Center Name":"Michael E. DeBakey VA Medical Center (TXVA)",
+    "Waiting List":306,
+    "Death Rate (center)":0.045557001,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.075526349,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":312,
+    "< 30 Days":7,
+    "30 to < 90 Days":24,
+    "90 Days to < 6 Months":35,
+    "6 Months to < 1 Year":52,
+    "1 Year to < 2 Years":69,
+    "2 Years to < 3 Years":72,
+    "3 Years to < 5 Years":53,
+    "5 or More Years":0,
+    "Center Code":"TXVATX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.8918793,40.65933435 ]
+    },
+    "properties": {
+    "Center Name":"Intermountain Medical Center (UTLD)",
+    "Waiting List":0,
+    "Death Rate (center)":0.037293465,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.439784833,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":238,
+    "< 30 Days":12,
+    "30 to < 90 Days":28,
+    "90 Days to < 6 Months":44,
+    "6 Months to < 1 Year":52,
+    "1 Year to < 2 Years":45,
+    "2 Years to < 3 Years":25,
+    "3 Years to < 5 Years":19,
+    "5 or More Years":13,
+    "Center Code":"UTLDTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.83477,40.76811 ]
+    },
+    "properties": {
+    "Center Name":"University of Utah Medical Center (UTMC)",
+    "Waiting List":535,
+    "Death Rate (center)":0.059113317,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.421286179,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":270,
+    "< 30 Days":10,
+    "30 to < 90 Days":21,
+    "90 Days to < 6 Months":37,
+    "6 Months to < 1 Year":55,
+    "1 Year to < 2 Years":56,
+    "2 Years to < 3 Years":51,
+    "3 Years to < 5 Years":28,
+    "5 or More Years":12,
+    "Center Code":"UTMCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.8390649,40.77128445 ]
+    },
+    "properties": {
+    "Center Name":"Primary Children's Hospital (UTPC)",
+    "Waiting List":241,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":2.082679971,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":6,
+    "< 30 Days":0,
+    "30 to < 90 Days":1,
+    "90 Days to < 6 Months":2,
+    "6 Months to < 1 Year":1,
+    "1 Year to < 2 Years":1,
+    "2 Years to < 3 Years":1,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"UTPCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -88.023473,43.0422889 ]
+    },
+    "properties": {
+    "Center Name":"Children's Hospital of the King's Daughters (VACH)",
+    "Waiting List":173,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.931232295,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":5,
+    "< 30 Days":0,
+    "30 to < 90 Days":0,
+    "90 Days to < 6 Months":1,
+    "6 Months to < 1 Year":1,
+    "1 Year to < 2 Years":1,
+    "2 Years to < 3 Years":2,
+    "3 Years to < 5 Years":0,
+    "5 or More Years":0,
+    "Center Code":"VACHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.22849481,38.8574108 ]
+    },
+    "properties": {
+    "Center Name":"Inova Fairfax Hospital (VAFH)",
+    "Waiting List":950,
+    "Death Rate (center)":0.065147274,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.169973621,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":480,
+    "< 30 Days":20,
+    "30 to < 90 Days":23,
+    "90 Days to < 6 Months":45,
+    "6 Months to < 1 Year":56,
+    "1 Year to < 2 Years":71,
+    "2 Years to < 3 Years":51,
+    "3 Years to < 5 Years":91,
+    "5 or More Years":123,
+    "Center Code":"VAFHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.54147217,37.60350855 ]
+    },
+    "properties": {
+    "Center Name":"Henrico Doctors' Hospital (VAHD)",
+    "Waiting List":630,
+    "Death Rate (center)":0.073547527,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.165721416,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":151,
+    "< 30 Days":7,
+    "30 to < 90 Days":10,
+    "90 Days to < 6 Months":14,
+    "6 Months to < 1 Year":24,
+    "1 Year to < 2 Years":25,
+    "2 Years to < 3 Years":23,
+    "3 Years to < 5 Years":18,
+    "5 or More Years":30,
+    "Center Code":"VAHDTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.65455093,39.81015825 ]
+    },
+    "properties": {
+    "Center Name":"Medical College of Virginia Hospitals (VAMC)",
+    "Waiting List":299,
+    "Death Rate (center)":0.061947486,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.338093561,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":399,
+    "< 30 Days":34,
+    "30 to < 90 Days":36,
+    "90 Days to < 6 Months":66,
+    "6 Months to < 1 Year":65,
+    "1 Year to < 2 Years":72,
+    "2 Years to < 3 Years":58,
+    "3 Years to < 5 Years":45,
+    "5 or More Years":23,
+    "Center Code":"VAMCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.3043041,36.8616399 ]
+    },
+    "properties": {
+    "Center Name":"Sentara Norfolk General Hospital (VANG)",
+    "Waiting List":988,
+    "Death Rate (center)":0.053408706,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.130315435,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":524,
+    "< 30 Days":12,
+    "30 to < 90 Days":14,
+    "90 Days to < 6 Months":23,
+    "6 Months to < 1 Year":60,
+    "1 Year to < 2 Years":117,
+    "2 Years to < 3 Years":90,
+    "3 Years to < 5 Years":102,
+    "5 or More Years":106,
+    "Center Code":"VANGTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -78.50798,38.033554 ]
+    },
+    "properties": {
+    "Center Name":"University of Virginia Health Sciences Center (VAUV)",
+    "Waiting List":379,
+    "Death Rate (center)":0.053758569,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.22822248,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":556,
+    "< 30 Days":29,
+    "30 to < 90 Days":33,
+    "90 Days to < 6 Months":61,
+    "6 Months to < 1 Year":105,
+    "1 Year to < 2 Years":112,
+    "2 Years to < 3 Years":62,
+    "3 Years to < 5 Years":93,
+    "5 or More Years":61,
+    "Center Code":"VAUVTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.194753,44.4796284 ]
+    },
+    "properties": {
+    "Center Name":"The University of Vermont Medical Center (VTMC)",
+    "Waiting List":567,
+    "Death Rate (center)":0.013783019,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.346350294,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":66,
+    "< 30 Days":6,
+    "30 to < 90 Days":5,
+    "90 Days to < 6 Months":5,
+    "6 Months to < 1 Year":12,
+    "1 Year to < 2 Years":16,
+    "2 Years to < 3 Years":7,
+    "3 Years to < 5 Years":10,
+    "5 or More Years":5,
+    "Center Code":"VTMCTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.282532,47.66311535 ]
+    },
+    "properties": {
+    "Center Name":"Seattle Children's Hospital (WACH)",
+    "Waiting List":920,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.423170043,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":59,
+    "< 30 Days":3,
+    "30 to < 90 Days":3,
+    "90 Days to < 6 Months":5,
+    "6 Months to < 1 Year":11,
+    "1 Year to < 2 Years":21,
+    "2 Years to < 3 Years":9,
+    "3 Years to < 5 Years":6,
+    "5 or More Years":1,
+    "Center Code":"WACHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.613422,45.5282065 ]
+    },
+    "properties": {
+    "Center Name":"Providence Sacred Heart Medical Center & Children's Hospital (WASH)",
+    "Waiting List":450,
+    "Death Rate (center)":0.054029317,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.145497428,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":217,
+    "< 30 Days":4,
+    "30 to < 90 Days":6,
+    "90 Days to < 6 Months":6,
+    "6 Months to < 1 Year":35,
+    "1 Year to < 2 Years":40,
+    "2 Years to < 3 Years":33,
+    "3 Years to < 5 Years":56,
+    "5 or More Years":37,
+    "Center Code":"WASHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.2347803,47.878748 ]
+    },
+    "properties": {
+    "Center Name":"Swedish Medical Center (WASM)",
+    "Waiting List":305,
+    "Death Rate (center)":0.037586481,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.184129617,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":450,
+    "< 30 Days":14,
+    "30 to < 90 Days":34,
+    "90 Days to < 6 Months":25,
+    "6 Months to < 1 Year":61,
+    "1 Year to < 2 Years":92,
+    "2 Years to < 3 Years":95,
+    "3 Years to < 5 Years":100,
+    "5 or More Years":29,
+    "Center Code":"WASMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -123.0626835,47.3374215 ]
+    },
+    "properties": {
+    "Center Name":"Virginia Mason Medical Center (WAVM)",
+    "Waiting List":167,
+    "Death Rate (center)":0.068531417,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.245996802,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":306,
+    "< 30 Days":8,
+    "30 to < 90 Days":11,
+    "90 Days to < 6 Months":24,
+    "6 Months to < 1 Year":46,
+    "1 Year to < 2 Years":90,
+    "2 Years to < 3 Years":30,
+    "3 Years to < 5 Years":63,
+    "5 or More Years":34,
+    "Center Code":"WAVMTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.8379134,32.8094605 ]
+    },
+    "properties": {
+    "Center Name":"Children's Hospital of Wisconsin (WICH)",
+    "Waiting List":43,
+    "Death Rate (center)":0,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":1.040370289,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":8,
+    "< 30 Days":2,
+    "30 to < 90 Days":2,
+    "90 Days to < 6 Months":1,
+    "6 Months to < 1 Year":1,
+    "1 Year to < 2 Years":1,
+    "2 Years to < 3 Years":0,
+    "3 Years to < 5 Years":1,
+    "5 or More Years":0,
+    "Center Code":"WICHTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.60068,43.20833 ]
+    },
+    "properties": {
+    "Center Name":"Froedtert Memorial Lutheran Hospital (WISE)",
+    "Waiting List":936,
+    "Death Rate (center)":0.058225024,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.139868806,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":603,
+    "< 30 Days":15,
+    "30 to < 90 Days":37,
+    "90 Days to < 6 Months":32,
+    "6 Months to < 1 Year":68,
+    "1 Year to < 2 Years":122,
+    "2 Years to < 3 Years":77,
+    "3 Years to < 5 Years":150,
+    "5 or More Years":102,
+    "Center Code":"WISETX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.95043042,42.9899857 ]
+    },
+    "properties": {
+    "Center Name":"Aurora St. Luke's Medical Center (WISL)",
+    "Waiting List":53,
+    "Death Rate (center)":0.057875621,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.13609174,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":203,
+    "< 30 Days":7,
+    "30 to < 90 Days":9,
+    "90 Days to < 6 Months":27,
+    "6 Months to < 1 Year":33,
+    "1 Year to < 2 Years":48,
+    "2 Years to < 3 Years":26,
+    "3 Years to < 5 Years":22,
+    "5 or More Years":31,
+    "Center Code":"WISLTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.4302,43.0767 ]
+    },
+    "properties": {
+    "Center Name":"University of Wisconsin Hospital and Clinics (WIUW)",
+    "Waiting List":321,
+    "Death Rate (center)":0.051166901,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.303050218,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":936,
+    "< 30 Days":36,
+    "30 to < 90 Days":56,
+    "90 Days to < 6 Months":71,
+    "6 Months to < 1 Year":148,
+    "1 Year to < 2 Years":195,
+    "2 Years to < 3 Years":142,
+    "3 Years to < 5 Years":172,
+    "5 or More Years":116,
+    "Center Code":"WIUWTX1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.52838657,40.39230195 ]
+    },
+    "properties": {
+    "Center Name":"Charleston Area Medical Center (WVCA)",
+    "Waiting List":746,
+    "Death Rate (center)":0.047734568,
+    "Death Rate (nation)":0.054763277,
+    "Transplant Rate (center)":0.206633194,
+    "Transplant Rate (nation)":0.186361012,
+    "All Time":127,
+    "< 30 Days":12,
+    "30 to < 90 Days":11,
+    "90 Days to < 6 Months":10,
+    "6 Months to < 1 Year":20,
+    "1 Year to < 2 Years":30,
+    "2 Years to < 3 Years":14,
+    "3 Years to < 5 Years":19,
+    "5 or More Years":11,
+    "Center Code":"WVCATX1"
+    }
+  }
+]
+}
