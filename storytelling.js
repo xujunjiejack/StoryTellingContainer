@@ -47,49 +47,52 @@ function handleResize() {
 // scrollama event handlers
 function handleStepEnter(response) {
     // response = { element, direction, index }
+    console.log("Step entering " + response.index)
 
-    // fade in current step
-    $step.classed('is-active', function (d, i) {
+        $step.classed('is-active', function (d, i) {
+            return i === response.index;
+        })
         console.log(response.index)
-        return i === response.index;
-    });
 
-    // update graphic based on step here
-    let stepData = $step.attr('data-step')
+        // update graphic based on step
+        if (response.index === 0) {
+            center_layer.addTo(map);
+            info.remove(map);
+            map.flyTo([37.8, -100], 5);
+        }
+        if (response.index === 1) {
+            map.removeLayer(center_layer);
+            info.addTo(map);
+            subset_layer.addTo(map);
+            map.flyTo(pan_LatLng, 6);
+        }
+        if (response.index === 2) {
 
-    // update graphic based on step
-    if (response.index === 0) {
-        center_layer.addTo(map);
-        map.flyTo([37.8, -96], 4);
-    }
-    if (response.index === 1) {
-        map.removeLayer(center_layer);
-        info.addTo(map);
-        subset_layer.addTo(map);
-        map.flyTo(pan_LatLng, 6);
-    }
-    if (response.index === 2) {
-
-        map.removeLayer(subset_layer);
-        //info.removeFrom(map);
-        user_state_layer.addTo(map);
-        map.flyTo(pan_LatLng, 6);
-    }
-    if(response.index === 3){
-        map.removeLayer(user_state_layer);
-        georgia_layer.addTo(map);
-        map.flyTo([32.1656, -82.9001], 6);
-    }
-    if(response.index === 4){
-        map.removeLayer(georgia_layer);
-        california_layer.addTo(map);
-        map.flyTo([36.7783, -119.4179], 6);
-    }
-    if(response.index === 5){
-        map.removeLayer(california_layer);
-        state_layer.addTo(map);
-        map.flyTo([37.8, -96], 4);
-    }
+            map.removeLayer(subset_layer);
+            info.remove(map);
+            user_state_layer.addTo(map);
+            map.flyTo(pan_LatLng, 6);
+        }
+        if(response.index === 3){
+            map.removeLayer(user_state_layer);
+            georgia_layer.addTo(map);
+            map.flyTo([32.1656, -82.9001], 6);
+        }
+        if(response.index === 4){
+            map.removeLayer(georgia_layer);
+            california_layer.addTo(map);
+            map.flyTo([36.7783, -119.4179], 6);
+        }
+        if(response.index === 5){
+            map.removeLayer(california_layer);
+            alabama_layer.addTo(map);
+            map.flyTo([32.3182,-86.9023], 6);
+        }
+        if(response.index === 6){
+            map.removeLayer(alabama_layer);
+            state_layer.addTo(map);
+            map.flyTo([37.8, -100], 5);
+        }
 
     // if (response.index === 4){
     //     stop = false;
@@ -97,7 +100,7 @@ function handleStepEnter(response) {
 }
 
 function handleStepExit(response){
-    if(response.index===5){
+    if(response.index===6){
         map.removeLayer(state_layer);
     }
     if (response.index === 3){
@@ -118,6 +121,7 @@ function handleContainerEnter(response) {
     $graphic.classed('is-fixed', true);
     $graphic.classed('is-bottom', false);
 }
+
 
 function handleContainerExit(response) {
 
@@ -260,14 +264,10 @@ function handleResize2() {
 
 
 
-
-
-
 /*
   Vis 1
 */
 
-////////////////////// Leaflet Map Projection
 let centerFeatures = [];
 let center_layer;
 let subset_layer;
@@ -276,7 +276,12 @@ let pan_LatLng;
 let last_zipcode_state;
 let user_state_layer;
 let georgia_layer;
-var california_layer;
+let california_layer;
+let check_val=2010;
+let blood_string= "ABO"
+let bmi_string="0"
+let k=0;
+let check_value= 0;
 
 function style(feature) {
     return {
@@ -293,28 +298,8 @@ let info = L.control({
     position : 'topright'
 });
 
-// Set up the extent
-function padExtent(e, p) {
-    if (p === undefined) p = 0.05;
-    return ([e[0] - p, e[1] + p]);
-}
+let map = L.map('map', {zoomControl: false}).setView([37.8, -100], 5);
 
-var margin = {
-    top: 20,
-    right: 10,
-    bottom: 20,
-    left: 20
-};
-
-let width = 300;
-let height = 300;
-let domainwidth = width - margin.left - margin.right;
-let domainheight = height - margin.top - margin.bottom;
-
-// Create the map
-let map = L.map('map', {zoomControl: false}).setView([37.8, -96], 5);
-
-// Add the tile layer
 L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamVmZmV2ZXJoYXJ0MzgzIiwiYSI6IjIwNzVlOTA3ODI2MTY0MjM3OTgxMTJlODgzNjg5MzM4In0.QA1GsfWZccIB8u0FbhJmRg', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 10,
@@ -323,76 +308,22 @@ L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/{z}/{x}/{y}?
     accessToken: 'pk.eyJ1IjoiamVmZmV2ZXJoYXJ0MzgzIiwiYSI6ImNqOXI2aDg5ejZhYncyd3M0bHd6cWYxc2oifQ.fzcb7maGkQhAxRZTotB4tg'
 }).addTo(map);
 
-
 map.scrollWheelZoom.disable();
 
-function createScatterPlot(data, selected){
-    var svg_scatter = d3.select('.scatterplot_box')
-        .append("svg")
-        .attr('class','vis1')
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom);
-    var g_scatter = svg_scatter.append("g")
-        .attr("transform", "translate(" + margin.top + "," + margin.top + ")");
-
-    var x = d3.scaleLinear()
-        .domain(padExtent(d3.extent(data,function(d){ return d.transplant_rate_center;})))
-        .range(padExtent([0, width]));
-
-    var y = d3.scaleLinear()
-        .domain(padExtent(d3.extent(data,function(d){ return d.death_rate_center;})))
-        .range(padExtent([height, 0]));
-
-    var size_extent = d3.extent(data,function(d){ return d.wait_list;})
-
-    var sizeScale = d3.scaleSqrt()
-        .domain(size_extent)
-        .range([5,15]);
-
-    g_scatter.append("rect")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .attr("fill", "#F6F6F6")
-        .style("fill-opacity",0.2);
-
-    g_scatter.selectAll("circle")
-        .data(data)
-        .enter().append("circle")
-        .attr("class", "dot")
-        .attr("r", function(d) {return sizeScale(d.wait_list);})
-        .attr("cx", function(d) { console.log(d.transplant_rate_center); return x(d.transplant_rate_center); })
-        .attr("cy", function(d) { console.log(d.death_rate_center); return y(d.death_rate_center); })
-        .style("fill", function(d) {
-            if(selected.LatLng == d.LatLng){
-                return 'orange';
-            }
-            else{ return 'blue';}})
-        .style("fill-opacity", 0.5)
-        .style("stroke",'black')
-        .style("stroke-width", 1);
-
-    g_scatter.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0," + y.range()[0] / 2 + ")")
-        .call(d3.axisBottom(x).ticks(5));
-
-    g_scatter.append("g")
-        .attr("class", "y axis")
-        .attr("transform", "translate(" + x.range()[1] / 2 + ", 0)")
-        .call(d3.axisLeft(y).ticks(5));
-
-
+function padExtent(e, p) {
+    if (p === undefined) p = 0.05;
+    return ([e[0] - p, e[1] + p]);
 }
 
-// read data
+
 d3.queue()
     .defer(d3.csv, './data/Viz1.csv', function(row) {
-        var center = {center_name: row['Center Name'], LatLng: [+row['Latitude'],+row['Longitude']], wait_list: +row['Waiting List'],
+        let center = {center_name: row['Center Name'], LatLng: [+row['Latitude'],+row['Longitude']], wait_list: +row['Waiting List'],
             death_rate_center: +row['Death Rate (center)'],death_rate_nation: +row['Death Rate (nation)'],
             transplant_rate_center: +row['Transplant Rate (center)'], transplant_rate_nation: +row['Transplant Rate (nation)'],
-            all_time: +row['All Time'], less_than_30: +row['< 30 Days'],days_30_to_90: +row['30 to < 90 Days'], days_90_to_6_months: +row['90 Days to < 6 Months'],
-            months_6_to_1_year: +row['6 Months to < 1 Year'], year_1_to_2: +row['1 Year to < 2 Years'],year_2_to_3: +row['2 Years to < 3 Years'],
-            year_3_to_5: +row['3 Years to < 5 Years'],year_5_or_more: +row['5 or More Years'],center_code: +row['Center Code']};
+            all: +row['All Time'], less_than_30_time: +row['< 30 Days'],days_30_to_90_time: +row['30 to < 90 Days'], days_90_to_6_months_time: +row['90 Days to < 6 Months'],
+            months_6_to_1_year_time: +row['6 Months to < 1 Year'], year_1_to_2_time: +row['1 Year to < 2 Years'],year_2_to_3_time: +row['2 Years to < 3 Years'],
+            year_3_to_5_time: +row['3 Years to < 5 Years'],year_5_or_more_time: +row['5 or More Years'],center_code: +row['Center Code']};
 
         centerFeatures.push(turf.point([+row['Longitude'], +row['Latitude']], center));
         return center;
@@ -403,16 +334,28 @@ d3.queue()
     .defer(d3.json,'./data/states.json')
     .defer(d3.json,'./data/shape_GA.geoJson')
     .defer(d3.json,'./data/shape_CA.geoJson')
+    .defer(d3.json,'./data/shape_AL.geojson')
+    .defer(d3.csv, './data/2010-State-Bloodtype-BMI.csv')
+    .defer(d3.csv, './data/2011-State-Bloodtype-BMI.csv')
+    .defer(d3.csv, './data/2012-State-Bloodtype-BMI.csv')
+    .defer(d3.csv, './data/2013-State-Bloodtype-BMI.csv')
+    .defer(d3.csv, './data/2014-State-Bloodtype-BMI.csv')
+    .defer(d3.csv, './data/2015-State-Bloodtype-BMI.csv')
+    .defer(d3.csv, './data/2016-State-Bloodtype-BMI.csv')
+    .defer(d3.csv, './data/2017-State-Bloodtype-BMI.csv')
+    .defer(d3.csv, './data/2018-State-Bloodtype-BMI.csv')
     .await(readyToDraw);
 
+let center_data = null;
+let zipcode_data = null;
+let states_data = null;
+let alabama_layer = null;
+let data_vis2 = null;
+let all_state = null;
 
-let center_data;
-let zipcode_data;
-let states_data ;
 
-// ready to draw
-function readyToDraw(error, centers,zipcodes,states,georgia_data,california_data) {
-    if (error) {
+function readyToDraw(error, centers,zipcodes,states,georgia_data,california_data, albama_data,data_2010, data_2011, data_2012, data_2013, data_2014, data_2015, data_2016, data_2017, data_2018) {
+    if(error) {
         console.error('Error while loading datasets.');
         console.error(error);
         return;
@@ -421,39 +364,140 @@ function readyToDraw(error, centers,zipcodes,states,georgia_data,california_data
     center_data = centers;
     zipcode_data = zipcodes;
     states_data = states;
-    var centerCollection = turf.featureCollection(centerFeatures);
+    let centerCollection = turf.featureCollection(centerFeatures);
     center_layer = L.geoJson(centerCollection);
-    state_layer = L.geoJson(states);
-    georgia_layer = L.geoJson(georgia_data, {style: style});
-    california_layer = L.geoJson(california_data, {style: style});
+    georgia_layer = L.geoJson(georgia_data, {style:style});
+    california_layer = L.geoJson(california_data, {style:style});
+    alabama_layer = L.geoJson(albama_data,{style:style});
 
+    data_vis2 = [data_2010, data_2011, data_2012, data_2013, data_2014, data_2015, data_2016, data_2017, data_2018];
+    all_state = states;
     updateMap('30318');
+    concat(blood_string,bmi_string,check_val);
 
+    let container = d3.select('#scroll');
+    let graphic = container.select('.scroll__graphic');
+    let chart = graphic.select('.chart');
+    let text = container.select('.scroll__text');
+    let step = text.selectAll('.step');
 
-    var container = d3.select('#scroll');
-    var graphic = container.select('.scroll__graphic');
-    var chart = graphic.select('.chart');
-    var text = container.select('.scroll__text');
-    var step = text.selectAll('.step');
+    let inputBox = $("#probleminput");
+    let submitButton = $("#problemsubmit");
+    let c=0;
 
-    var inputBox = $("#probleminput");
-    var submitButton = $("#problemsubmit");
-    var c = 0;
-
-    submitButton.click(function () {
+    submitButton.click(function(){
         c++;
-        var getval = ($("#zip").val() ? $("#zip").val() : alert('please fill the text field'))
+        let getval = ($("#zip").val()?$("#zip").val():alert('please fill the text field'))
         console.log(getval)
         var x = {index: 1}
-        if (c >= 1) {
+        if(c>=1){
             console.log(subset_layer)
             map.removeLayer(subset_layer)
-        }
-        ;
+        };
         updateMap(getval);
         handleStepEnter(x)
 
     });
+
+    $("#blood_button > button").on("click", function() {
+        k++;
+        var x = {index: 6}
+        if(k>=1){
+            //console.log(subset_layer)
+            map.removeLayer(state_layer)
+        };
+        blood_string = this.value;
+        concat(blood_string, bmi_string, check_val);
+        handleStepEnter(x);
+    });
+
+    $("#bmi_button > button").on("click", function() {
+        k++;
+        var x = {index: 6}
+        if(k>=1){
+            //console.log(subset_layer)
+            map.removeLayer(state_layer)
+        };
+        bmi_string = this.value;
+        concat(blood_string, bmi_string, check_val);
+        handleStepEnter(x);
+    });
+
+
+// Function that is called when the blood_group button is clicked.
+    /*function blood_onclick(val) {
+        const btnClick = function () {
+            this.parentNode.getElementsByClassName("active")[0].classList.remove("active");
+            this.classList.add("active");
+        };
+        document.querySelectorAll(".btn-group .btn").forEach(btn => btn.addEventListener('click', btnClick));
+        k++;
+        var x = {index: 6}
+        if(k>=1){
+          //console.log(subset_layer)
+          map.removeLayer(state_layer)
+        };
+        blood_string= val;
+        concat(blood_string, bmi_string, check_val);
+        handleStepEnter(x);
+
+    }
+    // Function that is called  when the BMI button is  clicked.
+    function bmi_onclick(val) {
+        const btnClick = function () {
+            this.parentNode.getElementsByClassName("active")[0].classList.remove("active");
+            this.classList.add("active");
+        };
+        document.querySelectorAll(".btn-group .btn").forEach(btn => btn.addEventListener('click', btnClick));
+        k++;
+        var x = {index: 6}
+        if(k>=1){
+          //console.log(subset_layer)
+          map.removeLayer(state_layer)
+        };
+        bmi_string= val;
+        concat(blood_string, bmi_string, check_val);
+        handleStepEnter(x);
+    }*/
+
+
+// Code for the slider.......................................................
+
+    let slider2 = d3.sliderHorizontal()
+        .min(2010)
+        .max(2018)
+        .step(1)
+        .width(300)
+        .displayValue(false)
+        .tickFormat(d3.format("d"))
+        .on('onchange', val => {
+            check(val);
+
+        });
+
+    let group2 = d3.select("#slider").append("svg")
+        .attr("width", 500)
+        .attr("height", 100)
+        .append("g")
+        .attr("transform", "translate(30,30)");
+
+    group2.call(slider2);
+
+//Function that is called whenever the slider is changed.................................
+    function check(value){
+        check_val= value;
+        k++;
+        let x = {index: 6}
+        if(k>=1){
+            //console.log(subset_layer)
+            map.removeLayer(state_layer)
+        };
+
+        concat(blood_string, bmi_string, check_val);
+        handleStepEnter(x);
+    }
+
+
 }
 
 info.onAdd = function (map) {
@@ -463,15 +507,16 @@ info.onAdd = function (map) {
 };
 
 info.update = function (props) {
-    this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
-        '<b>' + props.center_name + '</b><br />people / mi<sup>2</sup>'
-        : 'Hover over a state');
+    this._div.innerHTML = '<h4>Organ Transplant Center</h4>' +  (props ?
+        '<b>' + props.center_name + '</b><br />'
+        : 'Hover over a center');
     var ScatterPlotDiv = this._div.appendChild(document.createElement("div"));
     ScatterPlotDiv.className="scatterplot_box";
+    var LineChartDiv = this._div.appendChild(document.createElement("div"));
+    LineChartDiv.className="linechart_box";
 };
 
 
-// Update the map
 function updateMap(myzipcode){
 
     var user_latlng = zipcode_data.filter(function(d){
@@ -492,18 +537,44 @@ function updateMap(myzipcode){
     var subset_data = center_data.filter(({LatLng}) =>
         nearest_array.some(f => LatLng.every(l => f.includes(l))))
 
+    var new_data = [];       //start with an empty array
+
+//loop through original data item-by-item
+    subset_data.forEach(function(d){
+        var obj = {};                //prepare an empty object
+        obj.key = d.center_name;
+        obj.values = [];             // prepare internal empty array
+
+        //we need the key values from the object
+        Object.keys(d).forEach(function(key){
+            // but only keys that contain the word (year)...
+            if(key.indexOf("time")>-1){
+                //setting up the new data structure
+                obj.values.push({interval:key,value:d[key]});
+            }
+        });
+        // finally, pushing the object to the new array
+        new_data.push(obj);
+    });
+
+    console.log(new_data);
+
+
     var subsetFeatures =[];
     for (var i=0; i<subset_data.length;i++){
         var point_data = turf.point([subset_data[i].LatLng[1],subset_data[i].LatLng[0]], subset_data[i])
         subsetFeatures.push(point_data);
     }
-    var subsetCollection = turf.featureCollection(subsetFeatures);
+    console.log(subset_data)
 
+
+    var subsetCollection = turf.featureCollection(subsetFeatures);
     subset_layer = L.geoJson(subsetCollection);
     subset_layer.on('mouseover', function (e) {
         info.update(e.layer.feature.properties)
         createScatterPlot(subset_data,e.layer.feature.properties);
-        console.log(e.layer.feature.properties)
+        createLineChart(new_data,e.layer.feature.properties.center_name);
+
     });
     subset_layer.on("mouseout",function(){
         //d3.select(".scatterplot").remove();
@@ -517,13 +588,64 @@ function updateMap(myzipcode){
 
 }
 
+function concat(str1,str2,year){
 
 
+    let temp_data = data_vis2[year-2010];
+    let concat_value= str1+"_"+str2;
+
+    // Filtering the data as per user query based  on the concat-value and year............................
+    let temp= [];
+    for (var i=0; i < temp_data.length; i++)
+    {
+        temp.push
+        ({
+            'state': temp_data[i]['State'],
+            'value': temp_data[i][concat_value]
+        })
+    }
+
+    // Adding our filtered value to the GeoJson file.......................................................
+    for (var i in all_state['features'])
+    {
+        let current_state= all_state['features'][i]['properties']['NAME'];
+        for (var j in temp)
+        {
+            if (temp[j]['state']==current_state)
+            {
+                all_state['features'][i]['properties']['value']= temp[j]['value'];
+                break;
+            }
+        }
+    }
 
 
+    state_layer = L.geoJson(all_state, {style: style});
 
+    function getColor(d) {
+        return d > 400  ? '#084594' :
+            d > 300  ? '#2171b5' :
+                d > 200  ? '#4292c6' :
+                    d > 100  ? '#6baed6' :
+                        d > 50   ? '#9ecae1' :
+                            d > 20   ? '#c6dbef' :
+                                d > 10   ?  '#deebf7' :
+                                    '#f7fbff';
+    }
 
+    function style(feature) {
 
+        return {
+            fillColor: getColor(feature.properties.value),
+            weight: 2,
+            opacity: 1,
+            color: 'white',
+            dashArray: '3',
+            fillOpacity: 0.7
+        };
+    }
+
+}
 
 
 
@@ -541,6 +663,14 @@ function updateMap(myzipcode){
        This is the code for Vis 3
  */
 
+/*
+/*
+  tags: basic
+  <p>This example demonstrates how to use batch mode commands</p>
+<p> To use a command in batch mode, we pass in an array of objects.  Then
+ the command is executed once for each object in the array. </p>
+*/
+
 let waitingTime = 0;
 
 let startYear = 1995
@@ -548,7 +678,7 @@ let startYear = 1995
 let animated = true;
 let stop = true;
 
-let wlListBaseX = 240;
+let wlListBaseX = 320;
 let wlListBaseHeight = 200;
 let cycleTime = 300;
 let parseTime = d3.timeParse("%Y");
@@ -556,14 +686,12 @@ let svg = d3.select('#vis3_svg');
 let chartWidth = svg.attr('width');
 let chartHeight = svg.attr('height');
 let yearIntervalInSVG = null;
-let marginLeft = 30
+let marginLeft = 30;
 
-let horizontalLineTop = 502
+let horizontalLineTop = 502;
 
 let yearScale = null;
 let sliderDragging = false;
-console.log("running experiment")
-
 
 // Road map, change all of the color. Done
 // Add grey area to the addition. Done
@@ -616,13 +744,15 @@ let normalizeRGB = (color) => [color[0] / 255, color[1] / 255, color[2] / 255];
 
 let dataset = [];
 
-let nodePositionOrderRect = ["other","cured", "died", "deteriorated"];
+let nodePositionOrderRect = ["cured","other", "died", "deteriorated"];
 let nodePositionOrder = ["wl"];
 let flatPoints =  null;
 
 let yearMarkPosition = {};
 let scaleMarkPosition = {};
 
+
+let additionStartX = 70;
 let nodePositionArrayLastYear = {
     cured: {
         name: "curedGrey",
@@ -634,7 +764,7 @@ let nodePositionArrayLastYear = {
         pointNumber: 0,
         color: "#c0ff5b",
         // color_rgb: normalizeRGB([192.0, 255.0, 91.0]),
-        color_rgb: normalizeRGB([230.0, 230.0, 230.0]),
+        color_rgb: normalizeRGB([241.0, 242.0, 242.0]),
         cx: 900,
         cy: 450
     },
@@ -650,7 +780,7 @@ let nodePositionArrayLastYear = {
         height: 490,
         pointNumber: 0,
         color: "#af5b5b",
-        color_rgb: normalizeRGB([230.0, 230.0, 230.0])
+        color_rgb: normalizeRGB([216.0, 216.0, 216.0])
     },
 
     // 880, 945, 1010, 1075
@@ -663,6 +793,7 @@ let nodePositionArrayLastYear = {
         height: 490,
         pointNumber: 5000,
         color: "#1f599b",
+        // color_rgb: normalizeRGB([201.0, 201.0, 201.0])
         color_rgb: normalizeRGB([230.0, 230.0, 230.0])
     },
 
@@ -675,8 +806,8 @@ let nodePositionArrayLastYear = {
         height: 490,
         pointNumber: 5000,
         color: "#1f599b",
-        color_rgb: normalizeRGB([230.0, 230.0, 230.0])
-    }
+        color_rgb: normalizeRGB([229.0, 229.0, 230.0])
+    },
 };
 
 let nodePositionArray = {
@@ -684,9 +815,9 @@ let nodePositionArray = {
     additions: {
         name: "additions",
         description: "New additions",
-        startX: 20,
+        startX: additionStartX,
         startY: 30,
-        width: 100,
+        width: 90,
         height: 470,
         pointNumber: 0,
         cx: 50,
@@ -728,7 +859,7 @@ let nodePositionArray = {
 
     died: {
         name: "died",
-        description: "died",
+        description: "died ",
         startX: 945,
         startY: 10,
         cx: 900 ,
@@ -771,7 +902,6 @@ let points = [];
 let movingPointsColors = [];
 let stayPointsColors = [];
 let allColors = [];
-
 class Point {
 
     constructor(x, y, color_rgb, currentCategory ) {
@@ -824,11 +954,11 @@ let allPoints = {
 
 let changeSlider = (waitingTime) => {
 
-    let slider = d3.select("#slider")
+    let slider = d3.select("#slider_vis3")
     let dx = waitingTime * (yearScale(parseTime('1996')) - yearScale(parseTime('1995'))) / cycleTime;
 
-    slider.attr("x1", yearScale(parseTime('' + startYear-1)) + dx)
-    slider.attr("x2", yearScale(parseTime('' + startYear-1)) + dx)
+    slider.attr("x1", yearScale(parseTime('' + startYear)) + dx)
+    slider.attr("x2", yearScale(parseTime('' + startYear)) + dx)
     slider.attr("y1", slider.attr("y1"))
     slider.attr("y2", slider.attr("y2"))
 }
@@ -904,8 +1034,8 @@ let populatePointsInRectBottomToUp = (p)=>{
 
 let leavingStartY = 10;
 let leavingStartX = 1000;
-let heightVis3 = 490;
-let widthVis3 = 100;
+let heightvis3 = 490;
+let widthvis3 = 90;
 
 let populatePointsInRectBottomToUpTotal = (nodePositionArray)=>{
 
@@ -920,15 +1050,16 @@ let populatePointsInRectBottomToUpTotal = (nodePositionArray)=>{
 
     let countTrack = pointNumberList[nodeIndex];
     let p = nodePositionArray[ nodePositionOrderRect[nodeIndex] ];
-    console.log("Where am I ")
-    console.log(pointNumberList)
+    p.labelY = 490;
+
     let pointList = allPoints[p.name];
 
+
     while (pointCount < allPointNumber) {
-        for (let y = heightVis3 + leavingStartY - 2 * pointWidth; y > leavingStartY - 2 * pointWidth; y -= pointWidth) {
+        for (let y = heightvis3 + leavingStartY - 2 * pointWidth; y > leavingStartY - 2 * pointWidth; y -= pointWidth) {
             if (pointCount > allPointNumber ) return;
 
-            for (let x = leavingStartX - 2 * pointWidth; x < widthVis3 + leavingStartX - 2 * pointWidth; x += pointWidth ) {
+            for (let x = leavingStartX - 2 * pointWidth; x < widthvis3 + leavingStartX - 2 * pointWidth; x += pointWidth ) {
 
                 // I want a tons of points on the line
                 pointList.push(new Point(x, y, p.color_rgb,p.name));
@@ -937,10 +1068,9 @@ let populatePointsInRectBottomToUpTotal = (nodePositionArray)=>{
                 if (pointCount > countTrack) {
                     nodeIndex +=1;
                     p =  nodePositionArray[ nodePositionOrderRect[nodeIndex] ];
-                    console.log( "name is " + p.name)
                     pointList = allPoints[p.name];
+                    p.labelY = y;
                     countTrack += p.pointNumber;
-                    console.log( "count Track is " + countTrack)
                 }
             }
 
@@ -949,7 +1079,7 @@ let populatePointsInRectBottomToUpTotal = (nodePositionArray)=>{
 };
 
 
-let populatePointsInRectBottomToUpLeavingGrey = (nodePositionArray)=>{
+let populatePointsInRectBottomToUpLeavingGrey = (nodePositionArrayLastYear)=>{
 
     let pointCount = 0;
 
@@ -967,28 +1097,26 @@ let populatePointsInRectBottomToUpLeavingGrey = (nodePositionArray)=>{
     let pointList = allPoints[p.name];
 
     while (pointCount < allPointNumber) {
-        for (let y = heightVis3 + leavingStartY - 2 * pointWidth; y > leavingStartY - 2 * pointWidth; y -= pointWidth) {
+        for (let y = heightvis3 + leavingStartY - 2 * pointWidth; y > leavingStartY - 2 * pointWidth; y -= pointWidth) {
             if (pointCount > allPointNumber ) return;
 
-            for (let x = leavingStartX - 2 * pointWidth; x < widthVis3 + leavingStartX - 2 * pointWidth; x += pointWidth ) {
+            for (let x = leavingStartX - 2 * pointWidth; x < widthvis3 + leavingStartX - 2 * pointWidth; x += pointWidth ) {
 
-                // I want a tons of points on the line
                 pointList.push(new Point(x, y, p.color_rgb,p.name));
                 pointCount++;
                 if (pointCount > allPointNumber) return
+
                 if (pointCount > countTrack) {
                     nodeIndex +=1;
                     p =  nodePositionArrayLastYear[ nodePositionOrderRect[nodeIndex] ];
-                    console.log( "name is " + p.name)
                     pointList = allPoints[p.name];
                     countTrack += p.pointNumber;
-                    console.log( "count Track is " + countTrack)
                 }
             }
-
         }
     }
 };
+
 
 // another simple way to populate WL Points.
 // What if we has the same base height and weight, and go from there
@@ -1024,6 +1152,7 @@ let populatePointsInRectWL = (p, pAdditions)=>{
         }
     }
 }
+
 
 
 let populateWlPoints = (p, pAdditions, colors)=>{
@@ -1241,8 +1370,57 @@ let getEndOfYearWlLength = (nodes) =>
     nodes["wl"].pointNumber + nodes["additions"].pointNumber - nodes["cured"].pointNumber - nodes["died"].pointNumber -
     nodes["deteriorated"].pointNumber - nodes["other"].pointNumber ;
 
-let b = true
+let fontFamily = "Georgia"
 
+class WlLabelController{
+
+    constructor(label, lastyearWl, thisyearWl, cycleTime){
+        this.label = label;
+        this.lastyearWl = lastyearWl;
+        this.thisyearWl = thisyearWl;
+        this.wlShown = lastyearWl;
+        this.difference = thisyearWl - lastyearWl;
+        this.cycleTime = cycleTime;
+        this.delta = this.difference/ this.cycleTime;
+        this.updateTickNumber = 30;
+        this.tickTracker = -1;
+
+    }
+
+    reset(lastyearWl, thisyearWl){
+        this.lastyearWl = lastyearWl;
+        this.thisyearWl = thisyearWl;
+        this.difference = thisyearWl - lastyearWl;
+        this.delta = this.difference/ this.cycleTime;
+        this.wlShown = this.lastyearWl;
+        this.tickTracker = -1;
+    }
+
+    renderLabelContent(){
+
+        if (this.tickTracker === cycleTime){
+            return
+        }
+
+        if (this.tickTracker % 30 === 0) {
+            this.label.textContent = `Currently waiting: ${ Math.floor(this.wlShown)}`;
+        }
+
+    }
+
+    updateWl(){
+        this.wlShown = this.delta+ this.wlShown
+        this.tickTracker += 1;
+    }
+
+    stop(){
+        this.delta = 0;
+    }
+}
+
+let wlLabelController = null;
+
+// Main function. It also add more element to the screen
 let computePointsAndColor = () =>{
     waitingTime = 0;
     points= [];
@@ -1288,14 +1466,15 @@ let computePointsAndColor = () =>{
     // }
 
     populatePointsInRectBottomToUpTotal(nodePositionArray);
+    populatePointsInRectBottomToUpLeavingGrey(nodePositionArrayLastYear);
     console.log(allPoints)
 
     // Last year
-    for (let index in nodePositionOrderRect){
-        let key = nodePositionOrderRect[index];
-        let p = nodePositionArrayLastYear[key];
-        populatePointsInRectBottomToUp(p, colors)
-    }
+    // for (let index in nodePositionOrderRect){
+    //     let key = nodePositionOrderRect[index];
+    //     let p = nodePositionArrayLastYear[key];
+    //     populatePointsInRectBottomToUp(p, colors)
+    // }
 
     let leavingPointsList = [];
     let reverseStartPoint = allPoints["wl"].length;
@@ -1320,17 +1499,22 @@ let computePointsAndColor = () =>{
     // Assign
     additionToWL(allPoints['additions'], allPoints['wl'], s, allPoints["wlAdditions"] ,allPoints['additions'].length)
     points =  allPoints["leavingPointGrey"].concat(allPoints["additionsGrey"].concat(allPoints["wl"].concat(allPoints["additions"])));
+    points = points.concat(allPoints["curedGrey"]);
+    points = points.concat(allPoints["diedGrey"]);
+    points = points.concat(allPoints["otherGrey"]);
+    points = points.concat(allPoints["deterioratedGrey"]);
+    console.log(allPoints["curedGrey"].length);
+    console.log(allPoints["diedGrey"].length);
+    console.log(allPoints["otherGrey"].length);
 
     console.log("All point length" + points.length)
     console.log("addition grey is " + allPoints['additionsGrey'].length)
     allPoints.movingPoints = points.filter( p =>  (p.currentX !== p.targetX|| p.currentY !== p.targetY) );
     allPoints.stayPoints =  points.filter( p =>  (p.direction[0] === 0 && p.direction[1] === 0) );
     console.log(allPoints);
-    //console.log( allPoints["wl"].filter(p => p.futureCategory !==
 
     // Initialize flatPoints
     flatPoints = Array(points.length * 2); // stay first, and movement first
-
 
     // Colors
     let updatePointBase = allPoints.stayPoints.length * 2;
@@ -1353,87 +1537,116 @@ let computePointsAndColor = () =>{
         allColors[colorBase + 3*i] = p.color_rgb[0];
         allColors[colorBase + 3*i + 1] = p.color_rgb[1];
         allColors[colorBase + 3*i + 2] = p.color_rgb[2]
-
     }
-    // console.log(allPoints.movingPoints);
-    // console.log(colors.length)
 
+    // Add the label
     for (let key in nodePositionArray) {
         let p = nodePositionArray[key];
-        let node = document.createElement("div");
-        node.classList.add("node");
-        // node.setAttribute("style", `width:${p.width}px; height:${p.height}px; left:${p.startX}px;
-        // top:${p.startY}px`);
-        node.setAttribute("id", key);
+        let node = document.getElementById(key);
+        if (node=== null){
+            node = document.createElement("div");
+            node.classList.add("node");
+            node.setAttribute("id", key);
 
-        if (p.name === "additions"){
-            node.style.width = `130px`;
-            node.style.left = `${p.startX-25}px`;
-        } else if (p.name === "wl") {
-            node.style.width = `200px`;
-            node.style.left = `${p.startX- 30}px`;
-        }
-        else {
-            node.style.width = `65px`;
-            node.style.left = `${p.startX-6}px`;
-        }
+            if (p.name === "additions"){
+                node.style.width = `120px`;
+                node.style.left = `${p.startX-20}px`;
+                node.style.height = `30px`;
+                node.style.top = `${p.startY + p.height + 2}px`;
+                node.style.textAlign = `center`;
+            } else if (p.name === "wl") {
+                node.style.width = `200px`;
+                node.style.left = `${p.startX- 40}px`;
+                node.style.height = `30px`;
+                node.style.top = `${p.startY + p.height + 2}px`;
+                node.style.textAlign = `center`;
+            }
+            else {
+                node.style.width = `120px`;
+                node.style.left = `${leavingStartX + 100}px`;
+                node.style.top = `${p.labelY - 20}px`;
+                node.style.textAlign = `left`;
+            }
 
-        node.style.height = `30px`;
-        node.style.textAlign = `center`;
-        node.style.top = `${p.startY + p.height + 2}px`;
-        // node.style.fontStyle.
-        node.style.color = "black";
-        // node.style.borderColor = "blue";
-        node.style.borderWidth= "0px";
-        // node.style.strokeOpacity = '0%';
-        node.textContent = p.description;
-        main.insertAdjacentElement("afterbegin", node);
-        console.log(node)
+            node.style.height = `30px`;
+            // node.style.fontStyle.
+            node.style.color = "black";
+            // node.style.borderColor = "blue";
+            node.style.borderWidth= "0px";
+            // node.style.strokeOpacity = '0%';
+            if (p.name === "wl"){
+                node.textContent = `${p.description}`
+            }else{
+                node.textContent = `${p.description}`
+            }
+
+            node.style.fontFamily = fontFamily;
+            main.insertAdjacentElement("afterbegin", node);
+            node.style.fontSize= `14px`;
+        }else{
+            node.style.top=`${p.labelY - 20}px`;
+
+            if (p.name === "wl"){
+                node.textContent = `${p.description}`
+            }else {
+                node.textContent = `${p.description}`
+            }
+        }
     }
-    // initial. if exists then just change
-    // let node = document.getElementById("title");
-    // if(node === null){
-    //     let node = document.createElement("div")
-    //     node.classList.add("node");
-    //     node.style.color = "black";
-    //     // node.style.borderColor = "blue";
-    //     node.style.borderWidth= "0px";
-    //     node.setAttribute ("id", "title");
-    //     node.textContent = `Waiting list change in ${startYear}`;
-    //     node.style.width = `600px`;
-    //     node.style.height = `50px`;
-    //     node.style.left = `300px`;
-    //     node.style.top = `500px`;
-    //     node.style.fontSize = "40px";
-    //     // main.insertAdjacentElement("afterbegin", node);
-    // }
-    // else{
-    //     node.textContent = `Waiting list change in ${startYear}`;
-    // }
 
-    // To-Do List
-    // Add the line below the bar y around 370, x around 180
+    for (let key in nodePositionOrderRect) {
+        let nodeKey = nodePositionOrderRect[key]
 
-    // add the tick one by one based on the past year. I need to add an array to memorize the x position there
+        let p = nodePositionArray[nodeKey];
+        let node = document.getElementById(nodeKey+"_number");
+        if (node=== null){
+            node = document.createElement("div");
+            node.classList.add("node");
+            node.setAttribute("id", nodeKey+"_number");
 
-    // add the year below it. (Think the font might be small. I can just use 95 - 15.
+            node.style.width = `120px`;
+            node.style.left = `${leavingStartX + 140}px`;
+            node.style.top = `${p.labelY - 20}px`;
+            node.style.textAlign = `left`;
 
-    // let markForYear = document.getElementById("timeline");
-    // if(markForYear === null){
-    //
-    //     let markForYear = document.createElement("div");
-    //     markForYear.classList.add("horizontalline");
-    //     markForYear.style.height = `2px`;
-    //     markForYear.style.width = `600px`;
-    //     markForYear.style.left = `180px`;
-    //     markForYear.style.top = `${horizontalLineTop}px`;
-    //     markForYear.style.position = "absolute"
-    //     markForYear.setAttribute("id", "timeline");
-    //
-    //     markForYear.style.background = "black";
-    //     main.insertAdjacentElement("afterbegin", markForYear);
-    //     console.log(markForYear)
-    // }
+            node.style.height = `30px`;
+            // node.style.fontStyle.
+            node.style.color = "black";
+            // node.style.borderColor = "blue";
+            node.style.borderWidth= "0px";
+            // node.style.strokeOpacity = '0%';
+            node.textContent = `${p.pointNumber}`
+            node.style.fontFamily = fontFamily;
+            main.insertAdjacentElement("afterbegin", node);
+            node.style.fontSize= `14px`;
+        }else{
+            node.style.top=`${p.labelY - 20}px`;
+            node.textContent = `${p.pointNumber}`
+        }
+    }
+
+
+
+    // The label on the right hand bottom
+    let patientLeftLabel = document.getElementById("patientLeft");
+    if (patientLeftLabel === null){
+        patientLeftLabel = document.createElement("div")
+        patientLeftLabel.classList.add("node")
+        patientLeftLabel.setAttribute("id", "patientLeft")
+        patientLeftLabel.style.left = "993px";
+        patientLeftLabel.style.fontSize= `14px`;
+        patientLeftLabel.style.top = "502px";
+        patientLeftLabel.style.width = "100px";
+        patientLeftLabel.style.height = "40px";
+        patientLeftLabel.style.textAlign = "center";
+        patientLeftLabel.style.color = "black";
+        patientLeftLabel.style.borderWidth= "0px";
+        patientLeftLabel.style.fontFamily = "Georgia";
+        patientLeftLabel.textContent = `Patients left ${nodePositionArray["died"].pointNumber +
+        nodePositionArray["deteriorated"].pointNumber + nodePositionArray["cured"].pointNumber +
+        nodePositionArray["other"].pointNumber}`;
+        main.insertAdjacentElement("afterbegin", patientLeftLabel);
+    }
 
     // Render vertical line onto it
     for (let i = 1995; i < startYear; i++){
@@ -1469,6 +1682,7 @@ let computePointsAndColor = () =>{
             labelForYear.textContent = `${ i.toString().slice(2,4) }`;
             labelForYear.style.borderWidth= "0px";
             labelForYear.style.position = "absolute";
+            labelForYear.style.fontFamily = fontFamily;
             main.insertAdjacentElement("afterbegin", labelForYear);
         }
     }
@@ -1478,35 +1692,56 @@ let computePointsAndColor = () =>{
     let label15 = document.getElementById("15_label");
 
 
-
-    let yScale = document.getElementById("yScale");
-    if(yScale === null){
-        let yScale = document.createElement("div");
-        yScale.classList.add("verticalline");
-        yScale.setAttribute("id", "yScale");
-        yScale.style.width = `2px`;
-        yScale.style.height = `400px`;
-        yScale.style.left = `110px`;
-        yScale.style.top = `100px`;
-        yScale.style.background = "black";
-        yScale.style.position = "absolute";
-        main.insertAdjacentElement("afterbegin", yScale);
-    }
+    // let yScale = document.getElementById("yScale");
+    // if(yScale === null){
+    //     let yScale = document.createElement("div");
+    //     yScale.classList.add("verticalline");
+    //     yScale.setAttribute("id", "yScale");
+    //     yScale.style.width = `2px`;
+    //     yScale.style.height = `400px`;
+    //     yScale.style.left = `40px`;
+    //     yScale.style.top = `100px`;
+    //     yScale.style.background = "black";
+    //     yScale.style.position = "absolute";
+    //     main.insertAdjacentElement("afterbegin", yScale);
+    // }
 
     let markValue = Object.keys(scaleMarkPosition);
-    for (let i = 0; i < markValue.length; i++){
-        let value = markValue[i];
+
+    // calculate the highest one. No need to run it at any time
+    // addition number
+    // run an algorithm to determine the closet number in the mark value
+    // first sort and run
+    // we will use the new key to run
+
+    // in place sort
+    let additionNumber = nodePositionArray["additions"].pointNumber;
+    markValue.sort( (a,b) => parseInt(a) - parseInt(b) );
+    let newMarkValue = [];
+    let tempMin = Infinity;
+    for (let i =0; i < markValue.length; i++){
+        let a = Math.abs(additionNumber - parseInt(markValue[i]));
+        if (a < tempMin){
+            tempMin = a
+        }else{
+            newMarkValue = markValue.slice(0, i+1);
+            break;
+        }
+    }
+
+    for (let i = 0; i < newMarkValue.length; i++){
+        let value = newMarkValue[i];
         let tickForValue = document.getElementById(`${value}_tick`);
         if (tickForValue === null){
             tickForValue = document.createElement("div");
             tickForValue.classList.add("tick");
-            tickForValue.style.left = `1140px`;
-            tickForValue.style.top = `${scaleMarkPosition[value]}px`;
-            tickForValue.style.width = `5px`;
-            tickForValue.style.height = `2px`;
+            tickForValue.style.left = `${additionStartX - 14}px`;
+            tickForValue.style.top = `${scaleMarkPosition[value] -2}px`;
+            tickForValue.style.width = `4px`;
+            tickForValue.style.height = `1px`;
             tickForValue.setAttribute("id", `${value}_tick`);
             tickForValue.style.background = "black";
-            tickForValue.style.position = "absolute"
+            tickForValue.style.position = "absolute";
             // tickForYear .style.fontSize = "8px";
             // tickForYear .textContent = `${ i.toString().slice(2,4) }`;
             // tickForYear.style.borderWidth= "0px";
@@ -1514,25 +1749,113 @@ let computePointsAndColor = () =>{
         }
     }
 
-    for (let i = 0; i < markValue.length; i++){
-        let value = markValue[i];
-        let labelForYear = document.getElementById(`${value}_label`);
-        if (labelForYear === null){
-            labelForYear = document.createElement("div");
-            labelForYear.classList.add("label");
-            labelForYear.style.left = `1147px`;
-            labelForYear.style.top = `${scaleMarkPosition[value] - 2}px`;
-            // labelForYear.style.width = `5px`;
-            // labelForYear.style.height = `2px`;
-            labelForYear.style.position = "absolute";
-            labelForYear.setAttribute("id", `${value}_label`);
-
-            labelForYear .style.fontSize = "8px";
-            labelForYear .textContent = `${ value }`;
-            labelForYear.style.borderWidth= "0px";
-            main.insertAdjacentElement("afterbegin", labelForYear );
+    for (let i = 0; i < newMarkValue.length; i++){
+        let value = newMarkValue[i];
+        let labelForValue = document.getElementById(`${value}_label`);
+        if (labelForValue === null){
+            labelForValue = document.createElement("div");
+            labelForValue.classList.add("label");
+            labelForValue.style.left = `${additionStartX-43}px`;
+            labelForValue.style.top = `${scaleMarkPosition[value]-10}px`;
+            labelForValue.style.position = "absolute";
+            labelForValue.setAttribute("id", `${value}_label`);
+            labelForValue .style.fontSize = "9px";
+            labelForValue .textContent = `${ value }`;
+            labelForValue.style.fontFamily = fontFamily;
+            labelForValue.style.borderWidth= "0px";
+            main.insertAdjacentElement("afterbegin", labelForValue );
         }
     }
+
+    let title = document.getElementById("title")
+    if (title === null){
+        title = document.createElement("div")
+        title.classList.add("titlevis3")
+        title.setAttribute("id", "title")
+        title.style.left = `350px`;
+        title.style.top = `100px`;
+        title.style.textAlign = `center`;
+        title.style.position = "absolute";
+        title.style.fontFamily = fontFamily;
+        title.textContent = `Waiting list change in ${startYear}`;
+        title.style.width = "500px";
+        title.style.height = "100px";
+        title.style.fontSize = "40px";
+        title.style.borderWidth= "0px";
+        main.insertAdjacentElement("afterbegin", title );
+    }else{
+        title.textContent = `Waiting list change in ${startYear}`
+    }
+
+    let wlnumberLabel = document.getElementById("wlnumber")
+    if (wlnumberLabel === null){
+        wlnumberLabel = document.createElement("div")
+        wlnumberLabel .classList.add("wlnumber")
+        wlnumberLabel .setAttribute("id", "wlnumber")
+        wlnumberLabel.style.left = `460px`;
+        wlnumberLabel.style.top = `170px`;
+        wlnumberLabel.style.textAlign = `center`;
+        wlnumberLabel.style.position = "absolute";
+        wlnumberLabel.style.fontFamily = fontFamily;
+        // wlnumberLabel.textContent = `Currently on waiting list: ${nodePositionArrayLastYear["wl"].pointNumber}`;
+        wlnumberLabel.style.width = "300px";
+        wlnumberLabel.style.height = "50px";
+        wlnumberLabel.style.fontSize = "20px";
+        wlnumberLabel.style.borderWidth= "0px";
+        main.insertAdjacentElement("afterbegin", wlnumberLabel);
+    }
+    if (wlLabelController === null){
+        wlLabelController = new WlLabelController(wlnumberLabel, nodePositionArray["wl"].pointNumber,
+            getEndOfYearWlLength(nodePositionArray)
+            , cycleTime)
+    }
+    else{
+        wlLabelController.reset(nodePositionArray["wl"].pointNumber, getEndOfYearWlLength(nodePositionArray))
+    }
+
+    // let addingLabel = document.getElementById("addingTotalNumber")
+    // if (addingLabel === null){
+    //     addingLabel = document.createElement("div")
+    //     addingLabel .classList.add("addingTotalNumber")
+    //     addingLabel .setAttribute("id", "addingTotalNumber")
+    //     addingLabel.style.left = `340px`;
+    //     addingLabel.style.top = `180px`;
+    //     addingLabel.style.textAlign = `center`;
+    //     addingLabel.style.position = "absolute";
+    //     addingLabel.style.fontFamily = fontFamily;
+    //     addingLabel.textContent = `Total new adding: ${nodePositionArray["additions"].pointNumber}`;
+    //     addingLabel.style.width = "250px";
+    //     addingLabel.style.height = "50px";
+    //     addingLabel.style.fontSize = "20px";
+    //     addingLabel.style.borderWidth= "0px";
+    //     main.insertAdjacentElement("afterbegin", addingLabel);
+    // }else{
+    //     addingLabel.textContent = `Total new adding: ${nodePositionArray["additions"].pointNumber}`
+    // }
+
+    // let leavingLabel = document.getElementById("leavingTotalNumber")
+    // if (leavingLabel=== null){
+    //     leavingLabel= document.createElement("div")
+    //     leavingLabel.classList.add("leavingTotalNumber")
+    //     leavingLabel.setAttribute("id", "leavingTotalNumber")
+    //     leavingLabel.style.left = `640px`;
+    //     leavingLabel.style.top = `180px`;
+    //     leavingLabel.style.textAlign = `center`;
+    //     leavingLabel.style.position = "absolute";
+    //     leavingLabel.style.fontFamily = fontFamily;
+    //     leavingLabel.textContent = `Total patients left: ${nodePositionArray["died"].pointNumber +
+    //         nodePositionArray["deteriorated"].pointNumber + nodePositionArray["cured"].pointNumber +
+    //         nodePositionArray["other"].pointNumber}`;
+    //     leavingLabel.style.width = "250px";
+    //     leavingLabel.style.height = "50px";
+    //     leavingLabel.style.fontSize = "20px";
+    //     leavingLabel.style.borderWidth= "0px";
+    //     main.insertAdjacentElement("afterbegin", leavingLabel);
+    // }
+    //     leavingLabel.textContent = `Total patients left: ${nodePositionArray["died"].pointNumber +
+    //         nodePositionArray["deteriorated"].pointNumber + nodePositionArray["cured"].pointNumber +
+    //         nodePositionArray["other"].pointNumber
+    //     }`;
 
 
 };
@@ -1571,7 +1894,8 @@ let updateNumber = (year) =>{
         }
     }
 
-    // console.log(nodePositionArray)
+    console.log("last year data")
+    console.log(nodePositionArray)
 }
 
 let calculateYearTickX = (dset) =>{
@@ -1584,10 +1908,10 @@ let calculateYearTickX = (dset) =>{
 
 let calculateNumberScale = (dset) =>{
 
-    let highestTick = 22000;
+    let highestTick = 37000;
     let tickNumber = 20
-    let numberInterval = 22000 / tickNumber;
-    let totalHeight = highestTick / 55;
+    let numberInterval = 37000 / tickNumber;
+    let totalHeight = highestTick / 90;
     let interval = totalHeight / tickNumber;
     let baseHeight = 500;
     for (let i = 0; i < tickNumber; i++ ){
@@ -1611,15 +1935,20 @@ let changeSlidePosition = (slideId, x) => {
 let createChart = (dset) =>{
 
     let formattedData = []
+    dset.sort((a,b) => a.time - b.time );
+    dset.forEach( (d, i) =>{
+            let newd = {}
+            console.log(d.time);
+            if (d.time + "" !== "1994") {
+                newd["time"] = parseTime(d.time + "");
+                newd["wl"] = parseInt( dset[i-1].wl);
+                newd["donars"] = parseInt(d.donars);
+                formattedData.push(newd)
+            }
+        }
+    );
 
-    dset.forEach( d =>{
-        let newd = {}
-        newd["time"] = parseTime(d.time + "")
-        newd["wl"] = parseInt(d.wl)
-        formattedData.push(newd)
-    } )
-
-    let x = d3.scaleTime().range([40, chartWidth-30]);
+    let x = d3.scaleTime().range([50, chartWidth-30]);
     yearScale = x;
     let y = d3.scaleLinear().range([chartHeight-20, 10]);
     let line = d3.line()
@@ -1635,20 +1964,36 @@ let createChart = (dset) =>{
     console.log(yearExtent);
 
     x.domain(yearExtent);
-    y.domain([30000, numberExtent[1]]);
+    y.domain([0, numberExtent[1]]);
+
     svg.append("path")
         .datum(formattedData)
         .attr("stroke", "steelblue")
         .attr("stroke-width", 1.5)
         .attr("fill", "none")
-        .attr("d", line);
+        .attr("d", line)
+
+    let line2 = d3.line()
+        .x(d=>x(d.time))
+        .y(d=>y(d.donars));
+
+    svg.append("path")
+        .datum(formattedData)
+        .attr("stroke", "steelblue")
+        .attr("stroke-width", 1.5)
+        .attr("fill", "none")
+        .attr("d", line2);
+
+    console.log(line2)
 
     svg.append("g")
+        .style("font-family", fontFamily)
         .attr("transform", `translate(0, ${chartHeight - 20} )`)
         .call(d3.axisBottom(x).ticks(24));
 
     svg.append("g")
-        .attr("transform", `translate(${40},` + 0+ ")")
+        .style("font-family", fontFamily)
+        .attr("transform", `translate(${50},` + 0+ ")")
         .call(d3.axisLeft(y));
 
     let dragStarted = (d) =>{
@@ -1659,7 +2004,7 @@ let createChart = (dset) =>{
     let dragged = (d) => {
         let x = d3.event.x
         let y = d3.event.y
-        changeSlidePosition("slider", x )
+        changeSlidePosition("slider_vis3", x )
     }
 
     let dragended = (d) =>{
@@ -1674,13 +2019,13 @@ let createChart = (dset) =>{
 
         if (x < yearScale(parseTime("1994"))){
             // move slide to 1994
-            changeSlidePosition("slider", positionOfAYear(1994))
+            changeSlidePosition("slider_vis3", positionOfAYear(1994))
 
         } else if (x > yearScale(parseTime("2018"))) {
             // move slide to 2018
-            changeSlidePosition("slider", positionOfAYear(2018))
+            changeSlidePosition("slider_vis3", positionOfAYear(2018))
         }else {
-            for (let i = 1994; i < 2019; i ++){
+            for (let i = 1995; i < 2019; i ++){
 
                 let currentDistance = Math.abs(x - positionOfAYear(i));
                 if (currentDistance < prevDistance){
@@ -1688,9 +2033,10 @@ let createChart = (dset) =>{
                 }else{
                     // decide that the last one is the closest one
                     // move slide to that year
-                    changeSlidePosition("slider", positionOfAYear(i-1))
-                    console.log(i -1);
+                    changeSlidePosition("slider_vis3", positionOfAYear(i-1))
+                    console.log("The effect of change slider is " +  i -1);
                     startYear = i-1;
+
                     updateNumber(startYear);
                     computePointsAndColor();
                     break
@@ -1707,7 +2053,7 @@ let createChart = (dset) =>{
         .on('end', dragended);
 
     svg.append('line')
-        .attr("id", "slider")
+        .attr("id", "slider_vis3")
         .attr("x1", x(parseTime('1994')))
         .attr("y1", 0)
         .attr('x2', x(parseTime('1994')))
@@ -1718,7 +2064,6 @@ let createChart = (dset) =>{
 
 
     yearIntervalInSVG = x(parseTime('1996')) - x(parseTime('1995'))
-
 
 };
 
@@ -1734,7 +2079,8 @@ let data = d3.csv('./vis3/waitlist-change.csv',
             cured: d.Cured,
             other: d.Other,
             additions: d.Additions,
-            wl: parseInt(d["WL Length"])
+            wl: parseInt(d["WL Length"]),
+            donars: parseInt(d["Donor Number"])
         }
 
     } , (err, dset) =>{
@@ -1921,21 +2267,37 @@ let run = (dataset) => {
 
     regl.frame((time) => {
         regl.clear({
-            color: [1.0, 1.0, 1.0, 1]
+            color: [240/255, 240/255, 240/255, 1]
         });
 
         if (waitingTime > cycleTime && startYear !== 2018) {
             startYear += 1;
 
-            updateNumber(startYear);
-            computePointsAndColor();
+            if (startYear !== 2018) {
+                updateNumber(startYear);
+                computePointsAndColor();
+            }else{
+                if (wlLabelController !== null){
+                    wlLabelController.stop()
+                }
+            }
         }
+
         if (!sliderDragging)
             if (startYear !== 2018)
                 changeSlider(waitingTime);
 
+
+        // Update label
+        // wlnumberLabel
+        if (wlLabelController !== null){
+            wlLabelController.updateWl();
+            wlLabelController.renderLabelContent();
+        }
+
         if (!stop) {
             waitingTime += 1;
+
         }
 
         // This tells regl to execute the command once for each object
@@ -1945,9 +2307,3 @@ let run = (dataset) => {
         })
     })
 }
-
-function runAgain() {
-    stop = false
-}
-
-

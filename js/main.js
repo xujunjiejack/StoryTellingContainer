@@ -11,6 +11,11 @@ var last_zipcode_state;
 var user_state_layer;
 var georgia_layer;
 var california_layer;
+var check_val=2010;
+var blood_string= "ABO"
+var bmi_string="0"
+var k=0;
+var check_value= 0;
 
 function style(feature) {
     return {
@@ -26,7 +31,7 @@ var info = L.control({
     position : 'topright'
 });
 
-var map = L.map('map', {zoomControl: false}).setView([37.8, -96], 5);
+var map = L.map('map', {zoomControl: false}).setView([37.8, -100], 5);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamVmZmV2ZXJoYXJ0MzgzIiwiYSI6IjIwNzVlOTA3ODI2MTY0MjM3OTgxMTJlODgzNjg5MzM4In0.QA1GsfWZccIB8u0FbhJmRg', {
   attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -43,85 +48,16 @@ function padExtent(e, p) {
     return ([e[0] - p, e[1] + p]);
 }
 
-var margin = {
-  top: 20,
-  right: 10,
-  bottom: 20,
-  left: 20
-};
 
-var width = 300;
-var height = 300;
-var domainwidth = width - margin.left - margin.right;
-var domainheight = height - margin.top - margin.bottom;
-
-
-function createScatterPlot(data, selected){
-  var svg_scatter = d3.select('.scatterplot_box')
-                      .append("svg")
-                      .attr('class','vis1')
-                      .attr("width", width + margin.left + margin.right)
-                      .attr("height", height + margin.top + margin.bottom);
-  var g_scatter = svg_scatter.append("g")
-                    .attr("transform", "translate(" + margin.top + "," + margin.top + ")");
-
-   var x = d3.scaleLinear()
-    .domain(padExtent(d3.extent(data,function(d){ return d.transplant_rate_center;})))
-    .range(padExtent([0, width]));
-
-  var y = d3.scaleLinear()
-    .domain(padExtent(d3.extent(data,function(d){ return d.death_rate_center;})))
-    .range(padExtent([height, 0]));
-
-  var size_extent = d3.extent(data,function(d){ return d.wait_list;})
-
-  var sizeScale = d3.scaleSqrt()
-                        .domain(size_extent)
-                        .range([5,15]);
-
-  g_scatter.append("rect")
-          .attr("width", width + margin.left + margin.right)
-          .attr("height", height + margin.top + margin.bottom)
-          .attr("fill", "#F6F6F6")
-          .style("fill-opacity",0.2);
-
-  g_scatter.selectAll("circle")
-      .data(data)
-      .enter().append("circle")
-      .attr("class", "dot")
-      .attr("r", function(d) {return sizeScale(d.wait_list);})
-      .attr("cx", function(d) { console.log(d.transplant_rate_center); return x(d.transplant_rate_center); })
-      .attr("cy", function(d) { console.log(d.death_rate_center); return y(d.death_rate_center); })
-      .style("fill", function(d) {
-        if(selected.LatLng == d.LatLng){
-          return 'orange';
-        }
-        else{ return 'blue';}})
-      .style("fill-opacity", 0.5)
-      .style("stroke",'black')
-      .style("stroke-width", 1);
-
-  g_scatter.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + y.range()[0] / 2 + ")")
-      .call(d3.axisBottom(x).ticks(5));
-
-    g_scatter.append("g")
-      .attr("class", "y axis")
-      .attr("transform", "translate(" + x.range()[1] / 2 + ", 0)")
-      .call(d3.axisLeft(y).ticks(5));
-   
-
-}
 
 d3.queue()
     .defer(d3.csv, './data/Viz1.csv', function(row) {
        var center = {center_name: row['Center Name'], LatLng: [+row['Latitude'],+row['Longitude']], wait_list: +row['Waiting List'],
        death_rate_center: +row['Death Rate (center)'],death_rate_nation: +row['Death Rate (nation)'],
        transplant_rate_center: +row['Transplant Rate (center)'], transplant_rate_nation: +row['Transplant Rate (nation)'],
-       all_time: +row['All Time'], less_than_30: +row['< 30 Days'],days_30_to_90: +row['30 to < 90 Days'], days_90_to_6_months: +row['90 Days to < 6 Months'],
-       months_6_to_1_year: +row['6 Months to < 1 Year'], year_1_to_2: +row['1 Year to < 2 Years'],year_2_to_3: +row['2 Years to < 3 Years'],
-       year_3_to_5: +row['3 Years to < 5 Years'],year_5_or_more: +row['5 or More Years'],center_code: +row['Center Code']};
+       all: +row['All Time'], less_than_30_time: +row['< 30 Days'],days_30_to_90_time: +row['30 to < 90 Days'], days_90_to_6_months_time: +row['90 Days to < 6 Months'],
+       months_6_to_1_year_time: +row['6 Months to < 1 Year'], year_1_to_2_time: +row['1 Year to < 2 Years'],year_2_to_3_time: +row['2 Years to < 3 Years'],
+       year_3_to_5_time: +row['3 Years to < 5 Years'],year_5_or_more_time: +row['5 or More Years'],center_code: +row['Center Code']};
 
        centerFeatures.push(turf.point([+row['Longitude'], +row['Latitude']], center));
        return center;
@@ -132,9 +68,19 @@ d3.queue()
     .defer(d3.json,'./data/states.json')
     .defer(d3.json,'./data/shape_GA.geoJson')
     .defer(d3.json,'./data/shape_CA.geoJson')
+    .defer(d3.json,'./data/shape_AL.geojson')
+    .defer(d3.csv, './data/2010-State-Bloodtype-BMI.csv')
+    .defer(d3.csv, './data/2011-State-Bloodtype-BMI.csv')
+    .defer(d3.csv, './data/2012-State-Bloodtype-BMI.csv')
+    .defer(d3.csv, './data/2013-State-Bloodtype-BMI.csv')
+    .defer(d3.csv, './data/2014-State-Bloodtype-BMI.csv')
+    .defer(d3.csv, './data/2015-State-Bloodtype-BMI.csv')
+    .defer(d3.csv, './data/2016-State-Bloodtype-BMI.csv')
+    .defer(d3.csv, './data/2017-State-Bloodtype-BMI.csv')
+    .defer(d3.csv, './data/2018-State-Bloodtype-BMI.csv')
     .await(readyToDraw);
 
-function readyToDraw(error, centers,zipcodes,states,georgia_data,california_data) {
+function readyToDraw(error, centers,zipcodes,states,georgia_data,california_data, albama_data,data_2010, data_2011, data_2012, data_2013, data_2014, data_2015, data_2016, data_2017, data_2018) {
     if(error) {
         console.error('Error while loading datasets.');
         console.error(error);
@@ -146,31 +92,137 @@ function readyToDraw(error, centers,zipcodes,states,georgia_data,california_data
     states_data = states;
     var centerCollection = turf.featureCollection(centerFeatures);
     center_layer = L.geoJson(centerCollection);
-    state_layer = L.geoJson(states);
     georgia_layer = L.geoJson(georgia_data, {style:style});
     california_layer = L.geoJson(california_data, {style:style});
+    alabama_layer = L.geoJson(albama_data,{style:style});
 
+    var all_data = [data_2010, data_2011, data_2012, data_2013, data_2014, data_2015, data_2016, data_2017, data_2018];
+    data = all_data;
+    all_state = states;
     updateMap('30318');
+    concat(blood_string,bmi_string,check_val);
 
+    var container = d3.select('#scroll');
+    var graphic = container.select('.scroll__graphic');
+    var chart = graphic.select('.chart');
+    var text = container.select('.scroll__text');
+    var step = text.selectAll('.step');
 
     var inputBox = $("#probleminput");
     var submitButton = $("#problemsubmit");
     var c=0;
 
-    submitButton.click(function(){
-        c++;
-        var getval = ($("#zip").val()?$("#zip").val():alert('please fill the text field'))
-        console.log(getval)
-        var x = {index: 1}
-        if(c>=1){
-          console.log(subset_layer)
-          map.removeLayer(subset_layer)
-        };
-        updateMap(getval);
-        handleStepEnter(x)
+submitButton.click(function(){
+    c++;
+    var getval = ($("#zip").val()?$("#zip").val():alert('please fill the text field'))
+    console.log(getval)
+    var x = {index: 1}
+    if(c>=1){
+      console.log(subset_layer)
+      map.removeLayer(subset_layer)
+    };
+    updateMap(getval);
+    handleStepEnter(x)
 
 });
 
+ $("#blood_button > button").on("click", function() {
+  k++;
+    var x = {index: 6}
+    if(k>=1){
+      //console.log(subset_layer)
+      map.removeLayer(state_layer)
+    };
+    blood_string = this.value;
+    concat(blood_string, bmi_string, check_val);
+    handleStepEnter(x);
+  });
+
+   $("#bmi_button > button").on("click", function() {
+    k++;
+    var x = {index: 6}
+    if(k>=1){
+      //console.log(subset_layer)
+      map.removeLayer(state_layer)
+    };
+    bmi_string = this.value;
+    concat(blood_string, bmi_string, check_val);
+    handleStepEnter(x);
+  });
+
+
+// Function that is called when the blood_group button is clicked.
+/*function blood_onclick(val) {
+    const btnClick = function () {
+        this.parentNode.getElementsByClassName("active")[0].classList.remove("active");
+        this.classList.add("active");
+    };
+    document.querySelectorAll(".btn-group .btn").forEach(btn => btn.addEventListener('click', btnClick));
+    k++;
+    var x = {index: 6}
+    if(k>=1){
+      //console.log(subset_layer)
+      map.removeLayer(state_layer)
+    };
+    blood_string= val;
+    concat(blood_string, bmi_string, check_val);
+    handleStepEnter(x);
+
+}
+// Function that is called  when the BMI button is  clicked.
+function bmi_onclick(val) {
+    const btnClick = function () {
+        this.parentNode.getElementsByClassName("active")[0].classList.remove("active");
+        this.classList.add("active");
+    };
+    document.querySelectorAll(".btn-group .btn").forEach(btn => btn.addEventListener('click', btnClick));
+    k++;
+    var x = {index: 6}
+    if(k>=1){
+      //console.log(subset_layer)
+      map.removeLayer(state_layer)
+    };
+    bmi_string= val;
+    concat(blood_string, bmi_string, check_val);
+    handleStepEnter(x);
+}*/
+
+
+// Code for the slider.......................................................
+
+var slider2 = d3.sliderHorizontal()
+        .min(2010)
+        .max(2018)
+        .step(1)
+        .width(300)
+        .displayValue(false)
+        .tickFormat(d3.format("d"))
+        .on('onchange', val => {
+        check(val);
+
+        });
+
+var group2 = d3.select("#slider").append("svg")
+                .attr("width", 500)
+                .attr("height", 100)
+                .append("g")
+                .attr("transform", "translate(30,30)");
+
+group2.call(slider2);
+
+//Function that is called whenever the slider is changed.................................
+function check(value){
+  check_val= value;
+  k++;
+        var x = {index: 6}
+        if(k>=1){
+         //console.log(subset_layer)
+        map.removeLayer(state_layer)
+        };
+
+    concat(blood_string, bmi_string, check_val);
+    handleStepEnter(x);
+}
 
 
 // instantiate the scrollama
@@ -179,7 +231,7 @@ const scroller = scrollama();
 function handleResize() {
       // 1. update height of step elements
 
-      var stepHeight = Math.floor(window.innerHeight * 0.75);
+      var stepHeight = Math.floor(window.innerHeight * 0.25);
       step.style('height', stepHeight + 'px');
 
       // 2. update width/height of graphic element
@@ -221,7 +273,8 @@ function handleStepEnter(response){
   // update graphic based on step
   if (response.index == 0) {
     center_layer.addTo(map);
-    map.flyTo([37.8, -96], 4);
+    info.remove(map);
+    map.flyTo([37.8, -100], 5);
   }
   if (response.index == 1) {
     map.removeLayer(center_layer);
@@ -233,7 +286,7 @@ function handleStepEnter(response){
   if (response.index == 2) {
       
     map.removeLayer(subset_layer);
-    //info.removeFrom(map);
+     info.remove(map);
     user_state_layer.addTo(map);
     map.flyTo(pan_LatLng, 6);
   }
@@ -249,14 +302,21 @@ function handleStepEnter(response){
   }
   if(response.index == 5){
     map.removeLayer(california_layer);
+    alabama_layer.addTo(map);
+    map.flyTo([32.3182,-86.9023], 6);
+  }
+  if(response.index == 6){
+    map.removeLayer(alabama_layer);
     state_layer.addTo(map);
-    map.flyTo([37.8, -96], 4);
+    map.flyTo([37.8, -100], 5);
   }
 
 }
 
+
+
 function handleStepExit(e){
-  if(e.index==5){
+  if(e.index==6){
     map.removeLayer(state_layer);
   }
   console.log("Exit")
@@ -296,11 +356,13 @@ info.onAdd = function (map) {
   };
 
   info.update = function (props) {
-    this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
-        '<b>' + props.center_name + '</b><br />people / mi<sup>2</sup>'
-        : 'Hover over a state');
+    this._div.innerHTML = '<h4>Organ Transplant Center</h4>' +  (props ?
+        '<b>' + props.center_name + '</b><br />'
+        : 'Hover over a center');
     var ScatterPlotDiv = this._div.appendChild(document.createElement("div"));
     ScatterPlotDiv.className="scatterplot_box";
+    var LineChartDiv = this._div.appendChild(document.createElement("div"));
+    LineChartDiv.className="linechart_box";
   };
 
 
@@ -324,18 +386,44 @@ var nearest_array=[];
 var subset_data = center_data.filter(({LatLng}) => 
    nearest_array.some(f => LatLng.every(l => f.includes(l))))
 
+var new_data = [];       //start with an empty array
+
+//loop through original data item-by-item
+subset_data.forEach(function(d){
+  var obj = {};                //prepare an empty object
+  obj.key = d.center_name;
+  obj.values = [];             // prepare internal empty array
+
+  //we need the key values from the object
+  Object.keys(d).forEach(function(key){
+    // but only keys that contain the word (year)...
+    if(key.indexOf("time")>-1){
+      //setting up the new data structure
+      obj.values.push({interval:key,value:d[key]});
+    }
+  });
+  // finally, pushing the object to the new array
+  new_data.push(obj);
+});
+
+  console.log(new_data);
+
+
 var subsetFeatures =[];
 for (var i=0; i<subset_data.length;i++){
   var point_data = turf.point([subset_data[i].LatLng[1],subset_data[i].LatLng[0]], subset_data[i])
   subsetFeatures.push(point_data);
 }
-var subsetCollection = turf.featureCollection(subsetFeatures);
+console.log(subset_data)
 
+
+var subsetCollection = turf.featureCollection(subsetFeatures);
 subset_layer = L.geoJson(subsetCollection);
 subset_layer.on('mouseover', function (e) {
       info.update(e.layer.feature.properties)
       createScatterPlot(subset_data,e.layer.feature.properties);
-      console.log(e.layer.feature.properties)
+      createLineChart(new_data,e.layer.feature.properties.center_name);
+
     });
 subset_layer.on("mouseout",function(){
     //d3.select(".scatterplot").remove();
@@ -348,4 +436,64 @@ function stateFilter(feature) {
 user_state_layer = L.geoJson(states_data,{filter: stateFilter, style:style});
 
 }
+
+function concat(str1,str2,year){
+
+
+      var temp_data = data[year-2010];
+      concat_value= str1+"_"+str2;
+
+      // Filtering the data as per user query based  on the concat-value and year............................
+      var temp= [];
+    for (var i=0; i < temp_data.length; i++)
+    {
+      temp.push
+      ({
+        'state': temp_data[i]['State'],
+        'value': temp_data[i][concat_value]
+      })
+    }
+
+    // Adding our filtered value to the GeoJson file.......................................................
+      for (var i in all_state['features'])
+      {
+        current_state= all_state['features'][i]['properties']['NAME'];
+        for (var j in temp)
+        {
+          if (temp[j]['state']==current_state)
+          {
+            all_state['features'][i]['properties']['value']= temp[j]['value'];
+            break;
+          }
+        }
+      }
+
+
+      state_layer = L.geoJson(all_state, {style: style});
+
+      function getColor(d) {
+          return d > 400  ? '#084594' :
+                 d > 300  ? '#2171b5' :
+                 d > 200  ? '#4292c6' :
+                 d > 100  ? '#6baed6' :
+                 d > 50   ? '#9ecae1' :
+                 d > 20   ? '#c6dbef' :
+                 d > 10   ?  '#deebf7' :
+                            '#f7fbff';
+      }
+
+      function style(feature) {
+
+          return {
+              fillColor: getColor(feature.properties.value),
+              weight: 2,
+              opacity: 1,
+              color: 'white',
+              dashArray: '3',
+              fillOpacity: 0.7
+          };
+      }
+
+}
+
 
