@@ -81,6 +81,15 @@
   padding: 16px 32px 24px 32px;
 }
 
+.final-CTA {
+  padding-top: 200px;
+  font:30px Georgia;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  line-height: 50px;
+}
+
 #bg-toggles {
   height: 800px !important;
   padding-top: 200px;
