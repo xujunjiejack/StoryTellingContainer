@@ -28,3 +28,26 @@
     font-family: Georgia;
 
 }
+
+.step h3 {
+  font-family: Georgia;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+
+.step p {
+  font-family: Georgia;
+  line-height: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.card {
+  background: #FAFAFA;
+  box-shadow: 0 2px 18px 0 rgba(0,0,0,0.18);
+  padding: 16px 32px 24px 32px;
+}
