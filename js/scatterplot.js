@@ -56,7 +56,7 @@ function createScatterPlot(data, selected){
         }
         else{ return '#5DA2D5';}})
       .style("fill-opacity", 0.5)
-      .style("stroke",'black')
+      .style("stroke",'#5DA2D5')
       .style("stroke-width", 1);
 
   g_scatter.append("g")
@@ -116,7 +116,7 @@ function createScatterPlot(data, selected){
    .text("Survival Rate")
    .attr('fill', 'black')
    .attr('font-size', '7px');
-   
+
    svg_scatter.append("line")
   .style("stroke", "red")
   .attr("x1", x(0.186361012))
