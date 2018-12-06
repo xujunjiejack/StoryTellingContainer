@@ -2116,14 +2116,14 @@ let run = (dataset) => {
     uniform float canvasHeight;
     attribute vec3 color;
     varying vec3 vColor;
-    
+
     vec2 normalizeCoords(float x, float y) {
           return vec2(
           2.0 * ((x / canvasWidth) - 0.5),
           // invert y to treat [0,0] as bottom left in pixel space
           -(2.0 * ((y / canvasHeight) - 0.5)));
     }
-    
+
     void main() {
       gl_PointSize = pointWidth;
       vColor = color;
