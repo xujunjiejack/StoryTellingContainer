@@ -133,7 +133,7 @@ var div = d3.select(".scatterplot_box").append("div")
    .text("Transplant Rate")
    .attr('fill', 'black')
    .attr('font-size', '7px');
-   
+
    svg_scatter.append("line")
   .style("stroke", "red")
   .attr("x1", x(0.186361012))

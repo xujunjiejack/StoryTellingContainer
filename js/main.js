@@ -241,7 +241,7 @@ function handleResize() {
         .style('width', bodyWidth + 'px')
         .style('height', window.innerHeight + 'px');
 
-      
+
       // 3. tell scrollama to update new element dimensions
       scroller.resize();
     }
@@ -284,7 +284,7 @@ function handleStepEnter(response){
     console.log(c);
   }
   if (response.index == 2) {
-      
+
     map.removeLayer(subset_layer);
      info.remove(map);
     user_state_layer.addTo(map);
@@ -380,10 +380,10 @@ var nearest = leafletKnn(center_layer).nearestLayer(L.latLng(user_latlng[0].LatL
 var nearest_array=[];
   for(var i=0;i<nearest.length;i++){
   nearest_array.push([nearest[i].layer.feature.geometry.coordinates[1],nearest[i].layer.feature.geometry.coordinates[0]]);
-} 
+}
 //console.log(nearest_array);
 
-var subset_data = center_data.filter(({LatLng}) => 
+var subset_data = center_data.filter(({LatLng}) =>
    nearest_array.some(f => LatLng.every(l => f.includes(l))))
 
 var new_data = [];       //start with an empty array
@@ -472,13 +472,13 @@ function concat(str1,str2,year){
       state_layer = L.geoJson(all_state, {style: style});
 
       function getColor(d) {
-          return d > 400  ? '#084594' :
-                 d > 300  ? '#2171b5' :
-                 d > 200  ? '#4292c6' :
-                 d > 100  ? '#6baed6' :
-                 d > 50   ? '#9ecae1' :
-                 d > 20   ? '#c6dbef' :
-                 d > 10   ?  '#deebf7' :
+          return d > 25  ? '#084594' :
+                 d > 13  ? '#2171b5' :
+                 d > 8  ? '#4292c6' :
+                 d > 5  ? '#6baed6' :
+                 d > 3   ? '#9ecae1' :
+                 d > 2   ? '#c6dbef' :
+                 d > 1   ?  '#deebf7' :
                             '#f7fbff';
       }
 
@@ -495,5 +495,3 @@ function concat(str1,str2,year){
       }
 
 }
-
-

@@ -63,7 +63,7 @@
 
     <div class="scroll__graphic sticky" style="width: 100%; height: 349px;">
         <div class="overlay">
-            <div class="chart2" id="map" style="width: 100%; height: 800px;">
+            <div class="chart2" id="map" style="width: 100%; height: 100vh;">
                 <p></p>
             </div>
         </div>
@@ -120,7 +120,9 @@
           <div class="card">
             <h3>Georgia</h3>
             <p>
-                Currently, Georgia has <span style="color: red;"> 4,796</span> patients like you, waiting for a kidney transplant. <span style="color: red;">39% </span> of them have already been waiting for over <span style="color: red;">3 years</span>.
+
+                Georgia has <span style="color: red;"> 4,796</span> waiting for a kidney transplant. <span style="color: red;">39% </span> of them have already been waiting for over <span style="color: red;">3 years</span>.
+               
             </p>
           </div>
 
@@ -157,18 +159,17 @@
             </p><br><br>
 
             <div class="row">
-                <div class="btn-group" id="blood_button">
+                <div class="btn-group btn-group-1" id="blood_button">
                     <button type="button" value="ABO" name="blood" class="btn btn-secondary btn-sm active" >All</button>
                     <button type="button" value="A" name="blood" class="btn btn-secondary btn-sm">A</button>
                     <button type="button" value="B" name="blood" class="btn btn-secondary btn-sm">B</button>
                     <button type="button" value="O" name="blood" class="btn btn-secondary btn-sm">O</button>
                     <button type="button" value="AB" name="blood" class="btn btn-secondary btn-sm">AB</button>
-                    <!--<button type="button" value="U" name="blood" class="btn btn-secondary btn-sm">None</button>-->
                 </div>
             </div>
             <br>
             <div class="row">
-                <div class="btn-group" id="bmi_button">
+                <div class="btn-group btn-group-2" id="bmi_button">
                     <button type="button" value="0" name="bmi" class="btn btn-secondary btn-sm active">All</button>
                     <button type="button" value="1" name="bmi" class="btn btn-secondary btn-sm">18.5</button>
                     <button type="button" value="2" name="bmi" class="btn btn-secondary btn-sm">18.5-25</button>
@@ -176,7 +177,6 @@
                     <button type="button" value="4" name="bmi" class="btn btn-secondary btn-sm">30-35</button>
                     <button type="button" value="5" name="bmi" class="btn btn-secondary btn-sm">35-50</button>
                     <button type="button" value="6" name="bmi" class="btn btn-secondary btn-sm">50+</button>
-                   <!-- <button type="button" value="NR" name="bmi" class="btn btn-secondary btn-sm">None</button>-->
                 </div>
             </div>
             <div id="slider"></div>
@@ -187,23 +187,12 @@
 
 </section>
 
-<!--<div class="container-fluid">-->
-    <!--&lt;!&ndash;   actual graphic/chart   &ndash;&gt;-->
-    <!--<div class='chart' >-->
-
-        <!--<div class="textarea" id="t2">-->
-            <!--<h1 class="headline text-center">The Impatient List</h1>-->
-
-            <!--<h3 class="subtitle text-center"> By Kuhu, Het, Tony, JJ </h3>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
 
 <div class="transition" style="height: 1000px; background: #fcfbfb">
     <div class="vis_transition"  >
 
         You might have noticed that in general, the waitlist length grows much faster
-            than the donar numbers. How did the waitlist develop into this situation today
+            than the donor numbers. How did the waitlist develop into this situation today?
 
 
     </div>
@@ -212,41 +201,55 @@
 <section id='scroll2'>
 
     <div class="scroll__graphic sticky" style="width: 100%; height: 349px;">
-        <div class="overlay">
-            <div id="vis3">
-                <div id = "main" style = "transform: translate(40px,-40px); ">
-                    <canvas id="canvas" width="1200" height="600" style="border:0px solid #000000;" ></canvas>
-                </div>
-                <div style="padding: 4px 60px; transform: translate(40px,-60px)";>
-                    <!--<label for="yearSlider" style="margin-right:6px;">1995</label>-->
-                    <!--<input id="yearSlider" type="text" data-slider-min="1995" data-slider-max="2017" data-slider-step="1" data-slider-value="1995" style="width: 800px;"/>-->
-                    <!--<label for="yearSlider"  style="margin-left:6px;">2017</label>-->
+        <div class="overlay"  >
 
-                    <!--<button type="button" id="animatonButton" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">-->
-                    <!--Single toggle-->
-                    <!--</button>-->
-                    <svg id = "vis3_svg" height="150" width="1000">
+                <div id="vis3">
+                    <row class="d-flex justify-content-center">
+                        <div id = "main" style="transform: translate(0px,0px)" >
+                            <canvas id="canvas" width="1200" height="600" style="border:0px solid #000000;" ></canvas>
+                        </div>
+                    </row>
+                    <row class="d-flex justify-content-center">
+                    <div style="padding: 4px 60px;";>
+                        <!--<label for="yearSlider" style="margin-right:6px;">1995</label>-->
+                        <!--<input id="yearSlider" type="text" data-slider-min="1995" data-slider-max="2017" data-slider-step="1" data-slider-value="1995" style="width: 800px;"/>-->
+                        <!--<label for="yearSlider"  style="margin-left:6px;">2017</label>-->
 
-                    </svg>
+                        <!--<button type="button" id="animatonButton" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">-->
+                        <!--Single toggle-->
+                        <!--</button>-->
+                        <svg id = "vis3_svg" height="150" width="1000">
+
+                        </svg>
+                    </div>
+                        </row>
                 </div>
-            </div>
+
         </div>
     </div>
 
     <div class='scroll__text' style="padding: 1rem 1rem">
         <div class='boxvis3 step' data-step='1'>
-            <p>Vis3 step1</p>
-
         </div>
     </div>
 
 
 </section>
 
+<div style="height: 500px">
 
-<div class="end" style="height: 300px;">
+</div>
 
-    This is end
+<div class="end" style="height: 100vh;">
+
+  <div>
+    <p class="final-CTA">To help 103,202 people on the waitlist, register to be a donor today. One donor could potentially save the lives of 8 people.</p><br><br>
+
+    <a href="https://www.organdonor.gov/register.html"><p style="text-align:center"><button type="button" class="btn btn-sm btn-CTA">Register to be a Donor</button></p></a>
+
+
+  </div>
+
 
 </div>
 

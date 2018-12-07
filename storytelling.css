@@ -1,7 +1,8 @@
 .chart {
-    height: 843px;
-    /*background: url("patient-family.jpg");*/
-    background: beige;
+    height: 100vh !important;
+    background: url("kidney list white.png") no-repeat center;
+    background-size: cover;
+    /* background: beige; */
 }
 
 .headline {
@@ -15,6 +16,32 @@
     font-size: 24px;
     font-family: Georgia;
     padding-bottom: 64px;
+
+}
+
+.btn-secondary {
+  color: #5DA2D5;
+  border-color: #5DA2D5;
+  background-color: transparent;
+  font-family: "Roboto";
+}
+
+.btn-secondary:hover {
+  color: #5DA2D5;
+  border-color: #5DA2D5;
+  background-color: #5DA2D520;
+  font-family: "Roboto";
+}
+
+.active {
+  color: white !important;
+  border-color: #5DA2D5 !important;
+  background-color: #5DA2D5 !important;
+  font-family: "Roboto";
+}
+
+.author {
+  font-family: Georgia;
 }
 
 .textarea{
@@ -54,9 +81,36 @@
   padding: 16px 32px 24px 32px;
 }
 
+.btn-group {
+  padding-left: 16px;
+}
+
+.final-CTA {
+  padding-top: 40vh;
+  font:30px Georgia;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  line-height: 50px;
+}
+
 #bg-toggles {
   height: 800px !important;
   padding-top: 200px;
+}
+
+.btn-CTA {
+  color: white !important;
+  border-color: #5DA2D5 !important;
+  background-color: #5DA2D5 !important;
+  font-family: "Roboto" sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+
+  padding: 16px 32px 16px 32px;
+
+  border-radius: 40px;
 }
 
 
