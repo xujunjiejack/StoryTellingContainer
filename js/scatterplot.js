@@ -8,12 +8,12 @@ function createScatterPlot(data, selected){
   var margin = {
   top: 20,
   right: 32,
-  bottom: 20,
+  bottom: 50,
   left: 32
 };
 
 var div = d3.select(".scatterplot_box").append("div")
-    .attr("class", "tooltip")       
+    .attr("class", "tooltip")
     .style("opacity", 0);
 
   var width = 300;
@@ -59,21 +59,21 @@ var div = d3.select(".scatterplot_box").append("div")
         }
         else{ return '#5DA2D5';}})
       .style("fill-opacity", 0.5)
-      .style("stroke",'black')
+      .style("stroke",'#5DA2D5')
       .style("stroke-width", 0.3)
-      .on("mouseover", function(d) {    
-            div.transition()    
-                .duration(200)    
-                .style("opacity", .9);    
+      .on("mouseover", function(d) {
+            div.transition()
+                .duration(200)
+                .style("opacity", .9);
             div.html('<div style="height:15px;">'+d.center_name+"</div><table><thead><tr><td>WaitList Size</td><td>Transplate Rate</td><td>Death Rate</td></tr></thead>"
-             + "<tbody><tr><td>"+d.wait_list+"</td><td>"+(d.transplant_rate_center).toFixed(4)+"</td><td>"+(d.death_rate_center).toFixed(4)+"</td></tr></tbody></table>")  
-              .style("right", 40 + "px")     
+             + "<tbody><tr><td>"+d.wait_list+"</td><td>"+(d.transplant_rate_center).toFixed(4)+"</td><td>"+(d.death_rate_center).toFixed(4)+"</td></tr></tbody></table>")
+              .style("right", 40 + "px")
               .style("top", 70 + "px");
-            })  ;        
-        .on("mouseout", function(d) {   
-            div.transition()    
-                .duration(500)    
-                .style("opacity", 0); 
+            })
+        .on("mouseout", function(d) {
+            div.transition()
+                .duration(500)
+                .style("opacity", 0);
         });
 
   g_scatter.append("g")
