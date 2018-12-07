@@ -472,13 +472,13 @@ function concat(str1,str2,year){
       state_layer = L.geoJson(all_state, {style: style});
 
       function getColor(d) {
-          return d > 400  ? '#084594' :
-                 d > 300  ? '#2171b5' :
-                 d > 200  ? '#4292c6' :
-                 d > 100  ? '#6baed6' :
-                 d > 50   ? '#9ecae1' :
-                 d > 20   ? '#c6dbef' :
-                 d > 10   ?  '#deebf7' :
+          return d > 25  ? '#084594' :
+                 d > 13  ? '#2171b5' :
+                 d > 8  ? '#4292c6' :
+                 d > 5  ? '#6baed6' :
+                 d > 3   ? '#9ecae1' :
+                 d > 2   ? '#c6dbef' :
+                 d > 1   ?  '#deebf7' :
                             '#f7fbff';
       }
 
