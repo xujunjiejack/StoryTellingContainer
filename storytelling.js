@@ -621,13 +621,13 @@ function concat(str1,str2,year){
     state_layer = L.geoJson(all_state, {style: style});
 
     function getColor(d) {
-        return d > 400  ? '#084594' :
-            d > 300  ? '#2171b5' :
-                d > 200  ? '#4292c6' :
-                    d > 100  ? '#6baed6' :
-                        d > 50   ? '#9ecae1' :
-                            d > 20   ? '#c6dbef' :
-                                d > 10   ?  '#deebf7' :
+        return d > 25  ? '#084594' :
+            d > 13  ? '#2171b5' :
+                d > 8  ? '#4292c6' :
+                    d > 5  ? '#6baed6' :
+                        d > 3   ? '#9ecae1' :
+                            d > 2   ? '#c6dbef' :
+                                d > 1   ?  '#deebf7' :
                                     '#f7fbff';
     }
 
@@ -1572,7 +1572,9 @@ let computePointsAndColor = () =>{
             // node.style.borderColor = "blue";
             node.style.borderWidth= "0px";
             // node.style.strokeOpacity = '0%';
-            if (p.name === "wl"){
+            if (p.name === "additions"){
+                node.textContent = `${p.description} ${p.pointNumber}`
+            }else if (p.name === "wl"){
                 node.textContent = `${p.description}`
             }else{
                 node.textContent = `${p.description}`
@@ -1584,9 +1586,11 @@ let computePointsAndColor = () =>{
         }else{
             node.style.top=`${p.labelY - 20}px`;
 
-            if (p.name === "wl"){
+            if (p.name === "additions"){
+                node.textContent = `${p.description} ${p.pointNumber}`
+            }else if (p.name === "wl"){
                 node.textContent = `${p.description}`
-            }else {
+            }else{
                 node.textContent = `${p.description}`
             }
         }
@@ -1752,7 +1756,7 @@ let computePointsAndColor = () =>{
         let labelForValue = document.getElementById(`${value}_label`);
         if (labelForValue === null){
             labelForValue = document.createElement("div");
-            labelForValue.classList.add("label");
+            labelForValue.classList.add("label_vis3");
             labelForValue.style.left = `${additionStartX-43}px`;
             labelForValue.style.top = `${scaleMarkPosition[value]-10}px`;
             labelForValue.style.position = "absolute";
@@ -1907,7 +1911,7 @@ let calculateYearTickX = (dset) =>{
 let calculateNumberScale = (dset) =>{
 
     let highestTick = 37000;
-    let tickNumber = 20
+    let tickNumber = 20;
     let numberInterval = 37000 / tickNumber;
     let totalHeight = highestTick / 90;
     let interval = totalHeight / tickNumber;
