@@ -10,6 +10,7 @@ var IconStyleOne = L.icon({
 var IconStyleTwo = L.icon({
             iconUrl: './data/all_icons.png'
         });
+var legend = L.control({position: 'bottomright'});
 
 // initialize the scrollama
 
@@ -98,6 +99,7 @@ function handleStepEnter(response) {
         if(response.index === 6){
             map.removeLayer(alabama_layer);
             state_layer.addTo(map);
+            legend.addTo(map);
             map.flyTo([37.8, -110], 4);
         }
 
@@ -106,19 +108,32 @@ function handleStepEnter(response) {
     // }
 }
 
-function handleStepExit(response){
-    if(response.index===6){
-        map.removeLayer(state_layer);
-    }
-    if (response.index === 3){
-        console.log("unsticky")
-        //
-        $graphic.classed('is-fixed', false);
+function handleStepExit(e){
+  if(e.index==0){
+    map.removeLayer(center_layer);
+  }
+  if(e.index==1){
+    info.remove(map);
+    map.removeLayer(subset_layer);
+  }
+  if(e.index==2){
+    map.removeLayer(user_state_layer);
 
-        $graphic.classed('is-bottom', response.direction === 'up');
-    }
-
-    console.log(response.index + "step exiting vis1,2")
+  }
+  if(e.index==3){
+    map.removeLayer(georgia_layer);
+  }
+  if(e.index==4){
+    map.removeLayer(california_layer);
+  }
+  if(e.index==5){
+    map.removeLayer(alabama_layer);
+  }
+  if(e.index==6){
+    map.removeLayer(state_layer)
+    legend.remove(map);
+  }
+  
 }
 
 function handleContainerEnter(response) {
@@ -660,6 +675,21 @@ function concat(str1,str2,year){
             fillOpacity: 0.7
         };
     }
+     legend.onAdd = function (map) {
+
+          var div = L.DomUtil.create('div', 'info legend'),
+              grades = [0, 10, 20, 50,100,200,300,400],
+              labels = [];
+
+          // loop through our density intervals and generate a label with a colored square for each interval
+          for (var i = 0; i < grades.length; i++) {
+              div.innerHTML +=
+                  '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+                  grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+          }
+
+          return div;
+      };
 
 }
 

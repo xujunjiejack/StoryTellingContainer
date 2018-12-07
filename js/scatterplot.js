@@ -8,7 +8,9 @@ function createScatterPlot(data, selected){
   var margin = {
   top: 20,
   right: 32,
+
   bottom: 50,
+
   left: 32
 };
 
@@ -70,10 +72,12 @@ var div = d3.select(".scatterplot_box").append("div")
               .style("right", 40 + "px")
               .style("top", 70 + "px");
             })
+
         .on("mouseout", function(d) {
             div.transition()
                 .duration(500)
                 .style("opacity", 0);
+
         });
 
   g_scatter.append("g")
@@ -144,7 +148,7 @@ var div = d3.select(".scatterplot_box").append("div")
   svg_scatter.append("text")
         .attr('transform', 'translate('+ 42 + ',' + 25+')rotate(90)')
         .attr("fill", "red")
-        .text("Median Survival Rate of U.S")
+        .text("National Average Transplant Rate")
         .attr('font-size', '7px');
 
   svg_scatter.append("line")
@@ -160,5 +164,13 @@ var div = d3.select(".scatterplot_box").append("div")
         .attr("fill", "red")
         .text("National Average Death Rate")
         .attr('font-size', '7px');
+
+        svg_scatter.append("text")
+        .attr("x", 100)
+         .attr("y", width+50)
+         .attr("class", "myLabel")//easy to style with CSS
+         .text("Death Rate Vs Transplant Rate")
+         .attr('fill', 'black')
+         .attr('font-size', '11px');
 
 }
