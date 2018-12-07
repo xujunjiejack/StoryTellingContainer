@@ -678,7 +678,8 @@ function concat(str1,str2,year){
      legend.onAdd = function (map) {
 
           var div = L.DomUtil.create('div', 'info legend'),
-              grades = [0, 10, 20, 50,100,200,300,400],
+              // grades = [0, 10, 20, 50,100,200,300,400],
+              grades= [1, 2, 3, 5, 8, 13, 25],
               labels = [];
 
           // loop through our density intervals and generate a label with a colored square for each interval
