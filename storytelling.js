@@ -2022,7 +2022,24 @@ let createChart = (dset) =>{
         .attr("stroke", "steelblue")
         .attr("stroke-width", 1.5)
         .attr("fill", "none")
-        .attr("d", line)
+        .attr("d", line);
+
+    svg.append("text")
+        .attr("x", `${chartWidth-60}px`)
+        .attr("y", `${chartHeight-50}px`)
+        .text('donor')
+        .attr("fill", "brown")
+        .attr("font-size", "14px")
+        .attr("font-family", fontFamily);
+
+    svg.append("text")
+        .attr("x", `${chartWidth-60}px`)
+        .attr("y", `${chartHeight-115}px`)
+        .text('patient')
+        .attr("fill", "steelblue")
+        .attr("font-size", "14px")
+        .attr("font-family", fontFamily);
+
 
     let line2 = d3.line()
         .x(d=>x(d.time))
@@ -2030,7 +2047,7 @@ let createChart = (dset) =>{
 
     svg.append("path")
         .datum(formattedData)
-        .attr("stroke", "steelblue")
+        .attr("stroke", "brown")
         .attr("stroke-width", 1.5)
         .attr("fill", "none")
         .attr("d", line2);
