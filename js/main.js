@@ -308,7 +308,7 @@ function handleStepEnter(response){
   if(response.index == 6){
     map.removeLayer(alabama_layer);
     state_layer.addTo(map);
-    map.flyTo([37.8, -100], 5);
+    map.flyTo([37.8, -110], 4);
   }
 
 }
@@ -419,16 +419,16 @@ console.log(subset_data)
 
 var subsetCollection = turf.featureCollection(subsetFeatures);
 subset_layer = L.geoJson(subsetCollection);
-subset_layer.on('mouseover', function (e) {
+subset_layer.on('click', function (e) {
       info.update(e.layer.feature.properties)
       createScatterPlot(subset_data,e.layer.feature.properties);
       createLineChart(new_data,e.layer.feature.properties.center_name);
 
     });
-subset_layer.on("mouseout",function(){
+/*subset_layer.on("mouseout",function(){
     //d3.select(".scatterplot").remove();
     info.update();
-   });
+   });*/
 
 function stateFilter(feature) {
       if (feature.properties.NAME === last_zipcode_state) return true

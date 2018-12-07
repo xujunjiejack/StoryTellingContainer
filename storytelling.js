@@ -4,6 +4,13 @@ let $chart = d3.select('.chart');
 let $text = d3.select('.scroll__text');
 let $step = $text.selectAll('.step');
 
+var IconStyleOne = L.icon({
+            iconUrl: './data/selected_icon.png'
+        });
+var IconStyleTwo = L.icon({
+            iconUrl: './data/all_icons.png'
+        });
+
 // initialize the scrollama
 
 // Scrollama 1
@@ -91,7 +98,7 @@ function handleStepEnter(response) {
         if(response.index === 6){
             map.removeLayer(alabama_layer);
             state_layer.addTo(map);
-            map.flyTo([37.8, -100], 5);
+            map.flyTo([37.8, -110], 4);
         }
 
     // if (response.index === 4){
@@ -151,7 +158,7 @@ function init() {
             text: '.box', // the step container
             step: '.scroll__text .box', // the step elements
             offset: 0.5, // set the trigger to be 1/2 way down screen
-            debug: true, // display the trigger offset for testing
+            debug: false, // display the trigger offset for testing
         })
 
         .onStepEnter(handleStepEnter)
@@ -567,25 +574,31 @@ function updateMap(myzipcode){
     }
     console.log(subset_data)
 
-
+    var clickedMarker;
     var subsetCollection = turf.featureCollection(subsetFeatures);
     subset_layer = L.geoJson(subsetCollection);
-    subset_layer.on('mouseover', function (e) {
+    subset_layer.on('click', function (e) {
         info.update(e.layer.feature.properties)
         createScatterPlot(subset_data,e.layer.feature.properties);
         createLineChart(new_data,e.layer.feature.properties.center_name);
 
+        if(clickedMarker) {
+          clickedMarker.setIcon(IconStyleTwo);
+        }
+        var layer = e.layer;
+        e.layer.setIcon(IconStyleOne);
+        clickedMarker = e.layer;
     });
-    subset_layer.on("mouseout",function(){
+    /*subset_layer.on("mouseout",function(){
         //d3.select(".scatterplot").remove();
         info.update();
-    });
+    });*/
 
     function stateFilter(feature) {
         if (feature.properties.NAME === last_zipcode_state) return true
     }
     user_state_layer = L.geoJson(states_data,{filter: stateFilter, style:style});
-
+    
 }
 
 function concat(str1,str2,year){
