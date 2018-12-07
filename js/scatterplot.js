@@ -8,7 +8,7 @@ function createScatterPlot(data, selected){
   var margin = {
   top: 20,
   right: 32,
-  bottom: 20,
+  bottom: 40,
   left: 32
 };
 
