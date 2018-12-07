@@ -616,7 +616,7 @@ function updateMap(myzipcode){
         if (feature.properties.NAME === last_zipcode_state) return true
     }
     user_state_layer = L.geoJson(states_data,{filter: stateFilter, style:style});
-    
+
 }
 
 function concat(str1,str2,year){

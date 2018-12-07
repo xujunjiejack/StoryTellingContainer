@@ -81,6 +81,12 @@
   padding: 16px 32px 24px 32px;
 }
 
+.scatter-bg {
+  background: #FAFAFA;
+  box-shadow: 0 2px 18px 0 rgba(0,0,0,0.18);
+  padding: 16px 32px 24px 32px;
+}
+
 .btn-group {
   padding-left: 16px;
 }
