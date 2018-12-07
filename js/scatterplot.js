@@ -12,6 +12,9 @@ function createScatterPlot(data, selected){
   left: 32
 };
 
+var div = d3.select(".scatterplot_box").append("div")
+    .attr("class", "tooltip")       
+    .style("opacity", 0);
 
   var width = 300;
   var height = 300;
@@ -56,8 +59,22 @@ function createScatterPlot(data, selected){
         }
         else{ return '#5DA2D5';}})
       .style("fill-opacity", 0.5)
-      .style("stroke",'#5DA2D5')
-      .style("stroke-width", 1);
+      .style("stroke",'black')
+      .style("stroke-width", 0.3)
+      .on("mouseover", function(d) {    
+            div.transition()    
+                .duration(200)    
+                .style("opacity", .9);    
+            div.html('<div style="height:15px;">'+d.center_name+"</div><table><thead><tr><td>WaitList Size</td><td>Transplate Rate</td><td>Death Rate</td></tr></thead>"
+             + "<tbody><tr><td>"+d.wait_list+"</td><td>"+(d.transplant_rate_center).toFixed(4)+"</td><td>"+(d.death_rate_center).toFixed(4)+"</td></tr></tbody></table>")  
+              .style("right", 40 + "px")     
+              .style("top", 70 + "px");
+            })  ;        
+        .on("mouseout", function(d) {   
+            div.transition()    
+                .duration(500)    
+                .style("opacity", 0); 
+        });
 
   g_scatter.append("g")
       .attr("class", "x axis")
@@ -81,7 +98,7 @@ function createScatterPlot(data, selected){
    .attr("x", 320)
    .attr("y", 177)
    .attr("class", "myLabel")//easy to style with CSS
-   .text("Survival Rate")
+   .text("Transplant Rate")
    .attr('fill', 'black')
    .attr('font-size', '7px');
 
@@ -113,7 +130,7 @@ function createScatterPlot(data, selected){
    .attr("x", 0)
    .attr("y", 177)
    .attr("class", "myLabel")//easy to style with CSS
-   .text("Survival Rate")
+   .text("Transplant Rate")
    .attr('fill', 'black')
    .attr('font-size', '7px');
 
@@ -125,8 +142,7 @@ function createScatterPlot(data, selected){
   .attr("x2", x(0.186361012))
 
   svg_scatter.append("text")
-        .attr("x", x(0.186361012)-35)
-        .attr("y", 15)
+        .attr('transform', 'translate('+ 42 + ',' + 25+')rotate(90)')
         .attr("fill", "red")
         .text("Median Survival Rate of U.S")
         .attr('font-size', '7px');
@@ -142,7 +158,7 @@ function createScatterPlot(data, selected){
         .attr("x", width-20)
         .attr("y", y(0.054763277)-5)
         .attr("fill", "red")
-        .text("Median Death Rate of U.S")
+        .text("National Average Death Rate")
         .attr('font-size', '7px');
 
 }
