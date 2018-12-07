@@ -69,7 +69,7 @@ var div = d3.select(".scatterplot_box").append("div")
              + "<tbody><tr><td>"+d.wait_list+"</td><td>"+(d.transplant_rate_center).toFixed(4)+"</td><td>"+(d.death_rate_center).toFixed(4)+"</td></tr></tbody></table>")  
               .style("right", 40 + "px")     
               .style("top", 70 + "px");
-            })  ;        
+            })
         .on("mouseout", function(d) {   
             div.transition()    
                 .duration(500)    
