@@ -398,6 +398,8 @@ function readyToDraw(error, centers,zipcodes,states,georgia_data,california_data
     });
 
     $("#blood_button > button").on("click", function() {
+      $(".btn-group-1 > .btn").removeClass("active");
+      $(this).addClass("active");
         k++;
         var x = {index: 6}
         if(k>=1){
@@ -410,6 +412,8 @@ function readyToDraw(error, centers,zipcodes,states,georgia_data,california_data
     });
 
     $("#bmi_button > button").on("click", function() {
+      $(".btn-group-2 > .btn").removeClass("active");
+      $(this).addClass("active");
         k++;
         var x = {index: 6}
         if(k>=1){

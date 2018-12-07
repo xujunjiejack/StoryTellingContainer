@@ -81,9 +81,36 @@
   padding: 16px 32px 24px 32px;
 }
 
+.btn-group {
+  padding-left: 16px;
+}
+
+.final-CTA {
+  padding-top: 40vh;
+  font:30px Georgia;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  line-height: 50px;
+}
+
 #bg-toggles {
   height: 800px !important;
   padding-top: 200px;
+}
+
+.btn-CTA {
+  color: white !important;
+  border-color: #5DA2D5 !important;
+  background-color: #5DA2D5 !important;
+  font-family: "Roboto" sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+
+  padding: 16px 32px 16px 32px;
+
+  border-radius: 40px;
 }
 
 
