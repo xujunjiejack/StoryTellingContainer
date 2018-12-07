@@ -3,7 +3,7 @@ let $graphic = d3.select('.scroll__graphic');
 let $chart = d3.select('.chart');
 let $text = d3.select('.scroll__text');
 let $step = $text.selectAll('.step');
-
+var info_state = L.control();
 var IconStyleOne = L.icon({
             iconUrl: './data/selected_icon.png'
         });
@@ -99,6 +99,7 @@ function handleStepEnter(response) {
         if(response.index === 6){
             map.removeLayer(alabama_layer);
             state_layer.addTo(map);
+            info_state.addTo(map);
             legend.addTo(map);
             map.flyTo([37.8, -110], 4);
         }
@@ -131,6 +132,7 @@ function handleStepExit(e){
   }
   if(e.index==6){
     map.removeLayer(state_layer)
+    info_state.remove(map);
     legend.remove(map);
   }
   
@@ -618,6 +620,17 @@ function updateMap(myzipcode){
     user_state_layer = L.geoJson(states_data,{filter: stateFilter, style:style});
 
 }
+info_state.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info');
+    this.update();
+    return this._div;
+  };
+
+  info_state.update = function (props) {
+     this._div.innerHTML = '<h4>Waitlist to Donor Ratio</h4>' +  (props ?
+        '<b>' + props.NAME + '</b><br />' + props.value + ''
+        : 'Hover over a state');
+};
 
 function concat(str1,str2,year){
 
@@ -669,6 +682,7 @@ function concat(str1,str2,year){
                         d > 3   ? '#9ecae1' :
                             d > 2   ? '#c6dbef' :
                                 d > 1   ?  '#deebf7' :
+                                    d == 0 ? '#d3d9dd':
                                     '#f7fbff';
     }
 

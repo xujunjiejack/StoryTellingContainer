@@ -66,18 +66,20 @@ console.log('Min Value:: ' + Math.min.apply(null, list)); // 0
   let lines = svg_line.append('g')
   .attr('class', 'lines');
 
+console.log(data)
 lines.selectAll('.line-group')
   .data(data).enter()
   .append('g')
   .attr('class', 'line-group')  
-  .on("mouseover", function(d, i) {
+  .on("mouseover", function(d, i) { 
       svg_line.append("text")
         .attr("class", "title-text")
-        .style("fill", color(i))        
+        .style("fill", 'black')        
         .text(d.key)
         .attr("text-anchor", "middle")
         .attr("x", (width-margin)/2)
-        .attr("y", 5);
+        .attr("y", 15)
+        .style("font-size",8);
     })
   .on("mouseout", function(d) {
       svg_line.select(".title-text").remove();
@@ -129,7 +131,7 @@ svg_line.append("g")
 
 svg_line.append("text")
         .attr("x", 100)
-        .attr("y", 0)
+        .attr("y", height-5)
         .attr("fill", "black")
         .text("Waiting Time Distribution")
         .attr('font-size', '11px');
