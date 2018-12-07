@@ -353,8 +353,8 @@ d3.queue()
         return { zip_code: row['zip_code'],LatLng: [+row['latitude'],+row['longitude']], state: row['state_name']};
     })
     .defer(d3.json,'./data/states.json')
-    .defer(d3.json,'./data/shape_GA.geoJson')
-    .defer(d3.json,'./data/shape_CA.geoJson')
+    .defer(d3.json,'./data/shape_GA.geojson')
+    .defer(d3.json,'./data/shape_CA.geojson')
     .defer(d3.json,'./data/shape_AL.geojson')
     .defer(d3.csv, './data/2010-State-Bloodtype-BMI.csv')
     .defer(d3.csv, './data/2011-State-Bloodtype-BMI.csv')
@@ -652,6 +652,14 @@ function concat(str1,str2,year){
 
 
     state_layer = L.geoJson(all_state, {style: style});
+
+    state_layer.on('mouseover', function (e) {
+        console.log(e.layer.feature.properties)
+        info_state.update(e.layer.feature.properties);
+    });
+    state_layer.on('mouseout',function(e){
+        info_state.update();
+    });
 
     function getColor(d) {
         return d > 25  ? '#084594' :

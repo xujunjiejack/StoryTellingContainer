@@ -138,6 +138,36 @@ var div = d3.select(".scatterplot_box").append("div")
    .attr('fill', 'black')
    .attr('font-size', '7px');
 
+    svg_scatter.append('rect')
+        .attr('width',10)
+        .attr('height',10)
+        .attr('x',width)
+        .attr('y',height)
+        .attr('fill','#F78888');
+
+    svg_scatter.append('rect')
+        .attr('width',10)
+        .attr('height',10)
+        .attr('x',width)
+        .attr('y',height+15)
+        .attr('fill','#5DA2D5');
+
+    svg_scatter.append('text')
+        .attr('x',width+15)
+        .attr('y',height+10)
+        .attr("class", "myLabel")//easy to style with CSS
+        .text("Selected")
+        .attr('fill', 'black')
+        .attr('font-size', '7px');
+
+    svg_scatter.append('text')
+        .attr('x',width+15)
+        .attr('y',height+25)
+        .attr("class", "myLabel")//easy to style with CSS
+        .text("Others")
+        .attr('fill', 'black')
+        .attr('font-size', '7px');
+
    svg_scatter.append("line")
   .style("stroke", "red")
   .attr("x1", x(0.186361012))
