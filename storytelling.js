@@ -2380,14 +2380,13 @@ let run = (dataset) => {
 
         // Update label
         // wlnumberLabel
-        if (wlLabelController !== null){
-            wlLabelController.updateWl();
-            wlLabelController.renderLabelContent();
-        }
 
         if (!stop) {
             waitingTime += 1;
-
+            if (wlLabelController !== null){
+                wlLabelController.updateWl();
+                wlLabelController.renderLabelContent();
+            }
         }
 
         // This tells regl to execute the command once for each object
