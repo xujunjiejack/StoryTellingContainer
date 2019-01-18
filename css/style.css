@@ -68,7 +68,7 @@ p {
     /* background-image: url("i1.jpg") */
     background: #FAFAFA;
     box-shadow: 0 2px 18px 0 rgba(0,0,0,0.18);
-    padding: 16px 32px 24px 32px;
+    padding: 10px 10px 10px 10px;
 
 }
 /* choose a light or dark theme to add to the body tag. */
@@ -231,15 +231,16 @@ height: auto;
     border-style:solid;
     border-color:black; */
     margin-left: 24px;
-	margin-bottom: 400px;
-	/* padding: 20px;
-	background: rgba(255,255,255,.6); */
+  margin-bottom: 200px;
+  /* padding: 20px;
+  background: rgba(255,255,255,.6); */
 }
 
 .boxvis3 {
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     padding: 20px;
-    /*background: rgba(255,255,255,.6);*/
+    background: rgba(255,255,255,.6);
+    opacity: 0;
 }
 
 .scroll__graphic {
@@ -342,6 +343,7 @@ p {
 
 .axis path {
   stroke: black;
+  fill-opacity:0.7;
 }
 
 .text {
@@ -390,17 +392,19 @@ div.tooltip {
   min-width: 60px;
   height: auto;
   background: none repeat scroll 0 0 #ffffff;
-  border: 1px solid #6F257F;
+  border: 1px solid black;
   padding: 2px;
   font-size: 8px;
   text-align: center;
 }
 
 .myLabel {
+  font-weight:600;
 
 }
-
-
+#scatterplot_box,#lineplot_box{
+  height:50%;
+}
 
 .legend {
         line-height: 18px;
@@ -421,34 +425,8 @@ div.tooltip {
             background: rgba(255,255,255,0.8);
             box-shadow: 0 0 15px rgba(0,0,0,0.2);
             border-radius: 5px;
-    }
-.info_state h4 {
-    margin: 0 0 5px;
-    color: #777;
-}
-
-.pauseButtonClass :hover{
-    background-color: #4b4b4b;
-}
-
-.disable{
-    display: none;
-}
-
-.vis3part {
-    transform: scale(0.8);
-    transition: 2s ease-in-out;
-}
-
-.zoomout {
-    transform: scale(1);
-}
-
-.vis3_container {
-    transform: translate(14%,0); transition: 2s ease-in-out;
-}
-
-
-.shiftleft {
-    transform: translate(0,0);
-}
+        }
+        .info_state h4 {
+            margin: 0 0 5px;
+            color: #777;
+        }

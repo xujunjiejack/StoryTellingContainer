@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
+    
     <link rel="stylesheet" type="text/css" href="storytelling.css" >
     <link rel="stylesheet" href="vis3/vis3.css">
 
@@ -45,23 +45,21 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="intro_text" style="vertical-align: center" >
+        <div class="intro_text" style="vertical-align: center; height: 700px" >
 
-            <p class="introduction">
+            <p class="text-center">
                 More than 114,000 Americans eligible for organ transplants are waiting for a donation, with 80% of them waiting for a kidney transplant.
             </p>
 
-            <img src="./organs.png" class="img-responsive" alt="">
+            <p class="text-center">
+                Kidneys filter and remove excess waste, minerals and fluid from the blood. When your kidneys lose this filtering ability due to, for example, diabetes, harmful levels of fluid and waste accumulate in your body. Your blood pressure will then raise and result in kidney failure. When the kidneys have lost about 90 percent of their ability, end-stage kidney disease occurs.
 
-            <p class="introduction">
-              The kidneys are two bean-shaped organs located on either side of the spine just below the rib cage. Their main function is to filter and remove excess waste, minerals and fluid from the blood by producing urine.
+                When your kidneys fail, kidney transplantation is one of two ways to replace the work your own kidneys can no longer do. Compared to its alternative, dialysis, kidney transplant offers more freedom and better quality of life.
             </p>
 
-            <p class="introduction">When your kidneys lose this filtering ability, harmful levels of fluid and waste accumulate in your body, which can raise your blood pressure and result in kidney failure (end-stage renal disease, which is also known as end-stage kidney disease). End-stage renal disease occurs when the kidneys have lost about 90 percent of their ability to function normally. They can be caused by diabetes, chronic, uncontrolled high blood pressure, polycystic kidney disease, etc. </p>
-
-            <p class="introduction">When your kidneys fail, kidney transplant is one of two ways to replace the work your own kidneys can no longer do. Compared to its alternative, dialysis, kidney transplant offers more freedom and better quality of life. </p>
-
-            <p class="introduction">However, getting a transplant is not easy. </p>
+            <p class="text-center">
+                However, getting a transplantation is not easy.
+            </p>
 
         </div>
     </div>
@@ -80,7 +78,7 @@
         <div class='box step' data-step='1'>
           <div class="card">
             <p>
-                To receive a transplant, you must first register yourself on the waitlist of a transplant center. There are 237 of them across the United States.
+                To receive a transplant, you must first register yourself on the waitlist of a transplant center.
             </p>
           </div>
 
@@ -88,7 +86,8 @@
 
         <div class='box step' data-step='2'>
           <div class="card">
-            <p>Since Kidney Transplant can be time sensitive, it is best for you to choose the ones adajacent to where you live. Please enter your zip code to view centers around you:</p>
+            <p>Since Kidney Transplant can be time sensitive, it is best for you to choose the ones adajacent to where you live.</p>
+            <p style="text-align:center"> Enter Your Zipcode </p>
             <p style="text-align:center">
             <div class="row">
                 <div class="col-lg-3"></div>
@@ -99,8 +98,6 @@
                 <div class="col-lg-3"></div>
             </div>
             </p>
-            <p>You’ll also need to compare between centers around you for their death rates, survival rates, and waitlist waiting time, in order to find the optimal center to register as a candidate. How would you balance these different factors, when each choice you make might influence your chance of getting a transplant to being cured? </p>
-            <p style="font-style: italic">Click on each pin on the map to view the data for each center compared to other centers around you.</p>
           </div>
 
             <!-- img -->
@@ -209,14 +206,14 @@
     <div class="scroll__graphic sticky" style="width: 100%; height: 349px;">
         <div class="overlay"  >
 
-                <div id="vis3" class = "vis3_container" >
+                <div id="vis3" style="padding-left:30%;">
                     <row class="d-flex justify-content-center ">
-                        <div id = "main" class="vis3part" >
+                        <div id = "main" class="vis3part" style="transform: scale(0.8)" >
                             <canvas id="canvas" width="1200" height="600" style="border:0px solid #000000;" ></canvas>
                         </div>
                     </row>
                     <row class="d-flex justify-content-center" >
-                        <div id="vis3_svg_container"   style="padding: 4px 25px 0 0; width:1100px" class="vis3part" >
+                        <div style="padding: 4px 60px;" style="transform: scale(0.8)" >
                             <!--<label for="yearSlider" style="margin-right:6px;">1995</label>-->
                             <!--<input id="yearSlider" type="text" data-slider-min="1995" data-slider-max="2017" data-slider-step="1" data-slider-value="1995" style="width: 800px;"/>-->
                             <!--<label for="yearSlider"  style="margin-left:6px;">2017</label>-->
@@ -227,19 +224,12 @@
                             <svg id = "vis3_svg" height="150" width="1000" >
 
                             </svg>
-
-                            <button id="pauseButton" class="pauseButtonClass disable" style="width: 70px; height:30px; border-radius: 3px; border-width: 0; background-color: #5DA2D5;color: #FAFAFA;
-                                                  position:absolute;left: 1050px; top: 10px;
-                                                                                        "
-                                    onclick="stopAfterOneYear()"> Pause </button>
                         </div>
 
-                        <!--<div class="vis3part" >-->
-                            <!--<button id="pauseButton" class="pauseButtonClass" style="width: 70px; height:30px; border-radius: 3px; border-width: 0; background-color: #5DA2D5;color: #FAFAFA;-->
-                                                    <!--position: absolute; left: 0px; top:20px;-->
-                                                                                        <!--"-->
-                                    <!--onclick="stopAfterOneYear()"> Pause </button>-->
-                        <!--</div>-->
+                        <div >
+                            <button id="pauseButton" class="pauseButtonClass" style="width: 70px; height:30px; border-radius: 3px; border-width: 0; background-color: #5DA2D5;color: #FAFAFA;"
+                                    onclick="stopAfterOneYear()"> Pause </button>
+                        </div>
 
                     </row>
 
@@ -251,11 +241,9 @@
     <div class='scroll__text' style="padding: 1rem 1rem; ">
         <div class='boxvis3 step' data-step='1'>
             <div class="card">
-                <h3>Longer, longer</h3>
-
                 <p>
                     One reason for the long waiting list is how little the waiting list got reduced each year.
-                    This visualization tells you about how the waiting list changes in one year.
+                    The visualization belows tells you about how the waiting list changes in one year.
                 </p>
 
 
@@ -264,9 +252,7 @@
 
         <div class='boxvis3 step' data-step='2'>
             <div class="card">
-                <h3>Year 2017</h3>
                 <p>
-
                     First, let's examine how the waiting list changes in last year (2017).
                     At the start of 2017, there were 99064 people on the waiting list. Each pixel in the
                     blue bar indicates one person.
@@ -278,7 +264,7 @@
         <div class='boxvis3 step' data-step='3'>
             <div class="card">
                 <p>
-                    In that year, in addition to keeping waiting, patients on the list have other outcomes.
+                    In that year, in addition to just keep waiting, patients on the list have different outcomes.
                     22775 patients got <span style="color: #7FCBFF "> cured </span>, luckily. 4706 patients got <span style="color:#E8C09E"> deteoriated</span>,
                     and even worse,4191 <span style="color:#B2603B"> died </span>. Over 10 patients died each day on average
                     on the waiting list.
@@ -298,20 +284,17 @@
         <div class='boxvis3 step' data-step='5'>
             <div class="card">
                 <p>
-                    Luckily, the size of waiting list in 2017 only got reduced around 3000, which is only 3%.
-                    However, not all years are like 2017.
+                    Luckily, the size of waiting list in 2017 just got reduced around 3000, which is only 3%.
+                    However, not all years are like 2017. Let's start from 1995, and saw the history.
                 </p>
             </div>
         </div>
 
         <div class='boxvis3 step' data-step='6'>
             <div class="card">
-                <h3> History </h3>
                 <p>
-                    Let's start from 1995, and saw the history.
                     You can change the year with the red bar below.
                     Also, you can pause at any time.
-                    Scroll to start.
                 </p>
             </div>
         </div>
