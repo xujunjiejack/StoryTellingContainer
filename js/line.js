@@ -1,7 +1,7 @@
 function createLineChart(data, selected_center){
 
 var margin = 35;
-var width = 350;
+var width = 430;
 var height = 250;
   console.log(data)
   console.log(selected_center)
@@ -127,21 +127,22 @@ svg_line.append("g")
   .attr("transform", "rotate(-90)")
   .attr("fill", "#000")
   .text("No.of Patients Waiting")
-  .attr('font-size', '7px');
+  .attr('font-size', '11px');
 
 svg_line.append("text")
-        .attr("x", 100)
-        .attr("y", height-5)
+        .attr("x", 120)
+        .attr("y", 0)
         .attr("fill", "black")
+        .attr("class","myLabel")
         .text("Waiting Time Distribution")
-        .attr('font-size', '11px');
+        .attr('font-size', '14px');
 
 svg_line.append("text")
-        .attr("x", 280)
-        .attr("y", height-10)
+        .attr("x", 330)
+        .attr("y", 210)
         .attr("fill", "black")
         .text("Waiting Time")
-        .attr('font-size', '7px');
+        .attr('font-size', '11px');
 
 
 

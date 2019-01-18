@@ -49,31 +49,13 @@
 }
 
 .intro_text{
-  padding-top: 120px;
-  padding-bottom: 120px;
-  /* width: 60vw; */
-    margin-right: 320px;
-    margin-left: 320px;
+    padding-top: 150px;
+    margin-right: 200px;
+    margin-left: 200px;
     font-size: 20px;
     line-height: 40px;
     font-family: Georgia;
-}
 
-img {
-  max-width: 100%;
-}
-
-ul {
-  list-style: circle !important;
-}
-
-li {
-  margin-left: 16px !important;
-}
-
-.introduction {
-  margin-top: 40px !important;
-  margin-bottom: 16px !important;
 }
 
 .step h3 {
@@ -141,4 +123,17 @@ li {
 
 .scroll__text {
   padding-bottom: 600px;
+}
+
+
+.center_tooltip { 
+  position: absolute;
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid black;
+  padding: 1px;
+  
+  }
+  .center_tooltip text{
+  font-size: 10px;
+  text-align: left;
 }

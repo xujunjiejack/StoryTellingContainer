@@ -6,27 +6,26 @@ function padExtent(e, p) {
 function createScatterPlot(data, selected){
 
   var margin = {
-  top: 20,
-  right: 32,
-
-  bottom: 50,
-
-  left: 32
+  top: 30,
+  right: 30,
+  bottom: 30,
+  left: 30
 };
 
 var div = d3.select(".scatterplot_box").append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
 
-  var width = 300;
-  var height = 300;
+  var width = 400;
+  var height = 400;
   var svg_scatter = d3.select('.scatterplot_box')
                       .append("svg")
                       .attr('class','vis1')
-                      .attr("width", width + margin.left + margin.right)
-                      .attr("height", height + margin.top + margin.bottom);
+                      .attr("width", width + margin.left)
+                      .attr("height", height+20);
   var g_scatter = svg_scatter.append("g")
-                    .attr("transform", "translate(" + margin.top + "," + margin.top + ")");
+                   .attr("transform", "translate(" + margin.top/2 + "," + margin.top + ")");
+                    
 
    var x = d3.scaleLinear()
     .domain(padExtent(d3.extent(data,function(d){ return d.transplant_rate_center;})))
@@ -43,8 +42,8 @@ var div = d3.select(".scatterplot_box").append("div")
                         .range([5,15]);
 
   g_scatter.append("rect")
-          .attr("width", width + margin.left + margin.right)
-          .attr("height", height + margin.top + margin.bottom)
+          .attr("width", width-30)
+          .attr("height", height-30)
           .attr("fill", "#F6F6F6")
           .style("fill-opacity",0.2);
 
@@ -64,6 +63,7 @@ var div = d3.select(".scatterplot_box").append("div")
       .style("stroke",'#5DA2D5')
       .style("stroke-width", 0.3)
       .on("mouseover", function(d) {
+            console.log(d);
             div.transition()
                 .duration(200)
                 .style("opacity", .9);
@@ -91,146 +91,144 @@ var div = d3.select(".scatterplot_box").append("div")
       .call(d3.axisLeft(y).tickSizeOuter(0).tickValues([]));
 
     svg_scatter.append("text")
-   .attr("x", 320)
-   .attr("y", 167)
-   .attr("class", "myLabel")//easy to style with CSS
-   .text("High 3-Year")
+   .attr("x", 405)
+   .attr("y", 227)
+   //.attr("class", "myLabel")//easy to style with CSS
+   .text("High")
    .attr('fill', 'black')
-   .attr('font-size', '13.5px');
+   .attr('font-size', '11px');
 
    svg_scatter.append("text")
-   .attr("x", 320)
-   .attr("y", 177)
-   .attr("class", "myLabel")//easy to style with CSS
-   .text("Transplant Rate")
+   .attr("x", 407)
+   .attr("y", 240)
+   //.attr("class", "myLabel")//easy to style with CSS
+   .text("T.R.")
    .attr('fill', 'black')
-   .attr('font-size', '13px');
+   .attr('font-size', '11px');
 
    svg_scatter.append("text")
-   .attr("x", 130)
-   .attr("y", 15)
-   .attr("class", "myLabel")//easy to style with CSS
-   .text("High WaitList Death Rate")
+   .attr("x", 190)
+   .attr("y", 25)
+   //.attr("class", "myLabel")//easy to style with CSS
+   .text("High D.R.")
    .attr('fill', 'black')
-   .attr('font-size', '13px');
+   .attr('font-size', '11px');
 
    svg_scatter.append("text")
-   .attr("x", 130)
-   .attr("y", 330)
-   .attr("class", "myLabel")//easy to style with CSS
-   .text("Low WaitList Death Rate")
+   .attr("x", 192)
+   .attr("y", 420)
+   //.attr("class", "myLabel")//easy to style with CSS
+   .text("Low D.R.")
    .attr('fill', 'black')
-   .attr('font-size', '13px');
-
-   svg_scatter.append("text")
-   .attr("x", 0)
-   .attr("y", 167)
-   .attr("class", "myLabel")//easy to style with CSS
-   .text("Low 3-Year")
-   .attr('fill', 'black')
-   .attr('font-size', '13px');
+   .attr('font-size', '11px');
 
    svg_scatter.append("text")
    .attr("x", 0)
-   .attr("y", 177)
-   .attr("class", "myLabel")//easy to style with CSS
-   .text("Transplant Rate")
+   .attr("y", 227)
+   //.attr("class", "myLabel")//easy to style with CSS
+   .text("Low")
    .attr('fill', 'black')
-   .attr('font-size', '13px');
+   .attr('font-size', '11px');
+
+   svg_scatter.append("text")
+   .attr("x", 2)
+   .attr("y", 240)
+   //.attr("class", "myLabel")//easy to style with CSS
+   .text("T.R.")
+   .attr('fill', 'black')
+   .attr('font-size', '11px');
+
+   svg_scatter.append('circle')
+        .attr('r',12)
+        .attr('cx',380)
+        .attr('cy',400)
+        .attr('fill','#5DA2D5');
+    svg_scatter.append('circle')
+        .attr('r',8)
+        .attr('cx',405)
+        .attr('cy',400)
+        .attr('fill','#5DA2D5');
+    svg_scatter.append('circle')
+        .attr('r',3)
+        .attr('cx',420)
+        .attr('cy',400)
+        .attr('fill','#5DA2D5');
+
+    svg_scatter.append("text")
+   .attr("x", 370)
+   .attr("y", 420)
+   //.attr("class", "myLabel")//easy to style with CSS
+   .text("WaitList Size")
+   .attr('fill', 'black')
+   .attr('font-size', '9px');
 
     svg_scatter.append('rect')
         .attr('width',10)
         .attr('height',10)
-        .attr('x',width)
-        .attr('y',height)
+        .attr('x',370)
+        .attr('y',350)
         .attr('fill','#F78888');
 
     svg_scatter.append('rect')
         .attr('width',10)
         .attr('height',10)
-        .attr('x',width)
-        .attr('y',height+15)
+        .attr('x',370)
+        .attr('y',365)
         .attr('fill','#5DA2D5');
 
     svg_scatter.append('text')
-        .attr('x',width+15)
-        .attr('y',height+10)
-        .attr("class", "myLabel")//easy to style with CSS
+        .attr('x',385)
+        .attr('y',357.5)
+        //.attr("class", "myLabel")//easy to style with CSS
         .text("Selected")
         .attr('fill', 'black')
-        .attr('font-size', '13px');
+        .attr('font-size', '9px');
 
     svg_scatter.append('text')
-        .attr('x',width+15)
-        .attr('y',height+25)
-        .attr("class", "myLabel")//easy to style with CSS
+        .attr('x',385)
+        .attr('y',372.5)
+        //.attr("class", "myLabel")//easy to style with CSS
         .text("Others")
         .attr('fill', 'black')
-        .attr('font-size', '13px');
+        .attr('font-size', '9px');
 
    svg_scatter.append("line")
   .style("stroke", "red")
   .attr("x1", x(0.186361012))
-  .attr("y1",20)
-  .attr("y2", height+20)
+  .attr("y1", margin.top)
+  .attr("y2", height+margin.bottom)
   .attr("x2", x(0.186361012))
+  .style("opacity", 0.5)
 
   svg_scatter.append("text")
-        .attr('transform', 'translate('+ 42 + ',' + 25+')rotate(90)')
+        .attr('transform', 'translate('+ (margin.left+margin.right) + ',' + margin.top+')rotate(90)')
         .attr("fill", "red")
-        .text("National Average Transplant Rate")
-        .attr('font-size', '13px');
+        .text("National Avg. T.R.")
+        .attr('font-size', '11px');
 
   svg_scatter.append("line")
   .style("stroke", "red")
-  .attr("x1", 20)
+  .attr("x1", margin.left/2)
   .attr("y1",y(0.054763277))
   .attr("y2", y(0.054763277))
-  .attr("x2", width+20)
+  .attr("x2", width+margin.right/2)
+  .style("opacity",0.5)
 
   svg_scatter.append("text")
-        .attr("x", width-20)
+        .attr("x", 330)
         .attr("y", y(0.054763277)-5)
         .attr("fill", "red")
-        .text("National Average Death Rate")
-        .attr('font-size', '13px');
+        .text("National Avg. D.R.")
+        .attr('font-size', '11px');
 
         svg_scatter.append("text")
         .attr("x", 100)
-         .attr("y", width+50)
+         .attr("y", 10)
          .attr("class", "myLabel")//easy to style with CSS
-         .text("Death Rate Vs Transplant Rate")
+         .text("Death Rate (D.R.) Vs Transplant Rate(T.R.)")
          .attr('fill', 'black')
-         .attr('font-size', '11px');
+         .attr('font-size', '14px');
 
-  svg_scatter.append('rect')
-              .attr('width',10)
-              .attr('height',10)
-              .attr('x',width)
-              .attr('y',height)
-              .attr('fill','#F78888');
-
-  svg_scatter.append('rect')
-              .attr('width',10)
-              .attr('height',10)
-              .attr('x',width)
-              .attr('y',height+15)
-              .attr('fill','#5DA2D5');
-
-  svg_scatter.append('text')
-              .attr('x',width+15)
-              .attr('y',height+10)
-              .attr("class", "myLabel")//easy to style with CSS
-              .text("Selected")
-              .attr('fill', 'black')
-              .attr('font-size', '13px');
-
-  svg_scatter.append('text')
-              .attr('x',width+15)
-              .attr('y',height+25)
-              .attr("class", "myLabel")//easy to style with CSS
-              .text("Others")
-              .attr('fill', 'black')
-              .attr('font-size', '13px');
+  
 
 }

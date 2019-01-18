@@ -259,28 +259,15 @@ function handleStepEnter2(response) {
         updateNumber(startYear);
         computePointsAndColor();
         stop=true;
-        document.getElementById("main").className = "vis3part";
-        document.getElementById("vis3_svg_container").className = 'vis3part';
-        document.getElementById("vis3").className = "vis3_container";
-        document.getElementById("pauseButton").className="pauseButtonClass disable";
     }
     else if (response.index === 5) {
-        setTimeout(() => { stop=false}, 2);
-        document.getElementById("main").className += ' zoomout';
-        document.getElementById("vis3_svg_container").className += ' zoomout';
-        document.getElementById("vis3").className += ' shiftleft';
-        document.getElementById("pauseButton").className="pauseButtonClass";
+        setTimeout(() => { stop=false}, 2)
     }
 }
 
 function handleStepExit2(response){
 
     console.log(response.index + "step exiting")
-    // if (response.index === 5) {
-    //     document.getElementById("main").className = "vis3part";
-    //     document.getElementById("vis3_svg_container").className = 'vis3part';
-    //     document.getElementById("vis3").className = "vis3_container";
-    // }
 }
 
 function handleContainerEnter2(response) {
@@ -588,6 +575,31 @@ info.update = function (props) {
 
 
 function updateMap(myzipcode){
+    center_layer.on('mouseover', function (e) {
+        var point = map.latLngToContainerPoint(e.latlng);
+        //console.log(point)
+        var tooltip = d3.select(map.getContainer())
+            .append("div")
+            .attr("class", "center_tooltip")
+            // Calculating according to marker and tooltip size
+            .style("left", point.x + 40 + "px")
+            .style("top", point.y - 60 + "px")
+            .style("position", "absolute")
+            .style("background", "white")
+            .style("opacity", "1")
+            .style("padding", "0 10px")
+            .style("z-index", "999")
+            .style("filter", "url(#drop-shadow)")
+            .html('<p><span style="color: gray;">CENTER NAME</span><br>'+e.layer.feature.properties.center_name+
+                '<br><span style="color: gray;">CITY</span><br>'+ e.layer.feature.properties.city+'<br><span style="color: gray;">COUNTY</span><br>'
+                +e.layer.feature.properties.county+'<br><span style="color: gray;">STATE</span><br>'+e.layer.feature.properties.state+'</p>')
+            .node();
+        //console.log(e.layer.feature.properties);
+    });
+    center_layer.on('mouseout',function(e){
+        //console.log("bye");
+        d3.select(map.getContainer()).select(".center_tooltip").remove();
+    });
 
     var user_latlng = zipcode_data.filter(function(d){
         if(d['zip_code'] == myzipcode) { return d.LatLng; }
@@ -656,6 +668,31 @@ function updateMap(myzipcode){
         //d3.select(".scatterplot").remove();
         info.update();
     });*/
+    subset_layer.on('mouseover', function (e) {
+        var point = map.latLngToContainerPoint(e.latlng);
+        //console.log(point)
+        var subset_tooltip = d3.select(map.getContainer())
+            .append("div")
+            .attr("class", "center_tooltip")
+            // Calculating according to marker and tooltip size
+            .style("left", point.x + 40 + "px")
+            .style("top", point.y - 60+ "px")
+            .style("position", "absolute")
+            .style("background", "white")
+            .style("opacity", "1")
+            .style("padding", "0 10px")
+            .style("z-index", "999")
+            .style("filter", "url(#drop-shadow)")
+            .html('<p><span style="color: gray;">CENTER NAME</span><br>'+e.layer.feature.properties.center_name+
+                '<br><span style="color: gray;">CITY</span><br>'+ e.layer.feature.properties.city+'<br><span style="color: gray;">COUNTY</span><br>'
+                +e.layer.feature.properties.county+'<br><span style="color: gray;">STATE</span><br>'+e.layer.feature.properties.state+'</p>')
+            .node();
+        //console.log(e.layer.feature.properties);
+    });
+    subset_layer.on('mouseout',function(e){
+        //console.log("bye");
+        d3.select(map.getContainer()).select(".center_tooltip").remove();
+    });
 
     function stateFilter(feature) {
         if (feature.properties.NAME === last_zipcode_state) return true
@@ -1873,7 +1910,9 @@ let computePointsAndColor = () =>{
         let a = Math.abs(additionNumber - parseInt(markValue[i]));
         if (a < tempMin){
             tempMin = a
-            newMarkValue.push(markValue[i])
+        }else{
+            newMarkValue = markValue.slice(0, i+1);
+            break;
         }
     }
 
@@ -1912,10 +1951,7 @@ let computePointsAndColor = () =>{
             labelForValue.style.fontFamily = fontFamily;
             labelForValue.style.borderWidth= "0px";
             main.insertAdjacentElement("afterbegin", labelForValue );
-        }else{
-            labelForValue .textContent = `${ value }`;
         }
-
     }
 
     let title = document.getElementById("title")
