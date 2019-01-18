@@ -206,14 +206,14 @@
     <div class="scroll__graphic sticky" style="width: 100%; height: 349px;">
         <div class="overlay"  >
 
-                <div id="vis3">
-                    <row class="d-flex justify-content-center" style="padding-left:30%">
-                        <div id = "main" style="transform: scale(0.8)"  >
+                <div id="vis3" style="padding-left:30%;">
+                    <row class="d-flex justify-content-center ">
+                        <div id = "main" class="vis3part" style="transform: scale(0.8)" >
                             <canvas id="canvas" width="1200" height="600" style="border:0px solid #000000;" ></canvas>
                         </div>
                     </row>
-                    <row class="d-flex justify-content-center" style="padding-left:30%">
-                        <div style="padding: 4px 60px; transform: scale(0.8)" >
+                    <row class="d-flex justify-content-center" >
+                        <div style="padding: 4px 60px;" style="transform: scale(0.8)" >
                             <!--<label for="yearSlider" style="margin-right:6px;">1995</label>-->
                             <!--<input id="yearSlider" type="text" data-slider-min="1995" data-slider-max="2017" data-slider-step="1" data-slider-value="1995" style="width: 800px;"/>-->
                             <!--<label for="yearSlider"  style="margin-left:6px;">2017</label>-->
@@ -230,7 +230,6 @@
                             <button id="pauseButton" class="pauseButtonClass" style="width: 70px; height:30px; border-radius: 3px; border-width: 0; background-color: #5DA2D5;color: #FAFAFA;"
                                     onclick="stopAfterOneYear()"> Pause </button>
                         </div>
-
 
                     </row>
 
