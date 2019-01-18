@@ -49,13 +49,31 @@
 }
 
 .intro_text{
-    padding-top: 150px;
-    margin-right: 200px;
-    margin-left: 200px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  /* width: 60vw; */
+    margin-right: 320px;
+    margin-left: 320px;
     font-size: 20px;
     line-height: 40px;
     font-family: Georgia;
+}
 
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: circle !important;
+}
+
+li {
+  margin-left: 16px !important;
+}
+
+.introduction {
+  margin-top: 40px !important;
+  margin-bottom: 16px !important;
 }
 
 .step h3 {
