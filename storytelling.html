@@ -206,14 +206,14 @@
     <div class="scroll__graphic sticky" style="width: 100%; height: 349px;">
         <div class="overlay"  >
 
-                <div id="vis3" style="padding-left:30%;">
+                <div id="vis3" class = "vis3_container" >
                     <row class="d-flex justify-content-center ">
-                        <div id = "main" class="vis3part" style="transform: scale(0.8)" >
+                        <div id = "main" class="vis3part" >
                             <canvas id="canvas" width="1200" height="600" style="border:0px solid #000000;" ></canvas>
                         </div>
                     </row>
                     <row class="d-flex justify-content-center" >
-                        <div style="padding: 4px 60px;" style="transform: scale(0.8)" >
+                        <div id="vis3_svg_container"   style="padding: 4px 25px 0 0; width:1100px" class="vis3part" >
                             <!--<label for="yearSlider" style="margin-right:6px;">1995</label>-->
                             <!--<input id="yearSlider" type="text" data-slider-min="1995" data-slider-max="2017" data-slider-step="1" data-slider-value="1995" style="width: 800px;"/>-->
                             <!--<label for="yearSlider"  style="margin-left:6px;">2017</label>-->
@@ -224,12 +224,19 @@
                             <svg id = "vis3_svg" height="150" width="1000" >
 
                             </svg>
-                        </div>
 
-                        <div >
-                            <button id="pauseButton" class="pauseButtonClass" style="width: 70px; height:30px; border-radius: 3px; border-width: 0; background-color: #5DA2D5;color: #FAFAFA;"
+                            <button id="pauseButton" class="pauseButtonClass disable" style="width: 70px; height:30px; border-radius: 3px; border-width: 0; background-color: #5DA2D5;color: #FAFAFA;
+                                                  position:absolute;left: 1050px; top: 10px;
+                                                                                        "
                                     onclick="stopAfterOneYear()"> Pause </button>
                         </div>
+
+                        <!--<div class="vis3part" >-->
+                            <!--<button id="pauseButton" class="pauseButtonClass" style="width: 70px; height:30px; border-radius: 3px; border-width: 0; background-color: #5DA2D5;color: #FAFAFA;-->
+                                                    <!--position: absolute; left: 0px; top:20px;-->
+                                                                                        <!--"-->
+                                    <!--onclick="stopAfterOneYear()"> Pause </button>-->
+                        <!--</div>-->
 
                     </row>
 
@@ -241,9 +248,11 @@
     <div class='scroll__text' style="padding: 1rem 1rem; ">
         <div class='boxvis3 step' data-step='1'>
             <div class="card">
+                <h3>Longer, longer</h3>
+
                 <p>
                     One reason for the long waiting list is how little the waiting list got reduced each year.
-                    The visualization belows tells you about how the waiting list changes in one year.
+                    This visualization tells you about how the waiting list changes in one year.
                 </p>
 
 
@@ -252,7 +261,9 @@
 
         <div class='boxvis3 step' data-step='2'>
             <div class="card">
+                <h3>Year 2017</h3>
                 <p>
+
                     First, let's examine how the waiting list changes in last year (2017).
                     At the start of 2017, there were 99064 people on the waiting list. Each pixel in the
                     blue bar indicates one person.
@@ -264,7 +275,7 @@
         <div class='boxvis3 step' data-step='3'>
             <div class="card">
                 <p>
-                    In that year, in addition to just keep waiting, patients on the list have different outcomes.
+                    In that year, in addition to keeping waiting, patients on the list have other outcomes.
                     22775 patients got <span style="color: #7FCBFF "> cured </span>, luckily. 4706 patients got <span style="color:#E8C09E"> deteoriated</span>,
                     and even worse,4191 <span style="color:#B2603B"> died </span>. Over 10 patients died each day on average
                     on the waiting list.
@@ -284,17 +295,20 @@
         <div class='boxvis3 step' data-step='5'>
             <div class="card">
                 <p>
-                    Luckily, the size of waiting list in 2017 just got reduced around 3000, which is only 3%.
-                    However, not all years are like 2017. Let's start from 1995, and saw the history.
+                    Luckily, the size of waiting list in 2017 only got reduced around 3000, which is only 3%.
+                    However, not all years are like 2017.
                 </p>
             </div>
         </div>
 
         <div class='boxvis3 step' data-step='6'>
             <div class="card">
+                <h3> History </h3>
                 <p>
+                    Let's start from 1995, and saw the history.
                     You can change the year with the red bar below.
                     Also, you can pause at any time.
+                    Scroll to start.
                 </p>
             </div>
         </div>

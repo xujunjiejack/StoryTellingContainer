@@ -259,15 +259,28 @@ function handleStepEnter2(response) {
         updateNumber(startYear);
         computePointsAndColor();
         stop=true;
+        document.getElementById("main").className = "vis3part";
+        document.getElementById("vis3_svg_container").className = 'vis3part';
+        document.getElementById("vis3").className = "vis3_container";
+        document.getElementById("pauseButton").className="pauseButtonClass disable";
     }
     else if (response.index === 5) {
-        setTimeout(() => { stop=false}, 2)
+        setTimeout(() => { stop=false}, 2);
+        document.getElementById("main").className += ' zoomout';
+        document.getElementById("vis3_svg_container").className += ' zoomout';
+        document.getElementById("vis3").className += ' shiftleft';
+        document.getElementById("pauseButton").className="pauseButtonClass";
     }
 }
 
 function handleStepExit2(response){
 
     console.log(response.index + "step exiting")
+    // if (response.index === 5) {
+    //     document.getElementById("main").className = "vis3part";
+    //     document.getElementById("vis3_svg_container").className = 'vis3part';
+    //     document.getElementById("vis3").className = "vis3_container";
+    // }
 }
 
 function handleContainerEnter2(response) {
@@ -1860,9 +1873,7 @@ let computePointsAndColor = () =>{
         let a = Math.abs(additionNumber - parseInt(markValue[i]));
         if (a < tempMin){
             tempMin = a
-        }else{
-            newMarkValue = markValue.slice(0, i+1);
-            break;
+            newMarkValue.push(markValue[i])
         }
     }
 
@@ -1901,7 +1912,10 @@ let computePointsAndColor = () =>{
             labelForValue.style.fontFamily = fontFamily;
             labelForValue.style.borderWidth= "0px";
             main.insertAdjacentElement("afterbegin", labelForValue );
+        }else{
+            labelForValue .textContent = `${ value }`;
         }
+
     }
 
     let title = document.getElementById("title")

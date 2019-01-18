@@ -431,10 +431,23 @@ div.tooltip {
     background-color: #4b4b4b;
 }
 
-.vis3part {
+.disable{
+    display: none;
+}
 
+.vis3part {
+    transform: scale(0.8);
+    transition: 2s ease-in-out;
 }
 
 .zoomout {
+    transform: scale(1);
+}
 
+.vis3_container {
+    transform: translate(14%,0); transition: 2s ease-in-out;
+}
+
+.shiftleft {
+    transform: translate(0,0);
 }
