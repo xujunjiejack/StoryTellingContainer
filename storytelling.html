@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" type="text/css" href="storytelling.css" >
     <link rel="stylesheet" href="vis3/vis3.css">
 
@@ -38,28 +38,30 @@
         <div class='chart'>
 
             <div class="textarea" id="t1">
-            <h1 class="headline text-center">The Impatient List</h1>
-            <h2 class="subtitle text-center"> What would it be like to be waiting for a kidney transplant in the United States?</h2>
-            <!--<h3 class="author text-center"> By Kuhu, Het, Tony, JJ </h3>-->
+                <h1 class="headline text-center">The Impatient List</h1>
+                <h2 class="subtitle text-center"> What would it be like to be waiting for a kidney transplant in the United States?</h2>
+                <!--<h3 class="author text-center"> By Kuhu, Het, Tony, JJ </h3>-->
             </div>
         </div>
     </div>
     <div class="container-fluid">
-        <div class="intro_text" style="vertical-align: center; height: 700px" >
+        <div class="intro_text" style="vertical-align: center" >
 
-            <p class="text-center">
+            <p class="introduction">
                 More than 114,000 Americans eligible for organ transplants are waiting for a donation, with 80% of them waiting for a kidney transplant.
             </p>
 
-            <p class="text-center">
-                Kidneys filter and remove excess waste, minerals and fluid from the blood. When your kidneys lose this filtering ability due to, for example, diabetes, harmful levels of fluid and waste accumulate in your body. Your blood pressure will then raise and result in kidney failure. When the kidneys have lost about 90 percent of their ability, end-stage kidney disease occurs.
+            <img src="./organs.png" class="img-responsive" alt="">
 
-                When your kidneys fail, kidney transplantation is one of two ways to replace the work your own kidneys can no longer do. Compared to its alternative, dialysis, kidney transplant offers more freedom and better quality of life.
+            <p class="introduction">
+                The kidneys are two bean-shaped organs located on either side of the spine just below the rib cage. Their main function is to filter and remove excess waste, minerals and fluid from the blood by producing urine.
             </p>
 
-            <p class="text-center">
-                However, getting a transplantation is not easy.
-            </p>
+            <p class="introduction">When your kidneys lose this filtering ability, harmful levels of fluid and waste accumulate in your body, which can raise your blood pressure and result in kidney failure (end-stage renal disease, which is also known as end-stage kidney disease). End-stage renal disease occurs when the kidneys have lost about 90 percent of their ability to function normally. They can be caused by diabetes, chronic, uncontrolled high blood pressure, polycystic kidney disease, etc. </p>
+
+            <p class="introduction">When your kidneys fail, kidney transplant is one of two ways to replace the work your own kidneys can no longer do. Compared to its alternative, dialysis, kidney transplant offers more freedom and better quality of life. </p>
+
+            <p class="introduction">However, getting a transplant is not easy. </p>
 
         </div>
     </div>
@@ -76,114 +78,115 @@
     <!--  step/text container  -->
     <div class='scroll__text'>
         <div class='box step' data-step='1'>
-          <div class="card">
-            <p>
-                To receive a transplant, you must first register yourself on the waitlist of a transplant center.
-            </p>
-          </div>
+            <div class="card">
+                <p>
+                    To receive a transplant, you must first register yourself on the waitlist of a transplant center. There are 237 of them across the United States.
+                </p>
+            </div>
 
         </div>
 
         <div class='box step' data-step='2'>
-          <div class="card">
-            <p>Since Kidney Transplant can be time sensitive, it is best for you to choose the ones adajacent to where you live.</p>
-            <p style="text-align:center"> Enter Your Zipcode </p>
-            <p style="text-align:center">
-            <div class="row">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-5">
-                    <input id="zip" class="form-control form-control-sm"  value="30318" type="text" >
+            <div class="card">
+                <p>Since Kidney Transplant can be time sensitive, it is best for you to choose the ones adajacent to where you live. Please enter your zip code to view centers around you:</p>
+                <p style="text-align:center">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-5">
+                        <input id="zip" class="form-control form-control-sm"  value="30318" type="text" >
+                    </div>
+                    <div class="col-lg-1"><button type="button" id="problemsubmit" class="btn btn-secondary btn-sm"><i class="fas fa-location-arrow"></i></button></div>
+                    <div class="col-lg-3"></div>
                 </div>
-                <div class="col-lg-1"><button type="button" id="problemsubmit" class="btn btn-secondary btn-sm"><i class="fas fa-location-arrow"></i></button></div>
-                <div class="col-lg-3"></div>
+                </p>
+                <p>You’ll also need to compare between centers around you for their death rates, survival rates, and waitlist waiting time, in order to find the optimal center to register as a candidate. How would you balance these different factors, when each choice you make might influence your chance of getting a transplant to being cured? </p>
+                <p style="font-style: italic">Click on each pin on the map to view the data for each center compared to other centers around you.</p>
             </div>
-            </p>
-          </div>
 
             <!-- img -->
             <!-- <img src="" alt=""> -->
         </div>
 
         <div class='box step' data-step='3'>
-          <div class="card">
-            <p>
-                Currently, your state has <span style="color: red;"> 4,123</span> patients like you, waiting for a kidney transplant. <span style="color: red;">42% </span> of them have already been waiting for over <span style="color: red;">2 years</span>
+            <div class="card">
+                <p>
+                    Currently, your state has <span style="color: red;"> 4,123</span> patients like you, waiting for a kidney transplant. <span style="color: red;">42% </span> of them have already been waiting for over <span style="color: red;">2 years</span>
 
-                <br>
-                <br>
-                The situation is even worst in other parts of the country.
-            </p>
-          </div>
+                    <br>
+                    <br>
+                    The situation is even worst in other parts of the country.
+                </p>
+            </div>
 
             <!-- img -->
             <!-- <img src="" alt=""> -->
         </div>
 
         <div class='box step' data-step='4'>
-          <div class="card">
-            <h3>Georgia</h3>
-            <p>
+            <div class="card">
+                <h3>Georgia</h3>
+                <p>
 
-                Georgia has <span style="color: red;"> 4,796</span> waiting for a kidney transplant. <span style="color: red;">39% </span> of them have already been waiting for over <span style="color: red;">3 years</span>.
+                    Georgia has <span style="color: red;"> 4,796</span> waiting for a kidney transplant. <span style="color: red;">39% </span> of them have already been waiting for over <span style="color: red;">3 years</span>.
 
-            </p>
-          </div>
+                </p>
+            </div>
 
             <!-- img -->
             <!-- <img src="" alt=""> -->
         </div>
         <div class='box step' data-step='5'>
-          <div class="card">
-            <h3>California</h3>
-            <p>
-                California has the longest waiting list of <span style="color: red;">19,723</span> patients, which is the highest in the nation even after population is considered. <span style="color: red;">44%</span> of those patients have been waiting for over <span style="color: red;">3 years</span>.
-            </p>
-          </div>
+            <div class="card">
+                <h3>California</h3>
+                <p>
+                    California has the longest waiting list of <span style="color: red;">19,723</span> patients, which is the highest in the nation even after population is considered. <span style="color: red;">44%</span> of those patients have been waiting for over <span style="color: red;">3 years</span>.
+                </p>
+            </div>
 
             <!-- img -->
             <!-- <img src="" alt=""> -->
         </div>
         <div class='box step' data-step='6'>
-          <div class="card">
-            <h3>Alabama</h3>
-            <p>
-                Alabama’s patients tend to wait the longest, with <span style="color: red;">63%</span> of them staying on the waitlist for over <span style="color: red;">3 years</span>, almost twice the amount of the national average <span style="color: red;">(34%)</span>.
-            </p>
-          </div>
+            <div class="card">
+                <h3>Alabama</h3>
+                <p>
+                    Alabama’s patients tend to wait the longest, with <span style="color: red;">63%</span> of them staying on the waitlist for over <span style="color: red;">3 years</span>, almost twice the amount of the national average <span style="color: red;">(34%)</span>.
+                </p>
+            </div>
 
 
         </div>
         <div class='box step' data-step='7' id="bg-toggles">
-          <div class="card" id="card-toggles">
-            <p>
-              Waitlist length is only part of the story, since different states have different populations and donor registration rates. In addition, donors and recipients need to have compatible blood types, and similar body size (BMI).<br><br>
+            <div class="card" id="card-toggles">
+                <p>
+                    Waitlist length is only part of the story, since different states have different populations and donor registration rates. In addition, donors and recipients need to have compatible blood types, and similar body size (BMI).<br><br>
 
-              What if we consider the ratio between the waitlist and donors for each state, and separate the results by blood type & BMI?
-            </p><br><br>
+                    What if we consider the ratio between the waitlist and donors for each state, and separate the results by blood type & BMI?
+                </p><br><br>
 
-            <div class="row">
-                <div class="btn-group btn-group-1" id="blood_button">
-                    <button type="button" value="ABO" name="blood" class="btn btn-secondary btn-sm active" >All</button>
-                    <button type="button" value="A" name="blood" class="btn btn-secondary btn-sm">A</button>
-                    <button type="button" value="B" name="blood" class="btn btn-secondary btn-sm">B</button>
-                    <button type="button" value="O" name="blood" class="btn btn-secondary btn-sm">O</button>
-                    <button type="button" value="AB" name="blood" class="btn btn-secondary btn-sm">AB</button>
+                <div class="row">
+                    <div class="btn-group btn-group-1" id="blood_button">
+                        <button type="button" value="ABO" name="blood" class="btn btn-secondary btn-sm active" >All</button>
+                        <button type="button" value="A" name="blood" class="btn btn-secondary btn-sm">A</button>
+                        <button type="button" value="B" name="blood" class="btn btn-secondary btn-sm">B</button>
+                        <button type="button" value="O" name="blood" class="btn btn-secondary btn-sm">O</button>
+                        <button type="button" value="AB" name="blood" class="btn btn-secondary btn-sm">AB</button>
+                    </div>
                 </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="btn-group btn-group-2" id="bmi_button">
-                    <button type="button" value="0" name="bmi" class="btn btn-secondary btn-sm active">All</button>
-                    <button type="button" value="1" name="bmi" class="btn btn-secondary btn-sm">18.5</button>
-                    <button type="button" value="2" name="bmi" class="btn btn-secondary btn-sm">18.5-25</button>
-                    <button type="button" value="3" name="bmi" class="btn btn-secondary btn-sm">25-30</button>
-                    <button type="button" value="4" name="bmi" class="btn btn-secondary btn-sm">30-35</button>
-                    <button type="button" value="5" name="bmi" class="btn btn-secondary btn-sm">35-50</button>
-                    <button type="button" value="6" name="bmi" class="btn btn-secondary btn-sm">50+</button>
+                <br>
+                <div class="row">
+                    <div class="btn-group btn-group-2" id="bmi_button">
+                        <button type="button" value="0" name="bmi" class="btn btn-secondary btn-sm active">All</button>
+                        <button type="button" value="1" name="bmi" class="btn btn-secondary btn-sm">18.5</button>
+                        <button type="button" value="2" name="bmi" class="btn btn-secondary btn-sm">18.5-25</button>
+                        <button type="button" value="3" name="bmi" class="btn btn-secondary btn-sm">25-30</button>
+                        <button type="button" value="4" name="bmi" class="btn btn-secondary btn-sm">30-35</button>
+                        <button type="button" value="5" name="bmi" class="btn btn-secondary btn-sm">35-50</button>
+                        <button type="button" value="6" name="bmi" class="btn btn-secondary btn-sm">50+</button>
+                    </div>
                 </div>
+                <div id="slider"></div>
             </div>
-            <div id="slider"></div>
-          </div>
 
         </div>
     </div>
@@ -195,7 +198,7 @@
     <div class="vis_transition"  >
 
         You might have noticed that in general, the waitlist length grows much faster
-            than the donor numbers. How did the waitlist develop into this situation today?
+        than the donor numbers. How did the waitlist develop into this situation today?
 
 
     </div>
@@ -206,34 +209,41 @@
     <div class="scroll__graphic sticky" style="width: 100%; height: 349px;">
         <div class="overlay"  >
 
-                <div id="vis3" style="padding-left:30%;">
-                    <row class="d-flex justify-content-center ">
-                        <div id = "main" class="vis3part" style="transform: scale(0.8)" >
-                            <canvas id="canvas" width="1200" height="600" style="border:0px solid #000000;" ></canvas>
-                        </div>
-                    </row>
-                    <row class="d-flex justify-content-center" >
-                        <div style="padding: 4px 60px;" style="transform: scale(0.8)" >
-                            <!--<label for="yearSlider" style="margin-right:6px;">1995</label>-->
-                            <!--<input id="yearSlider" type="text" data-slider-min="1995" data-slider-max="2017" data-slider-step="1" data-slider-value="1995" style="width: 800px;"/>-->
-                            <!--<label for="yearSlider"  style="margin-left:6px;">2017</label>-->
+            <div id="vis3" class = "vis3_container" >
+                <row class="d-flex justify-content-center ">
+                    <div id = "main" class="vis3part" >
+                        <canvas id="canvas" width="1200" height="600" style="border:0px solid #000000;" ></canvas>
+                    </div>
+                </row>
+                <row class="d-flex justify-content-center" >
+                    <div id="vis3_svg_container"   style="padding: 4px 25px 0 0; width:1100px" class="vis3part" >
+                        <!--<label for="yearSlider" style="margin-right:6px;">1995</label>-->
+                        <!--<input id="yearSlider" type="text" data-slider-min="1995" data-slider-max="2017" data-slider-step="1" data-slider-value="1995" style="width: 800px;"/>-->
+                        <!--<label for="yearSlider"  style="margin-left:6px;">2017</label>-->
 
-                            <!--<button type="button" id="animatonButton" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">-->
-                            <!--Single toggle-->
-                            <!--</button>-->
-                            <svg id = "vis3_svg" height="150" width="1000" >
+                        <!--<button type="button" id="animatonButton" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">-->
+                        <!--Single toggle-->
+                        <!--</button>-->
+                        <svg id = "vis3_svg" height="150" width="1000" >
 
-                            </svg>
-                        </div>
+                        </svg>
 
-                        <div >
-                            <button id="pauseButton" class="pauseButtonClass" style="width: 70px; height:30px; border-radius: 3px; border-width: 0; background-color: #5DA2D5;color: #FAFAFA;"
-                                    onclick="stopAfterOneYear()"> Pause </button>
-                        </div>
+                        <button id="pauseButton" class="pauseButtonClass disable" style="width: 70px; height:30px; border-radius: 3px; border-width: 0; background-color: #5DA2D5;color: #FAFAFA;
+                                                  position:absolute;left: 1050px; top: 10px;
+                                                                                        "
+                                onclick="stopAfterOneYear()"> Pause </button>
+                    </div>
 
-                    </row>
+                    <!--<div class="vis3part" >-->
+                    <!--<button id="pauseButton" class="pauseButtonClass" style="width: 70px; height:30px; border-radius: 3px; border-width: 0; background-color: #5DA2D5;color: #FAFAFA;-->
+                    <!--position: absolute; left: 0px; top:20px;-->
+                    <!--"-->
+                    <!--onclick="stopAfterOneYear()"> Pause </button>-->
+                    <!--</div>-->
 
-                </div>
+                </row>
+
+            </div>
 
         </div>
     </div>
@@ -241,9 +251,11 @@
     <div class='scroll__text' style="padding: 1rem 1rem; ">
         <div class='boxvis3 step' data-step='1'>
             <div class="card">
+                <h3>Longer, longer</h3>
+
                 <p>
                     One reason for the long waiting list is how little the waiting list got reduced each year.
-                    The visualization belows tells you about how the waiting list changes in one year.
+                    This visualization tells you about how the waiting list changes in one year.
                 </p>
 
 
@@ -252,7 +264,9 @@
 
         <div class='boxvis3 step' data-step='2'>
             <div class="card">
+                <h3>Year 2017</h3>
                 <p>
+
                     First, let's examine how the waiting list changes in last year (2017).
                     At the start of 2017, there were 99064 people on the waiting list. Each pixel in the
                     blue bar indicates one person.
@@ -264,7 +278,7 @@
         <div class='boxvis3 step' data-step='3'>
             <div class="card">
                 <p>
-                    In that year, in addition to just keep waiting, patients on the list have different outcomes.
+                    In that year, in addition to keeping waiting, patients on the list have other outcomes.
                     22775 patients got <span style="color: #7FCBFF "> cured </span>, luckily. 4706 patients got <span style="color:#E8C09E"> deteoriated</span>,
                     and even worse,4191 <span style="color:#B2603B"> died </span>. Over 10 patients died each day on average
                     on the waiting list.
@@ -284,17 +298,20 @@
         <div class='boxvis3 step' data-step='5'>
             <div class="card">
                 <p>
-                    Luckily, the size of waiting list in 2017 just got reduced around 3000, which is only 3%.
-                    However, not all years are like 2017. Let's start from 1995, and saw the history.
+                    Luckily, the size of waiting list in 2017 only got reduced around 3000, which is only 3%.
+                    However, not all years are like 2017.
                 </p>
             </div>
         </div>
 
         <div class='boxvis3 step' data-step='6'>
             <div class="card">
+                <h3> History </h3>
                 <p>
+                    Let's start from 1995, and saw the history.
                     You can change the year with the red bar below.
                     Also, you can pause at any time.
+                    Scroll to start.
                 </p>
             </div>
         </div>
@@ -309,13 +326,13 @@
 
 <div class="end" style="height: 100vh;">
 
-  <div>
-    <p class="final-CTA">To help 103,202 people on the waitlist, register to be a donor today. One donor could potentially save the lives of 8 people.</p><br><br>
+    <div>
+        <p class="final-CTA">To help 103,202 people on the waitlist, register to be a donor today. One donor could potentially save the lives of 8 people.</p><br><br>
 
-    <a href="https://www.organdonor.gov/register.html"><p style="text-align:center"><button type="button" class="btn btn-sm btn-CTA">Register to be a Donor</button></p></a>
+        <a href="https://www.organdonor.gov/register.html"><p style="text-align:center"><button type="button" class="btn btn-sm btn-CTA">Register to be a Donor</button></p></a>
 
 
-  </div>
+    </div>
 
 
 </div>
@@ -353,5 +370,3 @@
 <script type="text/javascript" src="./js/line.js"></script>
 <script type="text/javascript" src="./js/scatterplot.js"></script>
 <!--<script src="js/main.js"></script>-->
-
-</html>
