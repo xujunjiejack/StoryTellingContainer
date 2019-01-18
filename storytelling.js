@@ -196,6 +196,8 @@ init2();
 // Scrollama 2
 
 // Resize
+let stopAt100 = false;
+
 function init2() {
     // 1. call a resize on load to update width/height/position of elements
     handleResize2();
@@ -231,7 +233,35 @@ function handleStepEnter2(response) {
     });
 
     if (response.index === 0) {
-        stop = false
+        // still stop
+    } else if (response.index === 1){
+        // move to 2017
+
+        startYear = 2017;
+        updateNumber(startYear);
+        computePointsAndColor();
+        stop=true;
+
+    }  else if (response.index === 2){
+        // change color
+        // stop at 100
+        stop = false;
+        stopAt100 = true;
+
+    }
+    else if (response.index === 3){
+        // Move pixels
+        stopAt100 = false;
+    }
+    else if (response.index === 4){
+        // move to 1995
+        startYear = 1995;
+        updateNumber(startYear);
+        computePointsAndColor();
+        stop=true;
+    }
+    else if (response.index === 5) {
+        setTimeout(() => { stop=false}, 2)
     }
 }
 
@@ -742,7 +772,7 @@ function concat(str1,str2,year){
 
 let waitingTime = 0;
 
-let startYear = 1995
+let startYear = 1995;
 
 let animated = true;
 let stop = true;
@@ -820,6 +850,19 @@ let flatPoints =  null;
 let yearMarkPosition = {};
 let scaleMarkPosition = {};
 
+let pauseButton = document.getElementById("pauseButton");
+pauseButton.addEventListener("click", ()=>{
+    stop = !stop;
+
+    if (stop) {
+        pauseButton.textContent = "Resume";
+    }else{
+        pauseButton.textContent = "Pause";
+    }
+
+    console.log("Click, Click, Click")
+
+});
 
 let additionStartX = 70;
 let nodePositionArrayLastYear = {
@@ -907,7 +950,7 @@ let nodePositionArray = {
         cx: 500,
         cy: 400,
         pointNumber: 0,
-        color: "#c0ff5b",
+
         color_rgb: normalizeRGB([99, 174, 229])
     },
 
@@ -919,7 +962,6 @@ let nodePositionArray = {
         width: 55,
         height: 490,
         pointNumber: 0,
-        color: "#c0ff5b",
         // color_rgb: normalizeRGB([192.0, 255.0, 91.0]),
         color_rgb: normalizeRGB([127.0, 203.0, 222.0]),
         cx: 900,
@@ -976,7 +1018,7 @@ class Point {
     constructor(x, y, color_rgb, currentCategory ) {
         this.currentX = x;
         this.currentY = y;
-        this.color_rgb = color_rgb;
+        this.color_rgb = [color_rgb[0],color_rgb[1],color_rgb[2]] ;
         this.targetX = x;
         this.targetY = y;
         this.currentCategory = currentCategory; // used for locate future color
@@ -984,13 +1026,28 @@ class Point {
         this.futureColor = null; // used for next place
         this.direction = [0,0];
         this.requiredFrame = math.randomInt(100) + 50
-
+        this.colorFadeDirectionUnit = null;
+        this.colorFadeFrame = 40;
     }
 
     computeDirectionVector (){
         this.direction = [this.targetX - this.currentX, this.targetY- this.currentY]
     }
 
+    computeColorVector (){
+        if (this.futureColor === null){
+            return
+        }
+        this.colorFadeDirectionUnit = this.color_rgb.map( (c,i) =>
+            (this.futureColor[i] - this.color_rgb[i])/this.colorFadeFrame
+        )
+    }
+
+    setFutureColor (futureColor) {
+        this.futureColor = [futureColor[0], futureColor[1], futureColor[2]];
+        this.computeColorVector();
+        // console.log(this.colorFadeDirectionUnit)
+    }
 }
 
 // Next step: create a cured square
@@ -1222,8 +1279,6 @@ let populatePointsInRectWL = (p, pAdditions)=>{
     }
 }
 
-
-
 let populateWlPoints = (p, pAdditions, colors)=>{
     let pointCount = 0;
     let r = 1;
@@ -1366,7 +1421,7 @@ let assignRandomPointsToANumber = (sourcePoints, targetPoints, leavingPointPosit
         randomSourcePoint.targetX = t.currentX;
         randomSourcePoint.targetY = t.currentY;
         randomSourcePoint.futureCategory = t.currentCategory
-        randomSourcePoint.futureColor = t.color_rgb;
+        randomSourcePoint.setFutureColor(t.color_rgb);
         randomSourcePoint.computeDirectionVector()
 
         leavingGrey.push( new Point(randomSourcePoint.currentX, randomSourcePoint.currentY,normalizeRGB([230, 230, 230]),randomSourcePoint.name))
@@ -1407,7 +1462,7 @@ let additionToWL = (sourcePoints,  targetPoints, leavingPointSet, wlExtraAdditio
         sourcePoint.targetX = t.currentX;
         sourcePoint.targetY = t.currentY;
         sourcePoint.futureCategory = t.currentCategory;
-        sourcePoint.futureColor = sourcePoint.color_rgb;
+        sourcePoint.setFutureColor(sourcePoint.color_rgb);
         sourcePoint.computeDirectionVector()
         // console.log(targetPoints);
         n++;
@@ -1429,7 +1484,7 @@ let additionToWL = (sourcePoints,  targetPoints, leavingPointSet, wlExtraAdditio
         sourcePoint.targetX = t.currentX;
         sourcePoint.targetY = t.currentY;
         sourcePoint.futureCategory = sourcePoint.currentCategory;
-        sourcePoint.futureColor = sourcePoint.color_rgb;
+        sourcePoint.setFutureColor(sourcePoint.color_rgb);
         sourcePoint.computeDirectionVector()
     }
 
@@ -1439,7 +1494,7 @@ let getEndOfYearWlLength = (nodes) =>
     nodes["wl"].pointNumber + nodes["additions"].pointNumber - nodes["cured"].pointNumber - nodes["died"].pointNumber -
     nodes["deteriorated"].pointNumber - nodes["other"].pointNumber ;
 
-let fontFamily = "Georgia"
+let fontFamily = "Ariel"
 
 class WlLabelController{
 
@@ -1463,12 +1518,17 @@ class WlLabelController{
         this.delta = this.difference/ this.cycleTime;
         this.wlShown = this.lastyearWl;
         this.tickTracker = -1;
+        this.renderLabelContent()
     }
 
     renderLabelContent(){
 
         if (this.tickTracker === cycleTime){
             return
+        }
+
+        if (this.tickTracker === -1){
+            this.label.textContent = `Currently waiting: ${ Math.floor(this.wlShown)}`;
         }
 
         if (this.tickTracker % 30 === 0) {
@@ -1719,6 +1779,10 @@ let computePointsAndColor = () =>{
         nodePositionArray["deteriorated"].pointNumber + nodePositionArray["cured"].pointNumber +
         nodePositionArray["other"].pointNumber}`;
         main.insertAdjacentElement("afterbegin", patientLeftLabel);
+    }else {
+        patientLeftLabel.textContent = `Patients left ${nodePositionArray["died"].pointNumber +
+        nodePositionArray["deteriorated"].pointNumber + nodePositionArray["cured"].pointNumber +
+        nodePositionArray["other"].pointNumber}`;
     }
 
     // Render vertical line onto it
@@ -1746,9 +1810,9 @@ let computePointsAndColor = () =>{
             labelForYear.style.left = `${yearMarkPosition[i]-4}px`;
 
             if (i >= 2015)
-                labelForYear.style.top = `${horizontalLineTop + 10}px`;
+                labelForYear.style.top = `${horizontalLineTop + 14}px`;
             else
-                labelForYear.style.top = `${horizontalLineTop + 3}px`;
+                labelForYear.style.top = `${horizontalLineTop + 6}px`;
 
             labelForYear.setAttribute("id", `${i}_label`);
             labelForYear.style.fontSize = "8px";
@@ -1855,7 +1919,7 @@ let computePointsAndColor = () =>{
         title.style.height = "100px";
         title.style.fontSize = "40px";
         title.style.borderWidth= "0px";
-        main.insertAdjacentElement("afterbegin", title );
+        main.insertAdjacentElement("afterbegin", title);
     }else{
         title.textContent = `Waiting list change in ${startYear}`
     }
@@ -1863,8 +1927,8 @@ let computePointsAndColor = () =>{
     let wlnumberLabel = document.getElementById("wlnumber")
     if (wlnumberLabel === null){
         wlnumberLabel = document.createElement("div")
-        wlnumberLabel .classList.add("wlnumber")
-        wlnumberLabel .setAttribute("id", "wlnumber")
+        wlnumberLabel.classList.add("wlnumber")
+        wlnumberLabel.setAttribute("id", "wlnumber")
         wlnumberLabel.style.left = `460px`;
         wlnumberLabel.style.top = `170px`;
         wlnumberLabel.style.textAlign = `center`;
@@ -2261,7 +2325,12 @@ let run = (dataset) => {
 
                     let p = props.movingPoints[i];
 
-                    if (props.waitingTime === 40){
+                    if (props.waitingTime >= 40 && (props.waitingTime < (40 + p.colorFadeFrame)) && !stop){
+                        p.color_rgb[0] += p.colorFadeDirectionUnit[0];
+                        p.color_rgb[1] += p.colorFadeDirectionUnit[1];
+                        p.color_rgb[2] += p.colorFadeDirectionUnit[2];
+                        // p.color_rgb = p.futureColor
+                    } else if (props.waitingTime === (40 + p.colorFadeFrame)){
                         p.color_rgb = p.futureColor
                     }
 
@@ -2276,7 +2345,7 @@ let run = (dataset) => {
 
                     else {
                         // let t = math.randomInt(20) + 180;
-                        if ( props.waitingTime >= 100) {
+                        if ( props.waitingTime >= 100 && !stop ) {
                             p.currentX += p.direction[0] / p.requiredFrame;
                             p.currentY += p.direction[1] / p.requiredFrame;
                         }
@@ -2286,7 +2355,6 @@ let run = (dataset) => {
                     a[2*i + 1 + base] = p.currentY
                     // console.log(p.direction[0]/10)
                 }
-                props.waitingTime = props.waitingTime + 1;
 
                 return a
 
@@ -2331,7 +2399,6 @@ let run = (dataset) => {
                     for (let j = 0; j < 3; j++){
                         allColors[ base + 3*i + j ] = props.movingPoints[i].color_rgb[j];
                     }
-
                 }
                 // Calculate
                 return allColors
@@ -2377,22 +2444,26 @@ let run = (dataset) => {
             if (startYear !== 2018)
                 changeSlider(waitingTime);
 
-
         // Update label
         // wlnumberLabel
 
         if (!stop) {
-            waitingTime += 1;
-            if (wlLabelController !== null){
-                wlLabelController.updateWl();
-                wlLabelController.renderLabelContent();
+
+            if (stopAt100 === true && waitingTime === 99){
+
+            }else{
+                waitingTime += 1;
+                if (wlLabelController !== null){
+                    wlLabelController.updateWl();
+                    wlLabelController.renderLabelContent();
+                }
             }
         }
 
         // This tells regl to execute the command once for each object
         draw({pointWidth: pointWidth, canvasHeight: canvasHeight, canvasWidth: canvasWidth, time: time, points: points,allPoints: allPoints,
             colors: colors, movingPoints: allPoints.movingPoints, flatPoints: flatPoints, stayPoints:allPoints.stayPoints,
-            movingPointsColors: movingPointsColors, allColors: allColors, waitingTime: waitingTime, animated: animated,
+            movingPointsColors: movingPointsColors, allColors: allColors, waitingTime: waitingTime, animated: animated, stop: stop
         })
     })
 }

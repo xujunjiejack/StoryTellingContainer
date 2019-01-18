@@ -96,7 +96,7 @@ var div = d3.select(".scatterplot_box").append("div")
    .attr("class", "myLabel")//easy to style with CSS
    .text("High 3-Year")
    .attr('fill', 'black')
-   .attr('font-size', '7.5px');
+   .attr('font-size', '13.5px');
 
    svg_scatter.append("text")
    .attr("x", 320)
@@ -104,7 +104,7 @@ var div = d3.select(".scatterplot_box").append("div")
    .attr("class", "myLabel")//easy to style with CSS
    .text("Transplant Rate")
    .attr('fill', 'black')
-   .attr('font-size', '7px');
+   .attr('font-size', '13px');
 
    svg_scatter.append("text")
    .attr("x", 130)
@@ -112,7 +112,7 @@ var div = d3.select(".scatterplot_box").append("div")
    .attr("class", "myLabel")//easy to style with CSS
    .text("High WaitList Death Rate")
    .attr('fill', 'black')
-   .attr('font-size', '7px');
+   .attr('font-size', '13px');
 
    svg_scatter.append("text")
    .attr("x", 130)
@@ -120,7 +120,7 @@ var div = d3.select(".scatterplot_box").append("div")
    .attr("class", "myLabel")//easy to style with CSS
    .text("Low WaitList Death Rate")
    .attr('fill', 'black')
-   .attr('font-size', '7px');
+   .attr('font-size', '13px');
 
    svg_scatter.append("text")
    .attr("x", 0)
@@ -128,7 +128,7 @@ var div = d3.select(".scatterplot_box").append("div")
    .attr("class", "myLabel")//easy to style with CSS
    .text("Low 3-Year")
    .attr('fill', 'black')
-   .attr('font-size', '7px');
+   .attr('font-size', '13px');
 
    svg_scatter.append("text")
    .attr("x", 0)
@@ -136,7 +136,7 @@ var div = d3.select(".scatterplot_box").append("div")
    .attr("class", "myLabel")//easy to style with CSS
    .text("Transplant Rate")
    .attr('fill', 'black')
-   .attr('font-size', '7px');
+   .attr('font-size', '13px');
 
     svg_scatter.append('rect')
         .attr('width',10)
@@ -158,7 +158,7 @@ var div = d3.select(".scatterplot_box").append("div")
         .attr("class", "myLabel")//easy to style with CSS
         .text("Selected")
         .attr('fill', 'black')
-        .attr('font-size', '7px');
+        .attr('font-size', '13px');
 
     svg_scatter.append('text')
         .attr('x',width+15)
@@ -166,7 +166,7 @@ var div = d3.select(".scatterplot_box").append("div")
         .attr("class", "myLabel")//easy to style with CSS
         .text("Others")
         .attr('fill', 'black')
-        .attr('font-size', '7px');
+        .attr('font-size', '13px');
 
    svg_scatter.append("line")
   .style("stroke", "red")
@@ -179,7 +179,7 @@ var div = d3.select(".scatterplot_box").append("div")
         .attr('transform', 'translate('+ 42 + ',' + 25+')rotate(90)')
         .attr("fill", "red")
         .text("National Average Transplant Rate")
-        .attr('font-size', '7px');
+        .attr('font-size', '13px');
 
   svg_scatter.append("line")
   .style("stroke", "red")
@@ -193,7 +193,7 @@ var div = d3.select(".scatterplot_box").append("div")
         .attr("y", y(0.054763277)-5)
         .attr("fill", "red")
         .text("National Average Death Rate")
-        .attr('font-size', '7px');
+        .attr('font-size', '13px');
 
         svg_scatter.append("text")
         .attr("x", 100)
@@ -223,7 +223,7 @@ var div = d3.select(".scatterplot_box").append("div")
               .attr("class", "myLabel")//easy to style with CSS
               .text("Selected")
               .attr('fill', 'black')
-              .attr('font-size', '7px');
+              .attr('font-size', '13px');
 
   svg_scatter.append('text')
               .attr('x',width+15)
@@ -231,6 +231,6 @@ var div = d3.select(".scatterplot_box").append("div")
               .attr("class", "myLabel")//easy to style with CSS
               .text("Others")
               .attr('fill', 'black')
-              .attr('font-size', '7px');
+              .attr('font-size', '13px');
 
 }
