@@ -446,6 +446,7 @@ div.tooltip {
 
 .vis3_container {
     transform: translate(14%,0); transition: 2s ease-in-out;
+    margin-top: 35px;
 }
 
 
