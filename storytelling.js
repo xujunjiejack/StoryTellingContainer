@@ -397,7 +397,7 @@ d3.queue()
     .defer(d3.csv,'./data/zipcodes_1.csv',function(row){
         return { zip_code: row['zip_code'],LatLng: [+row['latitude'],+row['longitude']], state: row['state_name']};
     })
-    .defer(d3.json,'./data/states.json')
+    .defer(d3.json,'./data/states1.json')
     .defer(d3.json,'./data/shape_GA.geojson')
     .defer(d3.json,'./data/shape_CA.geojson')
     .defer(d3.json,'./data/shape_AL.geojson')
