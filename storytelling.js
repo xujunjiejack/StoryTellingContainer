@@ -789,22 +789,27 @@ function concat(str1,str2,year){
             fillOpacity: 0.7
         };
     }
-    legend.onAdd = function (map) {
+   legend.onAdd = function (map) {
 
-        var div = L.DomUtil.create('div', 'info legend'),
-            // grades = [0, 10, 20, 50,100,200,300,400],
-            grades= [1, 2, 3, 5, 8, 13, 25],
-            labels = [];
+          var div = L.DomUtil.create('div', 'info legend'),
+              // grades = [0, 10, 20, 50,100,200,300,400],
+              ///////////////////////////////////
+              grades= [25, 13, 8, 5, 3, 2, 1],
+              ////////////////////////////////////
+              labels = [];
 
-        // loop through our density intervals and generate a label with a colored square for each interval
-        for (var i = 0; i < grades.length; i++) {
-            div.innerHTML +=
-                '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
-                grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
-        }
-
-        return div;
-    };
+          // loop through our density intervals and generate a label with a colored square for each interval
+          for (var i = 0; i < grades.length; i++) {
+              div.innerHTML +=
+                  '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+                  grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+          }
+          //////////////////////////
+            div.innerHTML += '<br><i style="background:' + getColor(0) + '"></i> ' +
+                  '0';
+        //////////////////////////////
+          return div;
+      };
 
 }
 
