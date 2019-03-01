@@ -147,9 +147,9 @@ li {
 
 .center_tooltip {
     position: absolute;
-    background: none repeat scroll 0 0 #ffffff;
-    border: 1px solid black;
-    padding: 1px;
+    background: #FAFAFA;
+    box-shadow: 0 2px 18px 0 rgba(0,0,0,0.18);
+    padding: 16px 32px 24px 32px;
 
 }
 .center_tooltip text{
