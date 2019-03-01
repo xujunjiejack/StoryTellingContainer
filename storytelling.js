@@ -706,8 +706,18 @@ function updateMap(myzipcode){
         d3.select(map.getContainer()).select(".center_tooltip").remove();
     });
 
-    function stateFilter(feature) {
-        if (feature.properties.NAME === last_zipcode_state) return true
+   function stateFilter(feature) {
+        if (feature.properties.NAME === last_zipcode_state)
+        {   
+            console.log(feature.properties.All_time);
+            console.log(typeof feature.properties.Over_3_years)
+            console.log(feature.properties.Over_3_years* 100)
+            var element_waiting = document.getElementById("waiting");
+            element_waiting.innerHTML = feature.properties.All_time;
+            var element_perce = document.getElementById("perce");
+            element_perce.innerHTML = (feature.properties.Over_3_years * 100).toFixed(3);
+           return true 
+        } 
     }
     user_state_layer = L.geoJson(states_data,{filter: stateFilter, style:style});
 
