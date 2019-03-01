@@ -55,6 +55,7 @@ body {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   /* padding-top: 60px; */
+   overflow-x: hidden;
   margin: auto;
 }
 
