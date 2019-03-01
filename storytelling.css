@@ -157,3 +157,12 @@ li {
     font-size: 10px;
     text-align: left;
 }
+
+.end_deatils{
+    font-family: Georgia;
+    font-weight: 300;
+    font-color: #5a5a5a;
+}
+.enddetailsheading{
+    font-weight: 900;
+}
