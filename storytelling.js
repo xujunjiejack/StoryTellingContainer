@@ -720,7 +720,7 @@ info_state.onAdd = function (map) {
 
 info_state.update = function (props) {
     this._div.innerHTML = '<h4>Waitlist to Donor Ratio</h4>' +  (props ?
-        '<b>' + props.NAME + '</b><br />' + props.value + ''
+        '<b>' + props.NAME + '</b><br />' + props.value.slice(0,5) + ''
         : 'Hover over a state');
 };
 
