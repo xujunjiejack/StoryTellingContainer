@@ -389,7 +389,8 @@ d3.queue()
             transplant_rate_center: +row['Transplant Rate (center)'], transplant_rate_nation: +row['Transplant Rate (nation)'],
             all: +row['All Time'], less_than_30_time: +row['< 30 Days'],days_30_to_90_time: +row['30 to < 90 Days'], days_90_to_6_months_time: +row['90 Days to < 6 Months'],
             months_6_to_1_year_time: +row['6 Months to < 1 Year'], year_1_to_2_time: +row['1 Year to < 2 Years'],year_2_to_3_time: +row['2 Years to < 3 Years'],
-            year_3_to_5_time: +row['3 Years to < 5 Years'],year_5_or_more_time: +row['5 or More Years'],center_code: +row['Center Code']};
+            year_3_to_5_time: +row['3 Years to < 5 Years'],year_5_or_more_time: +row['5 or More Years'],center_code: +row['Center Code'],county: row['County'],
+            state: row['State'], city: row['City']};
 
         centerFeatures.push(turf.point([+row['Longitude'], +row['Latitude']], center));
         return center;
